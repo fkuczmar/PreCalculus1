@@ -181,8 +181,8 @@ The points where the line $x=-5$ intersects the circle with center $A(2,1)$ that
   \begin{multipleChoice}  
     \choice{$(2,0)$}  
     \choice[correct]{$(4,0)$}  
-    \choice{$(12,0)$} 
-    \choice[correct]{$(-6,0)$} 
+    \choice[correct]{$(12,0)$} 
+    \choice{$(-6,0)$} 
      \end{multipleChoice}  
 \end{exercise}  
 
@@ -211,6 +211,201 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
+
+
+
+\begin{example}
+Find the coordinates of all points on the $x$-axis that are equidistant from the points $A(-2,3)$ and $B(6,1)$. Check your answer(s) by computing the appropriate distances.
+\end{example}
+
+\begin{explanation}
+Let $P$ be a point on the $x$-axis with coordinates $(x,0)$ that is equidistant from $A(-2,3)$ and $B(6,1)$. Then
+\[
+    \text{dist}(A,P) = \text{dist}(B,P) .
+\]
+Using the Pythagorean Theorem (or distance formula)
+\[
+    \text{dist}(A,P) = \sqrt{(x+2)^2 + (0-3)^2}
+\]
+and
+\[
+    \text{dist}(B,P) = \sqrt{(x-6)^2 + (0-1)^2} .
+\]
+
+Then $P(x,0)$ is equidistant from $A$ and $B$ when
+\[
+  \sqrt{(x+2)^2 + (0-3)^2} = \sqrt{(x-6)^2 + (0-1)^2} .
+\]
+Squaring both sides gives
+\[
+   (x+2)^2 +9 = (x-6)^2 + 1 .
+\]
+So $P$ is equidistant from $A$ and $B$ when
+\[
+    x^2 + 4x + 13 = x^2 - 12x + 37, 
+\]
+or when
+\[
+     16x = 24
+\]
+and 
+\[
+   x=3/2 .
+\]
+
+{\bf Conclusion:} There is one point on the $x$-axis that is equidistant from the points $A(-2,3)$ and $B(6,1)$. It has coordinates $(3/2,0)$. 
+
+To check this let's compute the two distances:
+
+\pskip
+
+\begin{align*}
+    \text{dist}(A,P)  &= \sqrt{(3/2+2)^2 + (0-3)^2} \\
+                             &= \sqrt{(7/2)^2 + 9} \\
+                             &= \sqrt{85/4}
+\end{align*}
+
+and 
+
+\begin{align*}
+    \text{dist}(B,P)  &= \sqrt{(3/2-6)^2 + (0-1)^2} \\
+                             &= \sqrt{(9/2)^2 + 1} \\
+                             &= \sqrt{85/4} .
+\end{align*}
+
+They are indeed equal.
+
+
+\end{explanation}
+
+
+
+\begin{example}
+(a) Is the point $Q(5,0)$ twice as far from $E(0,0)$ as it is from $F(15,0)$.
+
+(b) Find the coordinates of all points on the $y$-axis that are three times as far from the point $A(3,-2)$ as from the point $B(1,6)$. %Check your answer(s) by computing the appropriate distances.
+\end{example}
+
+\begin{explanation}
+(a) This is not really a math question, but an English question. Since
+\[
+    \text{dist}(Q,E) = 5
+\]
+and 
+\[
+    \text{dist}(Q,F) = 10  %= 2 \, \text{dist}(Q,E),
+\]
+$Q(5,0)$ is twice as far from $F(15,0)$ as it is from $E(0,0)$.
+
+\pskip
+
+{\bf Conclusion:} No, $Q(5,0)$ is {\bf not} twice as far from $E(0,0)$ as it is from $F(15,0)$. It's the other way around; $Q(5,0)$ is twice as far from $F(15,0)$ as it is from $E(0,0)$. 
+
+\pskip
+
+(b) Let $P$ be a point on the $y$-axis with coordinates $(0,y)$ that is three times as  from the point $A(3,-2)$ as it is from the point $B(1,6)$. Then
+\[
+    \text{dist}(A,P) = 3 \, \text{dist}(B,P) .
+\]
+Using the Pythagorean Theorem (or distance formula)
+\[
+    \text{dist}(A,P) = \sqrt{(0-3)^2 + (y+2)^2} = \sqrt{y^2 + 4y + 13}
+\]
+and
+\[
+    \text{dist}(B,P) = \sqrt{(0-1)^2 + (y-6)^2} = \sqrt{y^2-12y+37}.
+\]
+So $P(0,y)$ is  three times as  from $A(3,-2)$ as it is from $B(1,6)$ when
+\[
+   \sqrt{y^2 + 4y + 13} = 3 \sqrt{y^2-12y+37} .
+\]
+Squaring both sides gives
+\[
+  y^2 + 4y + 13 = 9(y^2-12y+37)
+\]
+and 
+\[
+        8y^2 - 112y +320 = 0 .
+\]
+So
+\[
+     y^2 - 14y + 40 = 0
+\]
+and
+\[
+     (y -4 )(y - 10) = 0.
+\]
+So
+\[
+     y-4 = 0    \;\;\;  \text{or} \;\;\; y-10=0
+\]
+and
+\[
+    y=4  \;\; \; \text{or} \;\;\ y=10 .
+\]
+
+\pskip
+
+{\bf Conclusion:} There are two points on the $y$-axis twice as far from $A(3,-2)$ as from $B(1,6)$. They have coordinates $(0,4)$ or $(0,10)$.
+
+\end{explanation}
+
+
+\begin{example}
+Show that the curve with equation
+\[
+   x^2  - 10x + y^2 + 7y = 5
+\]
+is a circle. Then determine the coordinates of its center and its radius.
+\end{example}
+
+
+\begin{explanation}
+We need to complete the square twice. The expression
+\[
+     x^2 - 10x
+\]
+is not a perfect square. But by adding the constant $(-10/2)^2 = (-5)^2 = 25$, we get a new expression that is a perfect square, namely,
+\[
+     x^2 -10x + (-5)^2 = (x-5)^2 .
+\]
+We can check this by distributing:
+\[
+    (x-5)^2 = (x-5)(x-5) = x^2 -5x -5x + 25 = x^2 - 10x + 25 .
+\]
+
+Similarly, the expression
+\[
+   y^2 + 7y
+\]
+is also not a perfect square. But by adding the constant $(7/2)^2 = 49/4$, we get a new expression that is a perfect square, namely
+\[
+     y^2 + 7y + (7/2)^2 = (y+7/2)^2 .
+\]
+
+Now let's write the equation of the curve as
+\[
+     (x^2  - 10x + \;\;\;\; ) + (y^2 + 7y + \;\;\;\; ) = 5 .
+\]
+We'll add $(-5)^2$ and $(7/2)^2$ to both sides, getting
+\[
+     (x^2  - 10x + (-5)^2 ) + (y^2 + 7y + (7/2)^2 ) = 5 + (-5)^2 + (7/2)^2 ,
+\]
+or
+\[
+    (x-5)^2 + (y+7/2)^2 = 5 + 25 + \frac{49}{4} = \frac{169}{4} .
+\]
+Taking the square root of both sides gives
+\[
+    \sqrt{(x-5)^2 + (y+7/2)^2} = 13/2 .
+\]
+The expression $\sqrt{(x-5)^2 + (y+7/2)^2}$ measures the distance from the point $P(x,y)$ to the point $A(5,-7/2)$. Since this distance is equal to the constant $13/2$, the graph of all points $P(x,y)$ whose coordinates satisfy the above equation is a circle with center $A(5,-7/2)$ and radius $13/2$.
+
+\pskip 
+
+{\bf Important Point:} Stick with fractions when completing the square. Do not use decimals.
+
+\end{explanation}
 
 \end{document}
 
