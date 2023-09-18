@@ -1,0 +1,229 @@
+\documentclass{ximera}
+\title{Circles}
+
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Circles in the Euclidean plane.
+\end{abstract}
+\maketitle
+
+
+\pskip
+
+
+
+
+\begin{example}
+Use the Pythagorean Theorem to determine if the point $P(10,5)$ lies inside, outside, or on the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
+\end{example}
+
+\begin{explanation}
+The circle is the set of points exactly 9 units from the center $A(2,1)$. The point $P$ will lie inside, outside, or on the circle depending respectively on whether the distance between $A$ and $P$ is less than, equal to, or greater than the radius.
+
+To determine the distance between $A$ and $P$, we use the Pythagorean theorem by drawing a right triangle $\Delta ABP$ with hypotenuse $AP$ and legs parallel to the coordinate axes as in the Figure. The point $B$ has coordinates $(10,1)$, taken from the $x$-coordinate of $P$ (ie. $x=10$) and the $y$-coordinate of $A$ (ie. $y=1$). Then by the Pythagorean Theorem, the distance between $A$ and $P$ is
+\[
+   \text{dist}(A,P) = \sqrt{AB^2 + BP^2} = \sqrt{(10-2)^2 + (5-1)^2} = \sqrt{8^2 + 4^2} = \sqrt{80} . 
+\]
+Since this distance is less than the radius of the circle $9 = \sqrt{81}$, the point $P$ lies \emph{inside} the circle.
+
+\iffalse   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!h]
+\centerline{
+\includegraphics[height=2 in]{Circle1.eps}   
+}
+%\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
+\end{figure}
+
+\fi   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{explanation}
+
+
+\begin{example}
+Use the distance formula to find an equation of the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
+\end{example}
+
+\begin{explanation}
+The circle is the set of points exactly 9 units from the point $A$. So the point $P(x,y)$ lies on the circle when
+\[
+     \text{dist}(A,P) = 9 .
+\]
+By the distance formula (really the Pythagorean Theorem), 
+\[
+ \text{dist}(A,P) =  \sqrt{(x-2)^2 + (y-1)^2} .
+\]
+So the point $P(x,y)$ lies on the circle with center $A(1,2)$ and radius $9$ when
+\[
+     \sqrt{(x-2)^2 + (y-1)^2} = 9 .
+\]
+This is an equation of the circle with center $A(1,2)$ and radius $9$. Stop here. There is no need to square both sides.
+
+\iffalse   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!h]
+\centerline{
+\includegraphics[height=2 in]{Circle1B.eps}   
+}
+%\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
+\end{figure}
+
+\fi
+
+\end{explanation}
+
+
+\begin{example}
+Find the coordinates of the $x$-intercepts of the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
+\end{example}
+
+\pskip
+
+\begin{explanation}
+A point lines on the $x$-axis when its $y$-coordinate is zero. So we can find the $x$-coordinates of the intercepts by substituting $y=0$ into the equation
+\[
+\sqrt{(x-2)^2 + (y-1)^2} = 9 
+\]
+of the circle and solving for $x$. So if $y=0$, then
+\[
+\sqrt{(x-2)^2 + (0-1)^2} = 9,
+\]
+and
+\[
+   (x-2)^2 + 1 = 81,
+\]
+and
+\[
+   (x-2)^2 = 80.
+\]
+So
+\[
+    x-2 = \pm \sqrt{80}
+\]
+and 
+\[
+  x = 2\pm \sqrt{80} .
+\]
+
+The $x$-intercepts of the circle with center $A(1,2)$ and radius $9$ have coordinates $(2\pm \sqrt{80}, 0)$, or approximately $(10.9,0)$ or $(-6.9,0)$.
+
+\iffalse   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!h]
+\centerline{
+\includegraphics[height=2.5 in]{Circle1C.eps}   
+}
+%\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
+\end{figure}
+
+\fi  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{explanation}
+
+
+
+\begin{example}
+Find the coordinates of the points where the line $x=-5$ intersects the circle with center $A(2,1)$ passing through the point $Q(10,5)$. Explain your reasoning. Be sure to include an accurate picture.
+\end{example}
+
+\begin{explanation}
+The circle has radius
+\[
+   \text{dist}(A,Q) = \sqrt{(10-2)^2  + (5-1)^2} = \sqrt{80} .
+\]
+So the point $P(x,y)$ lies on the circle when
+\[
+  \text{dist}(A,P) = \sqrt{80}
+\]
+or when
+\[
+   \sqrt{(x-2)^2 +(y-1)^2} = \sqrt{80} .
+\]
+This is an equation of the circle with center $A(2,1)$ that passes though the point $Q(10,5)$.
+
+To find the coordinates of the points where this circle intersects the line $x=-5$, substitute $x=-5$ into the equation of the circle. Then 
+\[
+       (-5-2)^2 + (y-1)^2 = 80
+\]
+and
+\[ 
+     (y-1)^2 = 31 .
+\]
+So
+\[
+     y = 1 \pm \sqrt{31} .
+\]
+The points where the line $x=-5$ intersects the circle with center $A(2,1)$ that passes through the point $Q(10,5)$ have coordinates $(-5, 1\pm \sqrt{31})$, or approximately $(-5, 6.6)$ or $(-5,-4.6)$.
+
+
+\iffalse  %%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!h]
+\centerline{
+\includegraphics[height=1.7 in]{Circle1D.eps}   
+}
+%\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
+\end{figure}
+
+\fi          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{explanation}
+
+
+
+\begin{exercise}  
+  Which of the following points are twice as far from $(0,0)$ as from $(6,0)$? Check all that apply.  
+  \begin{multipleChoice}  
+    \choice{$(2,0)$}  
+    \choice[correct]{$(4,0)$}  
+    \choice{$(12,0)$} 
+    \choice[correct]{$(-6,0$} 
+     \end{multipleChoice}  
+\end{exercise}  
+
+
+\begin{question} 
+Find an equation for the set of points twice as far from $(0,0)$ as from $(6,0)$. 
+\[
+  \answer{\sqrt{x^2+y^2} = 2 \sqrt{(x-6)^2+y^2}} 
+\]
+    \end{question}
+
+
+\begin{exploration}\label{exp:pc1}
+The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
+ 
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/0iruo192ir}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{0iruo192ir}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
