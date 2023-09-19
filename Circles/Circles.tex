@@ -13,7 +13,13 @@ Circles in the Euclidean plane.
 
 \pskip
 
-A circle is the set of points in a plane that are a given distance from a given point. The given point is the center of the circle and the fixed distance is the \emph{radius}. Any segment from the center to a point on the circle is also called a radius. The context should make it clear which meaning applies.
+\section{Circle Fundamentals}
+
+The most important thing to know about the equation of a circle is the logic behind it. If you understand this logic, there is no need to memorize the equation. Instead, you can figure it out yourself.
+
+The logic starts with the idea that a circle is the set of all points in a plane that are a fixed distance from a given point. The given point is the \emph{center} of the circle and the fixed distance is the \emph{radius}. Any segment from the center to a point on the circle is also called a radius. The context should make it clear which meaning applies.
+
+
 
 
 \begin{example}
@@ -21,7 +27,7 @@ Use the Pythagorean Theorem to determine if the point $P(10,5)$ lies inside, out
 \end{example}
 
 \begin{explanation}
-The circle is the set of points exactly 9 units from the center $A(2,1)$. The point $P$ will lie inside, outside, or on the circle depending respectively on whether the distance between $A$ and $P$ is less than, equal to, or greater than the radius.
+The circle is the set of points exactly 9 units from the center $A(2,1)$. The point $P$ will lie inside, outside, or on the circle if the distance between $A$ and $P$ is respectively less than, equal to, or greater than the radius.
 
 To determine the distance between $A$ and $P$, we use the Pythagorean theorem by drawing a right triangle $\Delta ABP$ with hypotenuse $AP$ and legs parallel to the coordinate axes as in the Figure. The point $B$ has coordinates $(10,1)$, taken from the $x$-coordinate of $P$ (ie. $x=10$) and the $y$-coordinate of $A$ (ie. $y=1$). Then by the Pythagorean Theorem, the distance between $A$ and $P$ is
 \[
@@ -45,23 +51,32 @@ Since this distance is less than the radius of the circle $9 = \sqrt{81}$, the p
 
 
 \begin{example}
-Use the distance formula to find an equation of the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
+Find an equation of the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
 \end{example}
 
 \begin{explanation}
-The circle is the set of points exactly 9 units from the point $A$. So the point $P(x,y)$ lies on the circle when
+The idea is to turn the geometric description of the circle, namely the set of all points in the plane exactly 9 units from the point $A$, into an equation. Take a general point $P$ with coordinates $(x,y)$. Then this point $P$ lies on the circle if and only if
 \[
      \text{dist}(A,P) = 9 .
 \]
-By the distance formula (really the Pythagorean Theorem), 
+We can use the Pythagorean Theorem to compute the distance between the center $A(2,1)$ and the general point $P(x,y)$ as 
 \[
  \text{dist}(A,P) =  \sqrt{(x-2)^2 + (y-1)^2} .
 \]
-So the point $P(x,y)$ lies on the circle with center $A(1,2)$ and radius $9$ when
+So the point $P(x,y)$ lies on the circle with center $A(1,2)$ and radius $9$ exaclty when (ie. if and only if)
 \[
      \sqrt{(x-2)^2 + (y-1)^2} = 9 .
 \]
-This is an equation of the circle with center $A(1,2)$ and radius $9$. Stop here. There is no need to square both sides.
+This is an equation of the circle with center $A(1,2)$ and radius $9$. 
+
+\pskip
+
+{\bf Remark:}  There is no need to square both sides in the above equation. In fact, writing the equation as
+\[
+      (x-2)^2 + (y-1)^2 = 81
+\]
+obscures the idea of a circle and turns a statement about distances into one about areas.
+
 
 \iffalse   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -72,13 +87,13 @@ This is an equation of the circle with center $A(1,2)$ and radius $9$. Stop here
 %\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
 \end{figure}
 
-\fi
+\fi          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{explanation}
 
 
 \begin{example}
-Find the coordinates of the $x$-intercepts of the circle with center $A(2,1)$ and radius $9$. Explain your reasoning. Be sure to include an accurate picture.
+Find the coordinates of the $x$-intercepts of the circle with center $A(2,1)$ and radius $9$. %Explain your reasoning. Be sure to include an accurate picture.
 \end{example}
 
 \pskip
@@ -126,6 +141,7 @@ The $x$-intercepts of the circle with center $A(1,2)$ and radius $9$ have coordi
 \end{explanation}
 
 
+\iffalse        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{example}
 Find the coordinates of the points where the line $x=-5$ intersects the circle with center $A(2,1)$ passing through the point $Q(10,5)$. Explain your reasoning. Be sure to include an accurate picture.
@@ -161,8 +177,6 @@ So
 The points where the line $x=-5$ intersects the circle with center $A(2,1)$ that passes through the point $Q(10,5)$ have coordinates $(-5, 1\pm \sqrt{31})$, or approximately $(-5, 6.6)$ or $(-5,-4.6)$.
 
 
-\iffalse  %%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{figure}[!h]
 \centerline{
 \includegraphics[height=1.7 in]{Circle1D.eps}   
@@ -170,11 +184,42 @@ The points where the line $x=-5$ intersects the circle with center $A(2,1)$ that
 %\caption{The graph of the function $y=f(x)$.}\label{Fi:Shadow}
 \end{figure}
 
-\fi          %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{explanation}
 
+\fi          %%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+\begin{example}
+How many circles pass through the points $A(3,5)$ and $B(6,-2)$? What can you say about their centers?
+\end{example}
+
+\begin{explanation}
+We have three degrees of freedom (ie. three choices) in drawing a circle - two in choosing the coordinates of its center and a third in choosing its radius. Since there are only two conditions, namely that our circle pass through the two given points, we would are left with one degree of freedom in choosing our circle. This suggests that there are infinitely many such circles. We'll explore this in the activity below. 
+\end{explanation}
+
+
+\begin{exploration}\label{exp:circle1}
+The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
+ 
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/23zigtkdoa}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{23zigtkdoa}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+
+
+\section{Circles of Appolonius}
 
 \begin{exercise}  
   Which of the following points are twice as far from $(0,0)$ as from $(6,0)$? Check all that apply.  
@@ -195,21 +240,6 @@ Find an equation for the set of points twice as far from $(0,0)$ as from $(6,0)$
     \end{question}
 
 
-\begin{exploration}\label{exp:pc1}
-The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
- 
-\pdfOnly{
-Access Desmos interactives through the online version of this text at
- 
-\href{https://www.desmos.com/calculator/0iruo192ir}.
-}
- 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{0iruo192ir}{900}{600}
-\end{center}
-\end{onlineOnly}
-\end{exploration}
 
 
 
