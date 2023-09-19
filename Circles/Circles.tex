@@ -197,11 +197,10 @@ How many circles pass through the points $A(3,5)$ and $B(6,-2)$? What can you sa
 
 \begin{explanation}
 We have three degrees of freedom (ie. three choices) in drawing a circle - two in choosing the coordinates of its center and a third in choosing its radius. Since there are only two conditions, namely that our circle pass through the two given points, we would are left with one degree of freedom in choosing our circle. This suggests that there are infinitely many such circles. We'll explore this in the activity below. 
-\end{explanation}
 
 
 \begin{exploration}\label{exp:circle1}
-The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
+Drag the centers of each of the circles below so that they pass through the points $A$ and $B$ if possible. What do you notice about the centers of these circles?
  
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -216,7 +215,38 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
+You should have noticed that the centers of circles through the points $A(3,5)$ and $B(6,-2)$ lie on a line. In fact, the centers are exactly the points on the perpendicular bisector of the segment $\overline{AB}$. The key to show why this is true is to realize that a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ exactly when (ie. if and only if) $P$ is equidistant (ie. equally distant) from $A$ and $B$ (\emph{Why?}). 
 
+Now many of you already know that the set of points equidistant from $A$ and $B$ is the perpendicular bisector of the segment $\overline{AB}$ and we could use this to find an equation of the set of all such points. But this is primarily an algebra class, so we will not use this approach. Instead, we will translate the geometric condition that the center $P(x,y)$ be equidistant from $A(3,5)$ and $B(6,-2)$ into an equation.
+
+Because 
+\[
+   \text{dist}(A,P) = \sqrt{(x-3)^2 + (y-5)^2}
+\] 
+and
+\[
+  \text{dist}(B,P) = \sqrt{(x-6)^2 + (y+2)^2} ,
+\]
+the point $P$ is the center of a circle through $A$ and $B$ if and only if
+\[
+   \text{dist}(A,P)  = \text{dist}(B,P) ,
+\]
+or equivalently, if and only if
+\[
+   \sqrt{(x-3)^2 + (y-5)^2} = \sqrt{(x-6)^2 + (y+2)^2} .
+\]
+
+Now this does not look at all like an equation of a line, but after doing some algebra we get the equivalent condition that
+\[
+      -6x -10y + 34 = -12x + 4y +40 ,
+\] 
+or that 
+\[
+    3x - 7y = 3 .
+\]
+
+
+\end{explanation}
 
 
 \section{Circles of Appolonius}
