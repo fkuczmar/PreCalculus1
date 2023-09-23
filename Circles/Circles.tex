@@ -322,134 +322,85 @@ and so $P$ also lies on the line
 \[
   2bx + 2cy = b^2 + c^2 .
 \]
-The center therefore is the point where these two lines intersect and we can find its coordinates by substituting $x=a/2$ into the second equation. This gives
+The center therefore is the point where these two lines intersect and we can find its coordinates by substituting $x=a/2$ into the second equation. Carry out this algebra and input the coordinates $(x_1,y_1)$ of the center of the circle through the points $O(0,0)$, $A(a,0)$, and $B(b,c)$ below.
+
+\begin{question}
 \[
-        2b (a/2) + 2cy = b^2 + c^2
+  (x_1, y_1) = \answer{ \left( \frac{a}{2}  ,  \frac{b^2+c^2-ab}{2c}   \right)} 
 \]
-and
-\[
-      y = \frac{b^2+c^2-ab}{2c} .
-\]
-So the center of the circle through the points $O(0,0)$, $A(a,0)$, and $B(b,c)$ has coordinates
-\[
-  (x_1, y_1) = \left(   \frac{a}{2}  ,  \frac{b^2+c^2-ab}{2c}    \right) .
-\]
+\end{question}
+
+%This gives
+%\[
+%        2b (a/2) + 2cy = b^2 + c^2
+%\]
+%and
+%\[
+%      y = \frac{b^2+c^2-ab}{2c} .
+%\]
+
+
+
+%So the center of the circle through the points $O(0,0)$, $A(a,0)$, and $B(b,c)$ has coordinates
+%\[
+%  (x_1, y_1) = \left(   \frac{a}{2}  ,  \frac{b^2+c^2-ab}{2c}    \right) .
+%\]
 
 \begin{exploration}\label{exp:circle7}
-Write the equations of the circles with radius 8 through the points $A(3,5)$ and $B(6,-2)$ in Lines 13 and 14 of the Desmos graph below. Use the graphs to check that your equations are correct.
+You may have noticed that we did not think about whether there is always a {\bf unique} circle through the points $O(0,0)$, $A(a,0)$, and $B(b,c)$. Drag points $A$ and $B$ in the Desmos activity below to explore this question. Try to reconcile what you see here with what the above algebra suggests.
  
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/zte1lf1zlu}.
+\href{https://www.desmos.com/calculator/cc7xl7pjad}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{zte1lf1zlu}{900}{600}
+\desmos{cc7xl7pjad}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
 
-
-
-
-
 \end{explanation}
 
 
+\begin{example}  \label{Ex8}
+Find an equation of the circle through the points $O(0,0)$, $A(a,b)$, and $C(c,d)$.
 
+\begin{exploration}\label{exp:circle8}
+(a) Correct the expressions for the coordinates $(x_1,y_1)$ of the circle's center in Lines 13 and 14 of the Desmos Activity below.
 
+(b) Correct the equation for the circle in Line 15.
 
+(c) Drag points $A$ and $B$ in the Desmos activity below to explore when there is a unique circle through $O$, $A$, and $B$. Try to reconcile what you see here with what the above algebra suggests.
+ 
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/cpwwnom2sw}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{cpwwnom2sw}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
 
-\section{Circles: A Different Perspective}
-
-\begin{exercise}  
-  Which of the following points are twice as far from $(0,0)$ as from $(6,0)$? Check all that apply.  
-  \begin{selectAll}  
-    \choice{$(2,0)$}  
-    \choice[correct]{$(4,0)$}  
-    \choice[correct]{$(12,0)$} 
-    \choice{$(-6,0)$} 
-     \end{selectAll}  
-\end{exercise}  
-
-
-\begin{question} 
-Find an equation for the set of points twice as far from $(0,0)$ as from $(6,0)$. 
-\[
-  \answer{\sqrt{x^2+y^2} = 2 \sqrt{(x-6)^2+y^2}} 
-\]
-    \end{question}
-
-
-
-
-
-
-\begin{example}
-Find the coordinates of all points on the $x$-axis that are equidistant from the points $A(-2,3)$ and $B(6,1)$. Check your answer(s) by computing the appropriate distances.
 \end{example}
 
-\begin{explanation}
-Let $P$ be a point on the $x$-axis with coordinates $(x,0)$ that is equidistant from $A(-2,3)$ and $B(6,1)$. Then
-\[
-    \text{dist}(A,P) = \text{dist}(B,P) .
-\]
-Using the Pythagorean Theorem (or distance formula)
-\[
-    \text{dist}(A,P) = \sqrt{(x+2)^2 + (0-3)^2}
-\]
-and
-\[
-    \text{dist}(B,P) = \sqrt{(x-6)^2 + (0-1)^2} .
-\]
-
-Then $P(x,0)$ is equidistant from $A$ and $B$ when
-\[
-  \sqrt{(x+2)^2 + (0-3)^2} = \sqrt{(x-6)^2 + (0-1)^2} .
-\]
-Squaring both sides gives
-\[
-   (x+2)^2 +9 = (x-6)^2 + 1 .
-\]
-So $P$ is equidistant from $A$ and $B$ when
-\[
-    x^2 + 4x + 13 = x^2 - 12x + 37, 
-\]
-or when
-\[
-     16x = 24
-\]
-and 
-\[
-   x=3/2 .
-\]
-
-{\bf Conclusion:} There is one point on the $x$-axis that is equidistant from the points $A(-2,3)$ and $B(6,1)$. It has coordinates $(3/2,0)$. 
-
-To check this let's compute the two distances:
-
-\pskip
-
-\begin{align*}
-    \text{dist}(A,P)  &= \sqrt{(3/2+2)^2 + (0-3)^2} \\
-                             &= \sqrt{(7/2)^2 + 9} \\
-                             &= \sqrt{85/4}
-\end{align*}
-
-and 
-
-\begin{align*}
-    \text{dist}(B,P)  &= \sqrt{(3/2-6)^2 + (0-1)^2} \\
-                             &= \sqrt{(9/2)^2 + 1} \\
-                             &= \sqrt{85/4} .
-\end{align*}
-
-They are indeed equal.
 
 
-\end{explanation}
+\section{Surprising Circles}
+
+\begin{exercise}  
+  Is the point $(12,0)$ twice as far from $(8,0)$ as it is from $(20,0)$? 
+  \begin{multipleChoice}  
+    \choice{Yes}  
+    \choice[correct]{No}  
+        \end{multipleChoice}  
+\end{exercise}  
 
 
 
@@ -522,6 +473,28 @@ and
 {\bf Conclusion:} There are two points on the $y$-axis twice as far from $A(3,-2)$ as from $B(1,6)$. They have coordinates $(0,4)$ or $(0,10)$.
 
 \end{explanation}
+
+
+\begin{exercise}  
+  Which of the following points are twice as far from $(0,0)$ as from $(6,0)$? Check all that apply.  
+  \begin{selectAll}  
+    \choice{$(2,0)$}  
+    \choice[correct]{$(4,0)$}  
+    \choice[correct]{$(12,0)$} 
+    \choice{$(-6,0)$} 
+     \end{selectAll}  
+\end{exercise}  
+
+
+
+\begin{question} 
+Find an equation for the set of points twice as far from $(0,0)$ as from $(6,0)$. 
+\[
+  \answer{\sqrt{x^2+y^2} = 2 \sqrt{(x-6)^2+y^2}} 
+\]
+    \end{question}
+
+
 
 
 \begin{example}
