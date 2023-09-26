@@ -222,9 +222,50 @@ The circles with equations
 \]
 and 
 \[
-   (x+3)^2 + (y-1)^2=30
+   (x+6)^2 + (y-2)^2=13
 \]
+intersect in two points. Use algebra to find an equation of the line through these points.
 \end{example}
+
+\begin{explanation}
+
+There is a hard way and an easy way to solve this problem. Both methods start the same.
+
+We'll rewrite the equations as
+\begin{equation}
+  x^2 + y^2 - 25 = 0   \label{Eq:Circle1}
+\end{equation}
+and
+\begin{equation}
+  (x+6)^2 + (y-2)^2-13 = 0 .   \label{Eq:Circle2}
+\end{equation}
+The idea now is to use algebra to start to solve this system of equations by substituting the expression $x^2-y^2-25$ for the zero on the right side of the second equation to get
+\[
+        (x+6)^2 + (y-2)^2-13 = x^2 + y^2 .
+\]
+Then some algebra leads to 
+\[
+   y-3x = 13.
+\]
+
+What this shows is that \emph{if} the point with coordinates $(x,y)$ lies on the circles defined by equations (\ref{Eq:Circle1}) and (\ref{Eq:Circle2}), then it also lies on the line $y-3x = 13$. Because there are two points of intersection and each of these points lies on this line, the line $y=3x=13$ is in fact the line through the points of intersection.
+
+That's it. We're done. There is no need to compute the coordinates of the intersection points. The desmos graph below suggests that we are correct.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{hdsihzbnus}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\begin{question}
+Use algebra to find the exact coordinates of the two intersection points. Then type these coordinates in Lines 4 and 5 of the above desmos activity to check if you are correct. 
+\end{question}
+
+\end{explanation}
+
+
 
 
 
