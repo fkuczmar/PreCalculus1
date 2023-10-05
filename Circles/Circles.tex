@@ -366,6 +366,86 @@ Now type this equation in Line 24 of the above Desmos demonstration to make sure
 
 \pskip
 
+
+\begin{example} \label{Ex5a}
+Find equations of all circles with radius $\sqrt{26}$ through the points $A(4,1)$ and $B(10,5)$.
+
+\begin{explanation}
+This example is just like the previous one, but it works out much easier (it's the one we did in class). As before, the center of such a circle must be
+
+\pskip
+
+(a) equidistant from $A$ and $B$, and 
+
+\pskip
+ 
+(b) a distance of $\sqrt{26}$ from $A$. 
+
+\pskip
+
+With $P(x,y)$ as the center, the first condition gives
+\[
+  \sqrt{(x-4)^2 + (y-1)^2} = \sqrt{(x-10)^2+(y-5)^2}
+\]
+ which leads to the equivalent condition that
+\[
+   3x + 2y = 27 , 
+\]
+or 
+\[
+    x = -\frac{2}{3}y + 9 .
+\]
+The second condition (b) is that
+\[
+   \sqrt{(x-4)^2 + (y-1)^2} =\sqrt{26} ,
+\]
+or equivalently that
+\[
+   (x-4)^2 + (y-1)^2 = 26.
+\]
+Then substituting gives
+\[
+    \left( -\frac{2}{3}y+9-4 \right)^2 + (y-1)^2 = 26
+\]
+or
+\[
+    \left( -\frac{2}{3}y+5 \right)^2 + (y-1)^2 = 26 .
+\]
+Now after some algebra we get
+\[
+   \frac{13}{9}y^2 - \frac{26}{3}y = 0.
+\]
+We can solve this quadratic equation by factoring:
+\[
+ \frac{13}{9}y \left(  y-6   \right) = 0 .
+\]
+So $y=0$ or $y=6$.
+
+Now if $y=0$, 
+\[
+   x = -\frac{2}{3}y + 9 = -\frac{2}{3}(0) + 9 = 9 .
+\]
+And if $y=6$, 
+\[
+x = -\frac{2}{3}y + 9 = -\frac{2}{3}(6) + 9 = 5 .
+\]
+
+So there are two circles through $A$ and $B$ with radius $\sqrt{26}$. Their centers have coordinates $(9,0)$ and $(5,6)$. The circles have respective equations
+\[
+  \sqrt{(x-9)^2 + y^2} =\sqrt{26}
+\]
+and
+\[
+\sqrt{(x-5)^2 + (y-6)^2} =\sqrt{26} .
+\]
+
+\end{explanation}
+
+\end{example}
+
+
+
+
 \begin{example}  \label{Ex6}
 Find equations of all circles of radius 8 through the points $A(3,5)$ and $B(6,-2)$.
 
