@@ -15,19 +15,23 @@ It can be misleading to say that the height of the balloon increases 50 feet eve
 
 Now most functions are decidedly not linear, even over short periods of time. It is unlikely for a balloon to ascend at a contant rate for very long, nor is it really possible to drive at a constant speed for very long. Nevertheless, most functions are locally linear, or at least approximately so, and it is for primarily this reason that they are very useful. For example, over a short period of time we would expect a balloon to ascend or descend at a nearly constant rate and the speed of a car to be almost constant. 
 
-Over long periods of time, some populations tend to grow approximately exponentially. But over a short period of time, the growth is nearly linear. For a dramatic way to see this, take a look at the website below to see how the U.S. and world populations are growing:
+Over long periods of time, some populations tend to grow exponentially. But over a short period of time, the growth is nearly linear. For a dramatic way to see this, take a look at the website below to see how the U.S. and world populations are growing:
 
 \href{https://www.census.gov/popclock/}{Population Clock}
+
+\begin{question} \label{Q1:LF}
+Use the above population clock to estimate the rate at which the world population is currently increasing.
+\end{question}
 
 We can also see this same phenomenon graphically. Consider, for example, the graph of the function
 \[
     T = f(m) , 0\leq m \leq 20 ,
 \]
-that expresses the temperature (in Celsius degrees) of a cup of coffee in terms of the number of minutes past noon shown below. The function is not linear. But zoom in close to the point $P$ on the graph.
+that expresses the temperature (in Celsius degrees) of a cup of coffee in terms of the number of minutes past noon is shown below. The function is not linear. But zoom in close to the point $P$ on the graph.
 
-\begin{exploration}\label{exp:angles2}
+\begin{exploration}\label{Exp1:LF}
 Zoom in close to point $P$ by scrolling with your mouse. 
-\begin{question} \label{Q1:LF}
+\begin{question} \label{Q2:LF}
 What do you notice about the graph of the function very close to $P$?
 \end{question}
 
@@ -60,7 +64,7 @@ Most of you are undoubtedly familiar with the slope-interecept form of an equati
 \[
     h=f(t) =h_0 + m t , 10\leq t \leq 20.
 \]
-This formula relies on knowing the value of $h_0$, ie. the balloon's height (in feet) at 12:00pm. But there is no need to know this height, nor do we have enough information to determine it (since we know nothing about the rate of ascent between noon and 12:10pm). Sure, we could assume that the balloon ascends at a constant rate from 12:00pm to 12:20pm and find the height at noon, but that would be an extra step. Furthermore, it would take our attention away from the motion of the balloon over the {\bf short} time interval between 12:10pm and 12;20pm. So {\bf forget about the slope-intercept formula.} For this class, and for your future math class, the focus will be on the point-slope equation of a line.
+This formula relies on knowing the value of $h_0$, ie. the balloon's height (in feet) at 12:00pm. But there is no need to know this height, nor do we have enough information to determine it (since we know nothing about the rate of ascent between noon and 12:10pm). Sure, we could assume that the balloon ascends at a constant rate from 12:00pm to 12:20pm and find the height at noon, but that would be an extra step. Furthermore, it would take our attention away from the motion of the balloon over the {\bf short} time interval between 12:10pm and 12;20pm. So {\bf forget about the slope-intercept formula.} For this class and for future math classes, the focus will be on the point-slope equation of a line.
 
 Rather than just plugging numbers into a formula, let's think about how to find the balloon's height at any time between 12:10pm and 12:20pm. Suppose, for example we wish to determine first the balloon's height at 12:20pm relying on the facts that the balloon is 1428 feet hight at 12:13pm and that it ascends at a constant rate of 50 ft/min. 
 
@@ -93,11 +97,51 @@ Now to find the height at any time $t$ between $10$ and $20$ minutes past noon, 
 
 We should keep our focus on the time interval between 12:10pm and 12:20pm by {\bf stopping} here. No need to distribute and simplify. 
 
-
 \end{explanation}
-
-
 \end{example}
+
+Now let's go back to the cooling coffee cup and see if we can approximate the temperature function near the point $P$.
+
+\begin{example} \label{Ex3:LF} The graph of the function
+\[
+    T = f(m) , 0\leq m \leq 20 ,
+\]
+that expresses the temperature (in Celsius degrees) of a cup of coffee in terms of the number of minutes past noon is shown below. 
+
+\begin{exploration}\label{Exp1:LF}
+
+(a) Zoom in close enough to point $P$ to be able to get a good approximation to the coordinates of point $Q$. 
+
+(b) Use the coordinates of points $P$ and $Q$ to find an expression for the linear function 
+\[
+  T = g(m) , 0\leq m \leq 20,
+\]
+that gives a good approximation to the temperature function $T=f(m)$ for times near 12:05pm. 
+
+Explain your reasoning by following Example \ref{Ex2:LF}.
+
+(c) Graph the linear function $T=g(m)$ by entering the correct expression on Line 16 below.
+
+(d) Zoom in toward $P$ and back out. What can you say about how well the linear function approximates the actual temperature function?
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/vce8fcabt7}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vce8fcabt7}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+\end{example} 
+
+
+
+
 
 
 
