@@ -45,6 +45,59 @@ Access Desmos interactives through the online version of this text at
 \end{exploration}
 
 
+Back to our balloon that ascends at a constant rate of 50 ft/min between 12:10pm and 12:20pm. To determine its height at any time during this interval, we need to know the height at one specific time. 
+
+\begin{example} \label{Ex2:LF}
+Between 12:10pm and 12:20pm a balloon ascends at a constant rate of 50 ft/min. The balloon is 1428 feet above the ground at 12:13pm. Find a function 
+\[
+  h = f(t), 10\leq m \leq 20
+\]
+that expresses the height of the balloon (in feet) in terms of the number of minutes past noon.
+
+
+\begin{explanation}
+Most of you are undoubtedly familiar with the slope-interecept form of an equation of a line, for this example written not as $y=b+mx$, but rather as 
+\[
+    h=f(t) =h_0 + m t , 10\leq t \leq 20.
+\]
+This formula relies on knowing the value of $h_0$, ie. the balloon's height (in feet) at 12:00pm. But there is no need to know this height, nor do we have enough information to determine it (since we know nothing about the rate of ascent between noon and 12:10pm). Sure, we could assume that the balloon ascends at a constant rate from 12:00pm to 12:20pm and find the height at noon, but that would be an extra step. Furthermore, it would take our attention away from the motion of the balloon over the {\bf short} time interval between 12:10pm and 12;20pm. So {\bf forget about the slope-intercept formula.} For this class, and for your future math class, the focus will be on the point-slope equation of a line.
+
+Rather than just plugging numbers into a formula, let's think about how to find the balloon's height at any time between 12:10pm and 12:20pm. Suppose, for example we wish to determine first the balloon's height at 12:20pm relying on the facts that the balloon is 1428 feet hight at 12:13pm and that it ascends at a constant rate of 50 ft/min. 
+
+The key is to compute the {\bf change} in the balloon's height from 12:13pm to 12:20pm. Because this time interval lasts 
+\[
+   (20 - 13) \text{ min } = 7 \text { min}
+\]
+and the balloon ascends at a constant rate of 50 ft/min, the change in height is %from 12:13pm to 12:20pm is
+\[
+  \Delta h = f(20) - f(13) = (50 ft/min)(20 - 13 \text{ min})  = 350 ft .
+\]
+Then adding this change in height to the balloon's height at 12:13pm (1428 feet) gives the height at 12:20pm as
+\[
+   f(20) = 1428 \text{ ft } + 350 \text{ ft } = 1778 \text{ ft}.
+\]
+Putting all the computations in one line, the height at 12:20pm is
+\begin{align*}
+    f(\textcolor{red}{20}) &= 1428 \text{ ft } + (50 ft/min)( \textcolor{red}{20} - 13 \text{ min}) . \\
+\end{align*}
+Or omitting the units, 
+\[
+     f(\textcolor{red}{20}) = 1428  + 50 ( \textcolor{red}{20} - 13 ) . 
+\]
+
+
+Now to find the height at any time $t$ between $10$ and $20$ minutes past noon, we need only replace the \textcolor{red}{20} in the above equation with $\textcolor{red}{t}$. So omitting the units, the balloon's height (in feet) at $t$ minutes past noon is given by the function
+\[
+   f(\textcolor{red}{t}) = 1428  + 50( \textcolor{red}{t} - 13) , 10\leq t \leq 20.
+\]
+
+We should keep our focus on the time interval between 12:10pm and 12:20pm by {\bf stopping} here. No need to distribute and simplify. 
+
+
+\end{explanation}
+
+
+\end{example}
 
 
 
