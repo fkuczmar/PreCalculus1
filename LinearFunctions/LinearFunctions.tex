@@ -180,11 +180,11 @@ Suppose that between prices of $\$6.00/\text{burger}$ and $\$10.00/\text{burger}
 
 \pskip
 
-So here we will let $p$ be the price (in $\$$/burger) and $q$ be the average number of burgers (measured in burgers/day) that Five Guys sells at a pirce of $p$  dollars/burger.
+We will let $p$ be the price (in $\$$/burger) and $q$ be the average number of burgers (measured in burgers/day) sold. %that Five Guys sells at a pirce of $p$  dollars/burger.
 
 \pskip
 
-(b) {\bf Relate the variables from part (a) with function notation as in Example 2, where we let $T=f(m)$.}
+(b) {\bf Relate the variables from part (a) with function notation.} % as in Example 2, where we let $T=f(m)$.}
 
 \pskip
 
@@ -208,7 +208,7 @@ I'll omit this part, but you should include a graph. In this case the graph of t
 
 \pskip
 
-(d) {\bf Next compute the appropriate rate of change of the linear function. Include units in your computation and use the delta notation for changes. Interpret the meaning of the slope.}
+(d) {\bf Compute the appropriate rate of change of the linear function. Include units in your computation and use the delta notation for changes. Interpret the meaning of the slope.}
 
 \pskip
 
@@ -216,25 +216,58 @@ The rate of change in the price with with respect to the average number of burge
 \[
    \frac{\Delta p}{\Delta q} = \frac{(10-6) \text{dollars/burger}}{(120-200) \text{burgers/day}} = -\frac{1}{20} \frac{\text{dollars/burger}}{\text{burgers/day} } .
 \]
-So if they raise the price by 1 dollar/burger, they sell an average of 20 fewer burgers/day. Or if they raise the price by $\$0.05$/burger, they sell an average of 1 fewer burgers/day.
+So if Five Guys raise the price by 1 dollar/burger, they sell an average of 20 fewer burgers/day. Or if they raise the price by $\$0.05$/burger, they sell an average of 1 fewer burgers/day.
 \pskip
 
 {\bf Do not simplify the units, otherwise it will be impossible to interpret the rate of change.}
 
 \pskip
 
-(e) Use your slope and a known data point to write an expression for the function in point-slope form. Include a domain.
+(e) {\bf Use your slope and a known data point to write an expression for the function in point-slope form. Include a domain.}
 
-So using the fact that $p=6$ when $q=200$, 
+Because $p=6$ when $q=200$, 
 \[
-  p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200, 
+  p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200 . 
 \]
-or equivalently (using the fact that $p=10$ when $q=120$)
+Or  because $p=10$ when $q=120$, 
 \[
   p = f(q) = 10 - \frac{1}{20} \left( q - 120 \right) \text{ for } 120\leq q \leq 200.
 \]
 \end{explanation}
 {\bf Leave the expressions like this. No need to simplify.}
+
+\pskip 
+
+(f) {\bf Explain the logic behind your function.}
+
+The function
+\[
+   p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200
+\]
+tells us that to get the price $p$ when they sell $q$ burgers/day, we take the price ($\$6$/burger) when they sell 200 burgers/day and add to that the change in the price when the number of burgers they sell changes from 120 burgers/day to $q$  burgers/day.
+
+\pskip
+
+(g) {\bf Check that your function is correct.}
+
+Using
+\[
+  p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200 , 
+\]
+we'll evaluate $f(200)$ to get
+\[
+    f(200) = 6 - \frac{1}{20} \left( 200 - 200 \right) =6 .
+\]
+This is correct since when they sell 200 burgers/day the price is $\$6$/burger.
+
+And we'll evaluate $f(120)$ to get
+\[
+  f(120) = 6 - \frac{1}{20} \left( 120 - 200 \right)  = 6 - (-4) = 10 .
+\]
+Rhat's also correct. When they sell 120 burgers/day the price is $\$10$/burger.
+
+
+
 
 \end{example}
 
@@ -244,7 +277,7 @@ Suppose that over a certain interval of speeds, the speed of a car is a linear f
 
 \pskip
 
-Choose speeds for the endpoints of this interval and reasonable gas mileages for those speeds. Then find a function that expresses the {\bf speed in terms of the gas mileage} by following the steps in Example 8.
+Choose speeds for the endpoints of this interval and reasonable gas mileages for those speeds. Then find a function that expresses the {\bf speed in terms of the gas mileage} by following the steps (a)-(g) in Example 8.
 \end{example}
 
 
