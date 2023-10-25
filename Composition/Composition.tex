@@ -9,35 +9,38 @@ Composing functions.
 \end{abstract}
 \maketitle
 
-\begin{question}   \label{Q1:Comp}
-There are two conditions for $x$ to be in the domain of the composition $f(g(x))$. What are they?
-\end{question}
 
-\begin{example} \label{Ex1:Comp}
-Let 
+Composing functions is a lot like composing actions. For example, consider the actions of putting on your socks and putting on your shoes. Two key points. First is that order matters. We get a completely different result if were to first put on our shoes and then our socks. And depending on how flexible your socks are, it might not even be possible to put your socks over your shoes.
+
+The second point is that to undo the compostion of first putting on your socks and then your shoes, we undo the two actions in the \emph{reverse} order - we first take off our shoes and then our socks. And whether we're talking about socks and shoes or functions, it pays to remember this idea.
+
+\begin{example}  \label{Ex0:Comp}
+Let
 \[
-     f(x) = \frac{x+3}{7x+23}
+    f(x) = \frac{24}{x^2-x-2}
 \]
-and
+and 
 \[
-    g(x) = \frac{x}{x-5} .
+    g(x) = \frac{x-5}{x+4} .
 \]
 
-Use the answer to Question 1 to help you with some of the following questions. Do {\bf not} compute any compositions. Express each domain in set notation.
- 
-(a) Find the domain of $f$.
+(a) Evaluate $f(g(-3))$.
 
-(b) Find the domain of $g$.
+(b) Evalute $g(f(-3))$.
 
-(c) Find the domain of $g\circ f$.
+(c) Solve the equation $g(f(x))=-7/2$.
 
-(d) Find the domain of $f\circ g$.
+(d) Solve the equation $f(g(x)) = 3/11$.
 
-(e) Find the domain of $g\circ g$.
+(e) Solve the equation $g(g(x)) = 2$.
 
-(f) Find the domain of $g\circ g\circ g$.
+(f) Solve the equation $f(f(x)) = 6/7$.
+
+
 
 \end{example}
+
+
 
 
 \begin{example} \label{Ex2:Comp}
@@ -86,21 +89,88 @@ Access Desmos interactives through the online version of this text at
 
 \begin{example}  \label{Ex3:Comp}
 The function
+\[
+     h = f(s) , 0\leq s \leq 25 ,
+\]
+expresses the altitude (in thousands of feet) in terms of your trip odometer reading (in miles) as you drive along a road in Colorado. 
+
+The function 
+\[
+  T = g(h) , 0\leq h \leq 11 ,
+\]
+expresses the temperature (in $^\circ$C) in terms of the altitude (in thousands of feet) at points along the road.
+
+Translate each of the following if possible, either from math to English or vice-versa. Then use the graphs of the functions $f$ and $g$ below to find approximate answers to both the mathematical questions and (in complete sentences) the English questions.
+
+(a) Evaluate $g(f(8))$.
+
+(b) Evaluate $f(g(8))$.
+
+(c) Find the temperature at an altitude of 10,000 feet.
+
+(d) Find the temperature when the odometer reads 10 miles.
+
+(e) At what altitude(s) is the temperature $10^\circ$?
+
+(f) At what altitude(s) is the temperature $3^\circ$?
+
+(g) Solve the equation $g(f(s)) = 5$.
+
+(h) Solve the equation $g(f(s)) = 9$.
+
+(i) Solve the equation $g(f(s)) = g(f(8))$.
+
+(j) At what odeometer readings is the temperature at most $5^\circ$C?
+
+
+
 \begin{exploration}\label{Exp3:Comp}
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/7inaza5mft}.
+\href{https://www.desmos.com/calculator/lvcgcrrsqu}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{7inaza5mft}{900}{600}
+\desmos{7lvcgcrrsqu}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
 
 \end{example}
+
+
+\begin{question}   \label{Q1:Comp}
+There are two conditions for $x$ to be in the domain of the composition $f(g(x))$. What are they?
+\end{question}
+
+\begin{example} \label{Ex1:Comp}
+Let 
+\[
+     f(x) = \frac{x+3}{7x+23}
+\]
+and
+\[
+    g(x) = \frac{x}{x-5} .
+\]
+
+Use the answer to Question 1 to help you with some of the following questions. Do {\bf not} compute any compositions. Express each domain in set notation.
+ 
+(a) Find the domain of $f$.
+
+(b) Find the domain of $g$.
+
+(c) Find the domain of $g\circ f$.
+
+(d) Find the domain of $f\circ g$.
+
+(e) Find the domain of $g\circ g$.
+
+(f) Find the domain of $g\circ g\circ g$.
+
+\end{example}
+
 
 \end{document}
