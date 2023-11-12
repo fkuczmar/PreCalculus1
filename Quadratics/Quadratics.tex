@@ -1,14 +1,80 @@
 \documentclass{ximera}
-\title{Quadratic Functions and Inverse Functions}
+\title{Quadratic Functions, More Inverses}
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
 \begin{document}
 \begin{abstract}
-Pairs of inverse functions.
+Quadratic functions and more about inverse functions.
 \end{abstract}
 \maketitle
 
-Nothing yet.
+\begin{question}    \label{Q1:Quadratics}
+Let 
+\[
+    f(x) = x^2 \, , x \in \mathbb{R} ,
+\]
+and 
+\[
+     g(x) = \sqrt{x} \, , x\geq 0 .
+\]
+
+(a) Explain why the inverse of the function $f$ is not a function.
+
+(b) Let 
+\[
+    h(x) = g(f(x)) .
+\]
+
+(i) Find the domain of $h$.
+
+(ii) Simplify $h(x)$.
+
+(iii) Graph the function $y=h(x)$.
+
+\pskip
+
+(c) Answer parts (i)-(iii) above for the function
+\[
+   j(x) = f(g(x)) .
+\]
+
+(d) Let
+\[
+   k(x) = x^2 \, , x\leq 0 .
+\]
+
+(i) Is the inverse of the function $k$ a function? Explain.
+
+(ii) Find an expression for $k^{-1}(y)$ by expressing the input to the function $y=k(x)$ in terms of its output.
+
+(iii) Find the domain of $k^{-1}(x)$.
+
+(iv) Simplify the composition $k^{-1}(k(x))$. Graph the composition.
+
+\end{question}
+
+
+
+\begin{exploration} \label{E1:Quadratics}
+The animation below shows water draining from a tank. Play the animation and sketch by hand a graph of the function $V=f(t)$ that expresses the depth of the water as a function of time. Explain your reasoning.
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/pjzkfxcza0}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{pjzkfxcza0}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+
+
 
 \end{document}
