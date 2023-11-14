@@ -55,6 +55,147 @@ and
 \end{question}
 
 
+\begin{example}     \label{Ex99:Quadratics}
+Let 
+\[
+   f(x) = \sqrt{25-x^2} \, , -5 \leq x \leq 5 .
+\]
+
+(a) Use your knowledge of circles to sketch a graph of the function $y=f(x)$ by hand.
+
+(b) Explain what it means for a funtion to be one-to-one.
+
+(c) Is the function $f$ one-to-one? Explain your reasoning.
+
+(d) Explain what it means for a relation to be a function.
+
+(e) Is the inverse of $f$ a function? Explain your reasoning.
+
+\begin{explanation}
+
+(a) Since 
+\[
+    y = \sqrt{25-x^2},
+\]
+we know that $y \geq 0$. Then squaring both sides and doing some algebra (you should fill in the details) gives
+\[
+    x^2 + y^2 =25 \text{ and } y\geq 0.
+\]
+The curve 
+\[
+   x^2 + y^2 = 25
+\]
+is a circle of radius 5 centered at the origin. But since $y\geq 0$, the graph (not shown) of the function $y=f(x)$ is a semicircle in the first and second quadrants with endpoints $(5,0)$ and $(-5,0)$.
+
+(b) A function is one-to-one if any two distinct inputs have distinct outputs.
+
+(c) The function $f$ is {\bf not} one-to-one. We can see this because the two inputs $x=-5$ and $x=5$ give the same output
+\[
+     f(\pm 5) = \sqrt{25-(\pm 5)^2} = 0 .
+\]
+
+We can also see that $f$ is not one-to-one from the graph. There are many horizontal lines that intersect the graph in two points. This means that there are many pairs of inputs that give the same output.
+
+(d) A relation is a function when each input has exactly one output.
+
+(e) Because $f$ is not one-to-one its inverse is {\bf not} a function. For example, the input $y=0$ to the inverse relation would have two outputs, $x=-5$ or $x=5$, making the inverse relation not a function.
+
+\end{explanation}
+
+\end{example}
+
+
+\begin{example} \label{Ex98:Quadratics}
+Let 
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
+\]
+
+(a) Explain why $f$ is one-to-one.
+
+(b) Find an expression for the inverse function
+\[
+    x = f^{-1}(y)
+\]
+that expresses the input $f$ in terms of its output. 
+
+(c) Graph the function $y=f^{-1}(x)$.
+
+
+\begin{explanation}
+(a) The graph of $y=f(x)$ is a quarter-circle in the first quadrant centered at the origin with endpoints $(5,0)$ and $(0,5)$. Since each horizontal line intersects the graph in at most one point, any two different inputs to $f$ have different ouputs. This means that $f$ is one-to-one.
+
+(b) We know from the graph in part (a) that the range of $f$ is the set
+\[
+   \{ y \, | \,  0\leq y \leq 5 \} .
+\]
+This is the domain of the function $x=f^{-1}(y)$.
+
+Now to find an expression for $f^{-1}(y)$, we solve the equation
+\[
+   y=   \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+for $x$. Squaring both sides gives
+\[
+   y^2 = 25 - x^2 .
+\]
+So 
+\[
+     x^2 = 25-y^2
+\]
+and 
+\[
+   x  = \pm \sqrt{25-y^2} .
+\]
+
+To decide which sign to choose, we go back to the domain of $f$, where we are given that 
+\[
+     0 \leq x \leq 5 .
+\]
+Since $x\geq 0$, this means we must choose the positive sign and so
+\[
+    x = f^{-1}(y) = \sqrt{25-y^2}.
+\]
+We should also include the domain $0\leq y \leq 5$ (as stated above). So the inverse of the function
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+is the function
+\[
+    x = f^{-1}(y) = \sqrt{25-y^2} \, , 0\leq y \leq 5 .
+\]
+
+(c) Since the variables $x$ and $y$ have no practical meaning, we can switch them in our expression for $x = f^{-1}(y)$. So the inverse of the function
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+is the function
+\[
+    y = f^{-1}(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
+\]
+This is identical to the function $f$. That is, $f$ is its own inverse and the graphs of $f$ and $f^{-1}$ are identical.
+
+\end{explanation}
+
+\end{example}
+
+\begin{example}  \label{Ex97:Quadratics}
+Answer parts (a)-(c) of the previous example for the function
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , -5 \leq x \leq 0 .
+\]
+
+\end{example}
+
+\begin{example}  \label{Ex96:Quadratics}
+Answer parts (a)-(c) of Example \ref{Ex98:Quadratics} for the function
+\[
+    y=   f(x) = - \sqrt{25-x^2} \, , -5 \leq x \leq 0 .
+\]
+
+\end{example}
+
+
 
 \begin{exploration} \label{E1:Quadratics}
 The animation below shows water draining from a tank. Play the animation and sketch by hand a graph of the function $V=f(t)$ that expresses the depth of the water as a function of time. Explain your reasoning.
