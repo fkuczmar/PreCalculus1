@@ -202,27 +202,56 @@ and
 \[
    P = g(t) \, , 0\leq t \leq 10 ,
 \]
-that express the population (in hundreds of thousands) in terms of the number of hours past noon assuming the population grows a constant rate (the function $f$) and at a constant relative rate (the function $g$), respectively.
+that express the population (measured in hundreds of thousands of bacteria) in terms of the number of hours past noon assuming the population grows a constant rate (the function $f$) and at a constant relative rate (the function $g$), respectively. Use point-slope for $f$.
 
 Enter these functions in the worksheet below. Compare their behaviors over the given domain.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/ijitjrucp8}.
+\href{https://www.desmos.com/calculator/wmitm72ut7}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{ijitjrucp8}{900}{600}
+\desmos{wmitm72ut7}{900}{600}
 \end{center}
 \end{onlineOnly}
 
 \pskip
 
-(b) Repeat part (a) assuming the population is $a\times 10^5$ at 1pm and $b\times 10^5$ at 4pm. Then vary the sliders for $a$ and $b$ and describe how the graphs change.  
+(b) Compare the steps  you took in finding the functions $f$ and $g$ in part (a) in the following way:
 
-(c) For part (b), find fully-simplified expressions (in terms of $a$ and $b$) for the populations at 2:30pm.
+i) Think of the first step in finding the linear function as finding the change in the population from 1pm to 4pm. How did you modify this step for the exponential function?
+
+ii) The second step in finding the linear function is determining the average growth rate. How did you modify this step for the exponential function?
+
+iii) The third step in finding the linear function (really two steps at once) is to add the change in the population from 1pm to time $t$ hours past noon to the population at 1pm. How did you modify this step for the exponential function?
+
+iv) You used three arithmetical operations in finding the linear function - subtraction (Step 1), multiplication (Steps 2 and 3), and addition (Step 3). What operations replaced these in the exponential function?
+
+
+
+(c) Repeat part (a) assuming the population is $a\times 10^5$ at 1pm and $b\times 10^5$ at 4pm. Use the parameters $a$ and $b$, not specific numbers. Then open the Sliders Folder in Line 1 by clicking the arrow at the left of the folder's name. Vary the sliders for $a$ and $b$ and describe how the graphs change. Be sure to consider a decreasing population.
+
+
+(d) For part (c), find fully-simplified expressions (in terms of $a$ and $b$) for the populations at 2:30pm.
+
+\end{question}
+
+
+\begin{question} \label{Q23:ExponentialG}
+(a) The function 
+\[
+   f(t) = P_0 (2^{t/33} \, , -10\leq t \leq 50 ,
+\]
+expresses the population of a country in terms of the number of years past 1940. Describe precisely how the population grows. Do not use a calculator.
+
+(b) The function 
+\[
+   m = m_0 \left( \frac{3}{4} \right)^{t/1300} \, , -10,000\leq t \leq 1000 ,
+\]
+expresses the mass (in kilograms) of a radiocative compound in terms of the number of years since 1900. Describe precisely how the mass decays. Do not use a calculator.
 
 \end{question}
 
@@ -233,6 +262,28 @@ Suppose both the population and national debt of a small country grow exponentia
 \[
     \answer{30} \text{ years}
 \]
+\end{question}
+
+
+
+\begin{question} \label{Q24:ExponentialG}
+The function 
+\[
+   P = f(t) \, , -40\leq t \leq 60 ,
+\]
+expresses the population of a small country (measured in hundreds of thousands of people) in terms of the number of years since 1900. Assume that the popluation increases between 1860 and 1960 and interpret the meaning of each of the following expressions.
+
+(a) $f^{-1}(20)$
+
+(b) $f(f^{-1}(20) + 30)$
+
+(c) $f^{-1}(1.44 f(30))$
+
+\pskip
+
+Now assume that the population increases by $20\%$ every 10 years and evaluate each of the above expressions. Explain your reasoning.
+
+
 \end{question}
 
 
