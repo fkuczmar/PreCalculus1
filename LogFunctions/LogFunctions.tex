@@ -22,7 +22,7 @@ Then
 \[
     f^{-1}(8) = \log_2 (8)    
 \]
-is the power of $2$ that gives $8$. An since
+is the power of $2$ that gives $8$. And since
 \[
    2^3 = 8 ,
 \]
@@ -37,7 +37,7 @@ We can express the description of $\log_28$ as being the power of $2$ that gives
 \]
 
 \begin{question}    \label{Ex0:LogF}
-(a) What is the meaning of $\log_2(10)$?
+(a) What is the meaning of $\log_2(10)$? What is its approximate value? (Do not use a calculator.)
 
 (b) What is the {\bf meaning} of $2^{\log_2 10}$ ? What is its value?
 
@@ -128,8 +128,54 @@ Access Desmos interactives through the online version of this text at
 \end{question}
 
 
+\begin{question} \label{Q4:LogF}
+Would you expect $\log_2(24)$ to be greater than or less than $4.5$? Explain your reasoning. Use the graph of the function $y=2^x$ to help. Do not use technology.
+\end{question}
+
+
 
 One of the main uses of the logarithmic functions is to solve exponential equations.
+
+\begin{question} \label{Q5:LogF}
+Let
+\[
+   P =  f(t) = 5000 (2^{t/8}) , \, 0\leq t \leq 40.
+\]
+
+(a) Describe what $f$ does to its input.
+
+(b) Use your response to part (a) to describe what $f^{-1}$ does to its input.
+
+(c) Use your description from part (b) to find an expression for $f^{-1}(P)$. 
+
+(d) What is the domain of $f^{-1}$?
+
+(e) Explain why the following algebraic computation of $f^{-1}(P)$ does {\bf not} match your description from part (b).
+
+\pskip
+
+Since
+\[
+   P = 5000 (2^{t/8}) ,
+\]
+\[
+   P/5000 = 2^{t/8} ,
+\]
+and 
+\[
+   \log_{10}\left( \frac{P}{5000} \right) = \log_{10} (2^{t/8}) .
+\]
+Then
+\[
+   \log_{10}\left( \frac{P}{5000} \right) =  \left( \frac{t}{8}  \right)  \log_{10} 2 
+\]
+and so 
+\[
+    t = \frac{8 \log_{10}(P/5000)}{\log_{10} 2} .
+\]
+
+(f) Change the algebra in part (e) to match your verbal description from part (b).
+\end{question}
 
 
 \end{document}
