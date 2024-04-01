@@ -248,7 +248,7 @@ Then some algebra leads to the equivalent equation
    y-3x = 13.
 \]
 
-What this shows is that \emph{if} the point with coordinates $(x,y)$ lies on the circles defined by equations (\ref{Eq:Circle1}) and (\ref{Eq:Circle2}), then it also lies on the line $y-3x = 13$. Because there are two points of intersection and each of these points lies on this line, the line $y=3x=13$ is in fact the line through the points of intersection.
+What this shows is that \emph{if} the point with coordinates $(x,y)$ lies on the circles defined by equations (\ref{Eq:Circle1}) and (\ref{Eq:Circle2}), then it also lies on the line $y-3x = 13$. Because there are two points of intersection and each of these points lies on this line, the line with equation $y=3x=13$ is in fact the line through the points of intersection.
 
 That's it. We're done. There is no need to compute the coordinates of the intersection points. The desmos graph below suggests that we are correct.
 
@@ -259,7 +259,7 @@ That's it. We're done. There is no need to compute the coordinates of the inters
 \end{onlineOnly}
 
 
-\begin{question}
+\begin{question}  \label{Q435rrtnhgh}
 Use algebra to find the exact coordinates of the two intersection points. Then type these coordinates in Lines 4 and 5 of the above desmos activity to check if you are correct. 
 \end{question}
 
@@ -279,7 +279,7 @@ and
 \end{example}
 
 \begin{explanation}
-I'll leave the algebra to you, but try mimicking the solution to the previous example. Then input your equation in Line 8 of the desmos activity below to check that you are correct.
+I'll leave the algebra to you, but try mimicking the solution to Example 4. Then input your equation in Line 8 of the desmos activity below to check that you are correct.
 
 \begin{onlineOnly}
     \begin{center}
@@ -299,7 +299,7 @@ Drag the center of the blue circle in the above demonstration to pull the circle
 How many circles pass through the points $A(3,5)$ and $B(6,-2)$? What can you say about their centers?
 
 \begin{explanation}
-We have three degrees of freedom (ie. three choices) in drawing a circle - two in choosing the coordinates of its center and a third in choosing its radius. Since there are only two conditions, namely that our circle pass through the two given points, we would are left with one degree of freedom in choosing our circle. This suggests that there are infinitely many such circles. We'll explore this in the activity below. 
+We have three degrees of freedom (ie. three choices) in drawing a circle - two in choosing the coordinates of its center and a third in choosing its radius. Since there are only two conditions, namely that our circle pass through the two given points, we would are left with one degree of freedom. This suggests that there are infinitely many circles (more precisely, a one-parameter family of circles) through the points $A$ and $B$. We'll explore this in the activity below. 
 
 
 \begin{exploration}\label{exp:circle1}
@@ -318,9 +318,9 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
-You should have noticed that the centers of circles through the points $A(3,5)$ and $B(6,-2)$ lie on a line. In fact, the centers are exactly the points on the perpendicular bisector of the segment $\overline{AB}$. The key to show why this is true is to realize that a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ exactly when (ie. if and only if) $P$ is equidistant (ie. equally distant) from $A$ and $B$ (\emph{Why?}). 
+You should have noticed that the centers of circles through the points $A(3,5)$ and $B(6,-2)$ lie on a line. In fact, the centers are exactly the points on the perpendicular bisector of the segment $\overline{AB}$. The key to show why this is true is to realize that a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ exactly when (ie. if and only if) $P$ is equidistant (equally distant) from $A$ and $B$ (\emph{Why?}). 
 
-Now many of you already know that the set of points equidistant from $A$ and $B$ is the perpendicular bisector of the segment $\overline{AB}$ and we could use this to find an equation of the set of all such points. But this is primarily an algebra class, so we will not use this approach. Instead, we will translate the geometric condition that the center $P(x,y)$ be equidistant from $A(3,5)$ and $B(6,-2)$ into an equation.
+Now many of you already know that the set of points equidistant from $A$ and $B$ is the perpendicular bisector of the segment $\overline{AB}$ and we could use this to find an equation of the set of all such points. But because this is an algebra class, we will \emph{not} use this approach. Instead, we will translate the geometric condition that the center $P(x,y)$ be equidistant from $A(3,5)$ and $B(6,-2)$ into an equation.
 
 The point $P$ is the center of a circle through $A$ and $B$ if and only if the distances $\text{dist}(A,P)$ and $\text{dist}(B,P)$ are equal. That is, if and only if
 \[
@@ -348,7 +348,7 @@ or that
     3x - 7y = 3 .
 \]
  
-Now type this equation in Line 24 of the above Desmos demonstration to make sure this is correct.
+Type this equation in Line 24 of the above Desmos demonstration to make sure this is correct.
 
 \end{explanation}
 
@@ -417,15 +417,15 @@ Access Desmos interactives through the online version of this text at
 Find equations of all circles with radius $\sqrt{26}$ through the points $A(4,1)$ and $B(10,5)$.
 
 \begin{explanation}
-This example is just like the previous one, but it works out much easier (it's the one we did in class). As before, the center of such a circle must be
+This example is just like the previous one, but it works out much easier. As before, the point $P$ is the center of such a circle if and only if
 
 \pskip
 
-(a) equidistant from $A$ and $B$, and 
+(a) $P$ is equidistant from $A$ and $B$, and 
 
 \pskip
  
-(b) a distance of $\sqrt{26}$ from $A$. 
+(b) the distance from $P$ to $A$ is equal to $\sqrt{26}$. 
 
 \pskip
 
