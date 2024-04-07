@@ -409,26 +409,33 @@ Find equations of all circles of radius $\sqrt{145}$ through the points $A(3,5)$
 \begin{explanation}
 Such a circle must satisfy three conditions: that it pass through the two points and have the given radius. Since we have three degrees of freedom in choosing a circle, we should expect there to be at most finitely many circles of radius $\sqrt{145}$ through the points $A(3,5)$ and $B(6,-2)$.
 
-The key is to find the centers of all such circles. The point $P$ with coordinates $(x,y)$ is the center of a circle through $A(3,5)$ and $B(6,-2)$ with radius $\sqrt{145}$  if and only if 
+The key is to find the centers of all such circles. A point $P$ with coordinates $(x,y)$ is the center of a circle through $A(3,5)$ and $B(6,-2)$ with radius $\sqrt{145}$  if and only if 
 
 (a) $P$ is equidistant from $A$ and $B$, and
 
-(b) the distance from $P$ to $A$ is equal to $\sqrt{145}$.
+(b) the distance from $P$ to $A$ (or $B$) is equal to $\sqrt{145}$.
 
 \pskip
 
-As in Example 7, the first condition tells us that $P$ lies on the line
+We saw in Example 7 that the first condition tells us that $P$ lies on the line
 \[
         3x - 7y  = 3.
 \] 
 
-The second tells us that $P$ lies on the circle of radius $\sqrt{145}$ centered at $A(3,5)$, or that 
+The second tells us that $P$ lies on the circle of radius $\sqrt{145}$ centered at $A(3,5)$ with equation 
 \[
     \sqrt{(x-3)^2 + (y-5)^2} = \sqrt{145} .
 \]
 
+So we can find the possible coordinates of $P$ by using algebra to find the coordinates of the points where the line and circle intersect. This amounts to solving the system
+\[
+   \begin{cases}
+      3x - 7y  = 3 \\
+      (x-3)^2 + (y-5)^2 = 145 .  
+   \end{cases}
+\]
 
-So we can find the possible coordinates of $P$ by using algebra to find the coordinates of the points where the line and circle intersect. For this, we solve the equation
+We first solve the equation
 \[
     3x - 7y = 3
 \]
@@ -436,21 +443,21 @@ for $x$ to get
 \[ 
         x = 1 + \frac{7}{3}y .
 \]
-Substitute this expression into the equation of the circle and square both sides to get
+Substituting this expression into the equation of the circle gives
 \[
    \left( \frac{7}{3}y - 2 \right)^2 + (y-5)^2 = 145.
 \]
-Then square both terms on the left and simplify, giving
+Then square both terms on the left and simplify to get
 \[
-    \frac{58}{9}y^2 - \frac{58}{3}y - 116 = 0 ,
+    \answer{\frac{58}{9}}y^2 - \answer{\frac{58}{3}}y - 116 = 0 ,
 \]
 or
 \[
-       y^2 - 3y - 18 = 0 . 
+       y^2 - \answer{3}y - \answer{18} = 0 . 
 \]
 Then 
 \[
-    (y-6)(y+3) = 0 ,
+    (y-\answer{6})(y+\answer{3}) = 0 ,
 \]
 and 
 \[
