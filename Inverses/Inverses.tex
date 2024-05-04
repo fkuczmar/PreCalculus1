@@ -11,7 +11,9 @@ Pairs of inverse functions.
 
 The action of putting on your shoes and the action of taking off your shoes are inverses. Each undoes the other. The actions of adding 4 and subtracting 4 are also inverses of each other. If you first add 4 to any number and then subtract 4 from the result, you end up with your original number. And subtracting 4 from a number and then adding 4 to the result brings you back to your original number. 
 
-The last example was really about functions. Inverse functions come in pairs and each undoes the other. For example, the functions 
+
+\begin{example} \label{Exd445t667}
+The above example about adding and subtracting 4 was really about functions. Inverse functions come in pairs and each undoes the other. For example, the functions 
 \[
     f(x) = x + 4
 \]
@@ -28,9 +30,23 @@ and
     f(g(23)) = f(23-4) = (23-4) + 4 = 23 .
 \]
 
-\begin{question}   \label{Q1:Inverses}
-Simplify the compositions $g(f(x))$ and $f(g(x))$ for the functions $f$ and $g$ above. Explain.
-\end{question}
+To show algebraically that the functions $f$ and $g$ are inverses of each other, we should simplify the compositions $g(f(x))$ and $f(g(x))$. For the first composition
+\begin{align*}
+          g(f(x)) &= g(x+4)  \\
+                    &= (x+4) - 4 \\
+                    & = x .
+\end{align*}
+This shows that $g$ undoes $f$. To show that $f$ undoes $g$, we need to show $f(g(x))=x$. Here's the computation:
+\begin{align*}
+          f(g(x)) &= f(x-4)  \\
+                    &= (x-4) + 4 \\
+                    & = x .
+\end{align*}
+
+
+\end{example}
+
+
 
 When the functions $f$ and $g$ are inverses of each other, we write $g(x) = f^{-1}(x)$ or $f(x) = g^{-1}(x)$. So, for example, for 
 \[
