@@ -64,6 +64,66 @@ the inverse function is
 is not the same as the inverse $f^{-1}(x) = x-4$.
 
 
+\begin{example}  \label{Ex:4577hhhh}
+Find an expression for the inverse of the function
+\[
+    y= f(x) = 4x -3 
+\]
+and show algebraically that you are correct.
+
+\begin{explanation}
+The function $f$ expresses the output $y=f(x)$ in terms of the input $x$. Our goal in finding an expression for the inverse is to express  $x$ as a function of $y$. That is, we are looking to solve the above equation for $x$ in terms of $y$. This will give us an expression $x=f^{-1}(y)$ for the inverse function. 
+
+One approach is to think about the action of $f$. The function $f$ first multiplies the input by $4$ and then subtracts $3$ from the result. To undo this process, that is, to express the input $x$ in terms of the output $y$, we first undo the second action (subtracting $3$) by adding $3$. Then we undo the first action (multiplying by $4$) by multiplying by the reciprocal $1/4$. The result is that
+\[
+     x =    f^{-1}(y) = \frac{1}{4} \left( x+3 \right) .
+\] 
+
+A second, more algebraic approach is to solve the equation $y=4x-3$ for $x$ in terms of $y$ as follows.
+
+Since 
+\[
+    y = 4x - 3, 
+\]
+\[
+         y + 3 = 4x ,
+\]
+and
+\[
+    x = f^{-1}(y) = \frac{1}{4}\left( y + 3 \right) .
+\]
+
+Now since $x$ and $y$ are dummy variables (ie. they do not have any practical meaning in this example), we can write the inverse function as 
+\[
+       y = f^{-1}(x) =  \frac{1}{4}\left( y+3 \right) .
+\]
+
+To show algebraically that $f$ and $f^{-1}$ are actually inverses, we need to show that $f^{-1}$ undoes $f$ and that $f$ undoes $f^{-1}$. For the first, we simplify the composition $f^{-1}(f(x))$:
+\begin{align*}
+        f^{-1}(f(x)) &= f^{-1}(4x-3) \\
+                          &= \frac{1}{4}\left( (4x-3)+3 \right) \\
+                          &= \frac{1}{4}\left( 4x \right) \\
+                          &= x .
+\end{align*}
+
+To show that $f$ undoes $f^{-1}$, we simplify the composition $f(f^{-1}(x))$.
+
+\begin{question}  \label{Q343fggg}
+Simplify the composition $f(f^{-1}(x))$ showing \emph{all} steps.
+\end{question}
+\end{explanation}
+\end{example}
+
+
+\begin{question}  \label{Qre345rrree}
+Use the method of the previous example to find an expression for the inverse of the function 
+\[
+      y =  g(x) = 5 - \frac{7}{9} \left( x + 53 \right) . 
+\] 
+Then show algebraically that the functions are inverses of each other.
+\end{question}
+
+
 \begin{example} \label{Ex1:Inverses}
 The function
 \[
