@@ -106,19 +106,24 @@ Desmos activity available at
 
 The actual function 
 \[
-        s= f(h) \, , \, 0\leq s \leq 10,000 ,
+        s= f(h) \, , \, 0\leq h \leq 100,000 ,
 \]
-expresses the approximate distance to the horizon (the length of the red arc $AT$ below, measured in miles) in terms of your height above the ground (the distance $AP$ below, measured in feet).
+expresses the approximate distance to the horizon (the length of the red arc $AT$ above, measured in miles) in terms of your height above the ground (the distance $AP$ above, measured in feet). But for this we need trigonometry, so instead we will takdee the distance to the horizon $s$ to be the length of segment $\overline{AP}$.
 
+We need one key fact - that the line of sight $\overline{PT}$ from the balloon to the horizon is tangent the earth at $P$. This makes $\angle PTO$ a right angle. That and the radius of the earth ($3960$ miles) is all you need to know to find an expression for the function $f$. Keep in mind that the input to $f$ is measured and feet and the output is measured in miles. Remember there are $5280$ feet in one mile.
 
-
-
-In fact, as long as you are not too high above the surface of the earth, the function
+The function
 \[
-      s = f(h) = 1.22\sqrt{h}, 0\leq h \leq 20,000,
+        s= f(h)  = \answer{\sqrt{\left( 3960 + \frac{h}{5280}\right)^2 - 3960^2}}   \, , \, 0\leq h \leq 10,000 ,
 \]
-gives a good approximation to the distance to the horizon (the length of the red arc $AT$ below, measured in miles) in terms of your height above the ground (the distance $AP$ below, measured in feet).
+expresses the approximate distance to the horizon (the length of segment $\overline{PT}$ above, measured in miles) in terms of your height above the ground (the distance $AP$, measured in feet).
 
+
+Explain why the function
+\[
+      s = g(h) =  1.22\sqrt{h}, 0\leq h \leq 100,000 ,
+\]
+gives a good approximation to $f$. Then use desmos to check this.
 
 
 \pskip \pskip
