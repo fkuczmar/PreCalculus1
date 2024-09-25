@@ -15,11 +15,11 @@ Pythagorean Theorem.
 
 
 \begin{question}  \label{Q324dfg45rhp}
-Imagine a 2000-foot long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one foot and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
+Imagine a one-mile long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one foot and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
 
 
 \begin{freeResponse}
-(a) Before doing any computation, guess the height of the track at its midpoint. What do you think?
+(a) Before doing any computation, guess the height of the track at its midpoint. What do you think? Note that there are 5280 feet in one mile.
 \end{freeResponse}
 
 (b) Now compute the height. How accurate was your estimate?
@@ -78,15 +78,54 @@ that expresses the gremlin's distance from the pole (in feet)  in terms of its h
 
 (f) Graph the function $g$.
 
+(g) How would your functions in parts (a) and (d) change (if at all), if instead the gremlin is at least 12 feet tall? 
+
 \end{question}
 
 
 \begin{question}  \label{Qdfthhrhghgr}
-Imagine yourself at a Pacific coast beach on a clear day. While it might seem you can see forever, the distance to the horizon is limited by the curvature of the earth. Our aim in this problem is to find a function 
+On a clear day with an unobstructed view (like you might have at the beach or in a hot air balloon), the distance to the horizon is limited by the curvature of the earth as illustrated in the demonstration below.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/ewowig5sgk}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ewowig5sgk}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Desmos activity available at
+
+\href{https://www.desmos.com/calculator/ewowig5sgk}{151:Distance to Horizon 1}
+
+\pskip
+
+The actual function 
 \[
         s= f(h) \, , \, 0\leq s \leq 10,000 ,
 \]
-that expresses the distance to the horizon (in miles) in terms of your height above the ground (in feet).
+expresses the approximate distance to the horizon (the length of the red arc $AT$ below, measured in miles) in terms of your height above the ground (the distance $AP$ below, measured in feet).
+
+
+
+
+In fact, as long as you are not too high above the surface of the earth, the function
+\[
+      s = f(h) = 1.22\sqrt{h}, 0\leq h \leq 20,000,
+\]
+gives a good approximation to the distance to the horizon (the length of the red arc $AT$ below, measured in miles) in terms of your height above the ground (the distance $AP$ below, measured in feet).
+
+
+
+\pskip \pskip
+
+
+
+
 \end{question}
 
 \end{document}
