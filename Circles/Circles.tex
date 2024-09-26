@@ -272,13 +272,71 @@ and
    (x+6)^2 + (y-2)^2=13 .
 \]
 
-Do this as follows:
+We'll do this as follows:
 
-(a) Solve the equation of the line through the points of intersection for $y$ in terms of $x$. Then substitute this expression into the equation
+(a) First we'll solve the equation of the line through the points of intersection for $y$ in terms of $x$ to get
+\[
+     y = \answer{3x+13.}
+\]. 
+Then substitute this expression into the equation
 \[
    x^2 + y^2 = 25
 \]
-of the first circle to get a quadratic equation. Solve this resulting equation for $x$ by \emph{completing the square}. Do \emph{not} use the quadratic formula.
+of the first circle to get the quadratic equation
+\[
+        x^2 + (\answer{3x+13})^2 = \answer{25}. 
+\]. 
+
+Now we'll solve this quadratic equation for $x$ by \emph{completing the square}. The first step is to distribute and simplify the left side to get the equivalent equation
+\[
+    \answer{10}x^2 + \answer{78}x + \answer{169} = 25.
+\]
+Next we'll subtract $169$ from both sides and then multipy both sides by $10$, giving
+\[
+      \answer{100}x^2 + \answer{780}x = \answer{-1440} .
+\]
+Now we want to add the same constant to both sides to make the left side a perfect square of the form
+\[
+      (10x + c)^2 = 100x^2 + 20cx + c^2 .
+\]
+Comparing the second terms in the this expression ($20cx$) with the second term in the left side of the previous equation ($780x$) tells us that 
+\[
+     20c = \answer{780} 
+\]
+and
+\[
+    c = \answer{39} .
+\]
+So we add $\answer{39^2}$ to each side of the equation
+\[
+   100x^2 + 780x = -1440
+\]
+to get
+\[
+  100x^2 + 780x + \answer{39^2} = \answer{-1440} + \answer{39^2} .
+\]
+Factoring the left side we get
+\[
+        (\answer{10}x + \answer{39})^2 = \answer{81} .
+\]
+So
+\[
+        10x + 39 = \answer{-9}  \text{ or } 10x+39 = 9 ,
+\]
+and the points where the circles intersect have $x$-coordinates
+\[
+      x = \answer{-4.8} \text{ or } x = \answer{-3} .
+\]
+To find the $y$-coordinates of these intersection points, we substitute these $x$-coordinates into the equation $y=\answer{3x+13}$of the line through the points of intersection. So if $x=-4.8$, then
+\[
+   y = 3(-4.8)+13 = \answer{-1.4} . 
+\]
+And when $x=-3$,
+\[
+   y = 3(-3)+13 = \answer{4} . 
+\]
+
+So the circles $x^2 + y^2 = 25$ and $(x+6)^2+(y-2)^2=13$ intersect in the points with coordinates $(-4.8,\answer{-1.4})$ and $(-3, \answer{4})$.
 
 (b) Type the coordinates of the two points of intersection in Lines 4 and 5 of the above desmos activity to check if you are correct. 
 \end{question}
@@ -313,7 +371,11 @@ Drag the center of the blue circle in the above demonstration to pull the circle
 
 \end{explanation}
 
+\section*{Circles Tangent to Each Other}
 
+
+
+\section*{Circles Through Two or Three Given Points}
 
 \begin{example}  \label{Ex5}
 How many circles pass through the points $A(3,5)$ and $B(6,-2)$? What can you say about their centers?
