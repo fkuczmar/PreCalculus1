@@ -15,20 +15,6 @@ Chapter quizzes
 
 \section*{Circle Fundamentals}
 
-\begin{itemize}
-
-\item{Do this quiz without using any sources. Nothing. Not to check grammar, not to look up information. Nothing. Just do the best you can with what you know.}
-
-\item{Do not use a calculator.}
-
-\item{Use only the material from the \emph{Introduction} and the chapter \emph{Circles} from our class notes.}
-
-\item{Include brief explanations for your solution to each problem.}
-
-\end{itemize}
-
-
-\pskip
 
 \begin{question}  \label{Q:9444433331350}
 Imagine a railroad track $L$ feet long secured only at its two ends to the desert floor. Suppose on a hot day the track expands one foot and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
@@ -36,6 +22,48 @@ Imagine a railroad track $L$ feet long secured only at its two ends to the deser
 Make the assumption above and find an expression for the height of the track above its midpoint. Simplify your expression as much as possible. 
 
 Explain your reasoning behind each solution. Define, with units, any variables you introduce. Include a picture to help with your explanation.
+
+\begin{explanation}
+In the figure below, the track is pinned at points $A$ and $B$. Point $M$ is the midpoint of the track and $C$ the point on the ground directly below $M$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vhuz17uwsa}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/vhuz17uwsa}{141: Railroad Track}
+
+
+Assuming the expanded track runs along segments $\overline{AM}$ and $\overline{MB}$,  segment $\overline{AM}$ has length
+\[
+   AM = \frac{L+1}{2}
+\]
+equal to half the length of the expanded track, measured in feet.
+
+Segment $\overline{AC}$ has length
+\[
+  AC = L/2
+\]
+equal to half the length of the original track (also in feet). 
+
+Let $h$ be the height of the midpoint of the expanded track above the ground, measured in feet. Then by the Pythagorean theorem in right triangle $\Delta ACM$,
+\[
+    \left(  \frac{L}{2} \right)^2  + h^2 =    \left( \frac{L+1}{2} \right)^2 .
+\]
+and (algebra left for you to fill in)
+\[
+      h^2 = \frac{2L+1}{4} .
+\]
+And since $h>0$,
+\[
+    h = \frac{\sqrt{2L+1}}{2}
+\]
+
+So the midpoint of the expanded track is approximately $\frac{1}{2}\sqrt{2L+1}$ feet above the ground.
+
+\end{explanation}
+
 
 \end{question}
 
