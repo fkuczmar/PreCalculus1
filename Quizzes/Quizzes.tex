@@ -28,11 +28,11 @@ In the figure below, the track is pinned at points $A$ and $B$. Point $M$ is the
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{vhuz17uwsa}{900}{600}
+\desmos{uio1ixkbxe}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/vhuz17uwsa}{141: Railroad Track}
+\href{https://www.desmos.com/calculator/uio1ixkbxe}{141: Railroad Track}
 
 
 Assuming the expanded track runs along segments $\overline{AM}$ and $\overline{MB}$,  segment $\overline{AM}$ has length
@@ -55,7 +55,7 @@ and (algebra left for you to fill in)
 \[
       h^2 = \frac{2L+1}{4} .
 \]
-And since $h>0$,
+Since $h>0$,
 \[
     h = \frac{\sqrt{2L+1}}{2}
 \]
@@ -69,9 +69,35 @@ So the midpoint of the expanded track is approximately $\frac{1}{2}\sqrt{2L+1}$ 
 
 
 \begin{question}  \label{Q8dsf8r3tg;lyhg}
-(a) Find an equation of the circle centered at the point $(-3,2)$ that passes through the point $(-7,-3)$. 
+(a) Find an equation of the circle centered at the point $A(-3,2)$ that passes through the point $B(-7,-3)$. 
 
 (b) Explain the \emph{logic} behind your equation. 
+
+\begin{explanation}
+
+(a) By the Pythagorean theorem, the circle has radius 
+\[
+       \text{dist}(A,B) = \sqrt{(3-(-7))^2 + (2-(-3))^2} = \sqrt{41} .
+\]
+
+The circle is the set of points exactly $\sqrt{41}$ units from the center $A(-3,2)$. So a point $P$ with coordinates $(x,y)$ lies on the circle if and only if 
+\[
+  \text{dist} (A,P) = \sqrt{41} .
+\]
+Using the Pythagorean theorem again, the distance $AP$ is
+\[
+        \text{dist} (A,P) = \sqrt{(x+3)^2 + (y-2)^2} .
+\]
+So the point $P(x,y)$ lies on the circle if and only if 
+\[
+   \sqrt{(x+3)^2 + (y-2)^2} = \sqrt{41}.
+\]
+
+That's an equation of the circle centered at $A(-3,2)$ passing through the point $B(-7,-3)$.
+
+
+\end{explanation}
+
 \end{question}
 
 
