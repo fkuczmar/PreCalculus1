@@ -155,7 +155,7 @@ This tells us that
 \[
      x = \pm \frac{18}{\sqrt{34}} .
 \]
-So the line $OA$ through the origin and $A$ intersects the circle in points with $x$-coordinates $x=\pm 18/\sqrt{34}$.  The point with $x$-coordinate $x=18/\sqrt{34}$ is in the first quadrant and is the point of ${\cal C}$ \emph{closest} to $A$. But we want the point $P$ \emph{farthest} from $A$. This is in the fourth quadrant. Its $x$-coordinate is $x = -18/\sqrt{34}$. And its $y$-coordinate is
+So the line $OA$ through the origin and $A$ intersects the circle in points with $x$-coordinates $x=\pm 18/\sqrt{34}$.  The point with $x$-coordinate $x=18/\sqrt{34}$ is in the fourth quadrant and is the point of ${\cal C}$ \emph{closest} to $A$. But we want the point $P$ \emph{farthest} from $A$. This is in the second quadrant. Its $x$-coordinate is $x = -18/\sqrt{34}$. And its $y$-coordinate is
 \[
     y = \left( -\frac{5}{3} \right) \left(-  \frac{18}{\sqrt{34}}  \right) = \frac{30}{\sqrt{34}}.
 \]
@@ -170,7 +170,88 @@ So the point on the circle with radius $6$ centered at the origin closest to $A(
 \end{question}
 
 \begin{question} \label{Qsdfl4345r3}
-Find an equation of the circle through the points $(0,0)$, $(6,4)$, and $(-2,-4)$. Explain your reasoning. Draw a picture to help with your explanation.
+Find an equation of the circle through the points $O(0,0)$, $A(6,4)$, and $B(-2,-4)$. Explain your reasoning. Draw a picture to help with your explanation.
+
+\begin{explanation}
+The key idea is that the center of a circle through the points $O(0,0)$, $A(6,4)$, and $B(-2,-4)$ is equidistant from all three points. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{uqzhkgp2ju}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/uqzhkgp2ju}{141: Quiz 1 Q4}
+
+We'll start by ignoring point $B$ and finding an equation of the set of points equidistant from $O$ and $A$. A point $P(x,y)$ is equidistant from the points $O(0,0)$ and $A(6,4)$ if and only if
+\[
+       \text{dist}(P,O) = \text{dist}(P,A) 
+\]
+or equivalently if and only if 
+\[
+   \sqrt{x^2+y^2} = \sqrt{(x-6)^2 + (x-4)^2}  .
+\]
+Some algebra (left for you) leads to the equation
+\[
+       3x + 2y = 13 .
+\]
+for the set of points equidistant from $O$ and $A$. The center of our circle must lie on this line.
+
+The center of our circle must also be equidistant from $O$ and $B$. The set of all such points is described by the condition that
+\[
+   \text{dist}(P,O) = \text{dist}(P,V) 
+\]
+and by the equation
+\[
+   \sqrt{x^2+y^2} = \sqrt{(x+2)^2 + (y+4)^2}  .
+\]
+Some algebra (left for you) leads to the equation
+\[
+       x+2y = -5 .
+\]
+for the set of points equidistant from $O$ and $B$. The center of our circle must also lie on this line.
+
+So it is necessary for the center of our circle to lie on the lines with equations
+\[
+ \begin{cases}
+             3x  + 2y = 13 \\
+             x+2y = -5   .
+\end{cases}
+\]
+This is also sufficient because a point that is both equidistant from $O$ and $A$ as well as from $O$ and $B$, is necessarily equidistant from $O$, $A$, and $B$. 
+
+So to find the center of the circle through $O$, $A$, and $B$, we just need to solve the system of equations above. Solving the second equation for $x$ give
+\[
+     x = -2y - 5.
+\]
+Subsituting this expression for $x$ in the first equation gives
+\[
+   3 (-2y-5) + 2y = 13 
+\]
+and 
+\[
+          y= -7 .
+\]
+Then 
+\[
+   x = -2(-7) - 5  = 9 .
+\]
+
+So the center $P$ of the unique circle through $O(0,0)$, $A(6,4)$, and $B(-2,-4)$ has coordinates
+\[
+    (x,y) = (9, -7).
+\]
+And since the origin $O$ lies on this circle, the circle has radius 
+\[
+   \text{dist}(O,P) = \sqrt{9^2 + (-7)^2 = \sqrt{130}}.
+\]
+ 
+That's all we need and an equation of the circle through $O(0,0)$, $A(6,4)$, and $B(-2,-4)$ is
+\[
+  \sqrt{(x-9)^2 + (y+7)^2} = \sqrt{130} .
+\]
+
+\end{explanation}
 
 \end{question}
 
