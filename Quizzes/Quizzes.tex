@@ -75,12 +75,12 @@ So the midpoint of the expanded track is approximately $\frac{1}{2}\sqrt{2L+1}$ 
 
 \begin{explanation}
 
-(a) By the Pythagorean theorem, the circle has radius 
+(a)-(b) By the Pythagorean theorem, the circle has radius 
 \[
        \text{dist}(A,B) = \sqrt{(3-(-7))^2 + (2-(-3))^2} = \sqrt{41} .
 \]
 
-The circle is the set of points exactly $\sqrt{41}$ units from the center $A(-3,2)$. So a point $P$ with coordinates $(x,y)$ lies on the circle if and only if 
+The circle is the set of points exactly $\sqrt{41}$ units from its center $A(-3,2)$. So a point $P$ with coordinates $(x,y)$ lies on the circle if and only if 
 \[
   \text{dist} (A,P) = \sqrt{41} .
 \]
@@ -98,6 +98,8 @@ That's an equation of the circle centered at $A(-3,2)$ passing through the point
 
 \end{explanation}
 
+
+
 \end{question}
 
 
@@ -106,11 +108,64 @@ That's an equation of the circle centered at $A(-3,2)$ passing through the point
 %\end{question}
 
 \begin{question}  \label{Q:df454tt4443}
-Find the coordinates of the point on the circle centered at the origin with radius $6$ that is farthest from the point $(3,-5)$. Draw a picture to help with your explanation.
+Find the coordinates of the point on the circle centered at the origin with radius $6$ that is farthest from the point $A(3,-5)$. Draw a picture to help with your explanation.
 
 \begin{hint}
 The point on the circle farthest from the point $A(3,-5)$ lies on the line through the origin and $A$. Start by finding an equation of this line in the form $y=f(x)$. Then substitute $f(x)$ for $y$ in the equation of the circle and solve for $x$. Keep going...
 \end{hint}
+
+\begin{explanation}
+
+Imagine the largest circle centered at the point $A(3,-5)$ that intersects the given circle ${\cal C}$. This largest circle is tangent to ${\cal C}$ at the point we are looking for (ie. the point on ${\cal C}$ farthest from $A$.) Try to convince yourself of this by dragging the slider $r$ in the worksheet below.  
+\begin{onlineOnly}
+    \begin{center}
+\desmos{wwqosobejf}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/wwqosobejf}{141: Quiz 1 Q3}
+
+Since the line through the centers of two circles tangent to each other passes through the point of tangency, the point we're looking for, call it $P$, is the point in the second quadrant where the line through the origin and $A(3,-5)$ intersects the given circle. To find the coordinates of $P$, we'll use algebra.
+
+First, an equation of the circle with radius $6$ centered at the origin is
+\[
+     \sqrt{x^2 + y^2} = 6.
+\] 
+Second, an equation of the line through the origin and $A(3,-5)$ is
+\[
+     y = -\frac{5}{3}x .
+\]
+Substituting this expression for $y$ in the equation of the circle gives
+\[
+  \sqrt{x^2 + \frac{25}{9}x^2} = 6 
+\]
+or equivalently
+\[
+      \sqrt{\frac{34}{9}x^2} = 6 .
+\]
+So
+\[
+       \frac{\sqrt{34}}{3}|x| = 6
+\]
+and
+\[
+     | x | = \frac{18}{\sqrt{34}} .
+\]
+This tells us that 
+\[
+     x = \pm \frac{18}{\sqrt{34}} 
+\]
+and that the line $OA$ through the origin and $A$ intersects the circle in points with $x$-coordinates $x=\pm 18/\sqrt{34}$.  The point with $x$-coordinate $x=18/\sqrt{34}$ is in the first quadrant and is the point in ${\cal C}$ \emph{closest} to $A$. But we want the point $P$ \emph{farthest} from $A$. This is in the fourth quadrant. Its $x$-coordinate is $x = -18/\sqrt{34}$. And its $y$-coordinate is
+\[
+    y = \left( -\frac{5}{3} \right) \left(-  \frac{18}{\sqrt{34}}  \right) = \frac{30}{\sqrt{34}}.
+\]
+
+So the point on the circle with radius $6$ centered at the origin closest to $A(3,-5)$ and coordinates
+\[
+   (x,y) = \left(  - \frac{18}{\sqrt{34}} ,  \frac{30}{\sqrt{34}}         \right).
+\]
+
+\end{explanation}
 
 \end{question}
 
