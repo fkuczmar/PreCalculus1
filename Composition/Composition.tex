@@ -14,36 +14,60 @@ Composing functions is a lot like composing actions. For example, consider the a
 
 The second point is that to undo the compostion of first putting on your socks and then your shoes, we undo the two actions in the \emph{reverse} order - we first take off our shoes and then our socks. And whether we're talking about socks and shoes or functions, it pays to remember this idea.
 
+\begin{example}  \label{Erer54r56t364}
+Use the graphs of the functions $y=f(x)$ and $y=g(x)$ below to find approximate answers to the following questions. Use set notation to write solution sets when solving an equation.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{zxb4adsbjb}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/zxb4adsbjb}{141: Composition 1}
+
+
+\end{example}
+
+
 \begin{example}  \label{Ex0:Comp}
 Let
 \[
-    f(x) = \frac{24}{x^2-x-2}
+    f(x) = \frac{24}{x^2-x-6}
 \]
 and 
 \[
-    g(x) = \frac{x-5}{x+4} .
+    g(x) = \frac{3x-5}{x-4} .
 \]
 
-(a) Evaluate $f(g(-3))$.
 
-(b) Evalute $g(f(-3))$.
+Answer each of the following questions \emph{without} using the quadratic formula. Use set notation to write solution sets when solving an equation.
+\begin{enumerate}
+\item Evaluate $f(g(3))$.
 
-(c) Solve the equation $g(f(x))=-7/2$.
+\item Evalute $g(f(0))$.
 
-(d) Solve the equation $f(g(x)) = 3/11$.
+\item Solve the equation $g(f(x))=23/10$.
 
-(e) Solve the equation $g(g(x)) = 2$.
+\item Solve the equation $g(f(x)) = 17/8$.
 
-(f) Solve the equation $f(f(x)) = 6/7$.
+\item Solve the equation $f(g(x)) = -4$.
+
+\item Solve the equation $f(g(x)) = -6$.
+
+\item Solve the equation $g(g(x)) = 2$.
+
+\item Solve the equation $f(f(x)) = -4$.
+\end{enumerate}
+
 
 \begin{explanation}
-(a) To evaluate a composition, we work our way from the inside out. So to evaluate $f(g(-3))$, we first evaluate $g(-3)$ to get
+(a) To evaluate a composition, we work our way from the inside out. So to evaluate $f(g(3))$, we first evaluate $g(3)$ to get
 \[
-    g(-3) = \frac{-3-5}{-3+4} = -8 .
+    g(3) = \frac{(3)(3)-5}{3-4} = -4 .
 \]
-Then we input $g(-3) = -8$ into the function $f$ to get
+Then we input $g(3) = -4$ into the function $f$ to get
 \[
-   f(g(-3)) = f(-8) = \frac{24}{(-8)^2 - (-8) -2} = \frac{12}{35} .
+   f(g(3)) = f(-4) = \frac{24}{(-4)^2 - (-4) -2} = \frac{4}{3} .
 \]
 
 
