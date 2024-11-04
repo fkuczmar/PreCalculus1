@@ -9,6 +9,63 @@ Quadratic functions and more about inverse functions.
 \end{abstract}
 \maketitle
 
+Remember the key idea about inverse functions.
+
+\pskip
+
+\emph{Two functions are inverses if they undo each other.}
+
+\pskip
+
+To show two functions are inverses, it is \emph{not} enough to show that \emph{one} undoes the other. We need to show that \emph{each} undoes the other. 
+
+So to show two functions are $y=f(x)$ and $x=g(y)$ are inverses of each other, we need to show:
+
+\begin{enumerate}
+\item The function $g$ undoes the function $f$. This amounts to proving that
+\[
+        g(f(x)) = x 
+\]
+for \emph{all} $x$ in the domain of $f$.
+
+\item And we also need to show that $f$ undoes $g$. This amounts to proving that
+\[
+        f(g(y)) = y
+\]
+for \emph{all} $y$ in the domain of $g$.
+\end{enumerate} 
+
+Simplifying the two compositions above requires doing some algebra. But on the other hand, showing that $f$ and $g$ are \emph{not} inverses of each other is \emph{not} an algebra problem. It requires only that we find a specific input to the function $f$, call it $x_0$, such that 
+\[
+    g(f(x_0)) \neq x_0 , 
+\]
+or that we find a specific input to $g$ (say $y_0$) such that
+\[
+    f(g(y_0)) \neq y_0.
+\]
+
+Here are some examples.
+
+\begin{question}  \label{Q345rgt5t45hh}
+Let 
+\[
+    f(x) = \sqrt{x}, x \geq 0
+\]
+and 
+\[
+  g(x) =  x^2 , x\in\mathbb{R} .
+\]
+\begin{enumerate}
+\item Does $g$ undo $f$? If so, prove this algebraically. If not, prove this by finding a specific input $x_0$ to $f$ such that $g(f(x_0))\neq x_0$.
+
+\item Does $f$ undo $g$? If so, prove this algebraically. If not, prove this by finding a specific input $y_0$ to $g$ such that $f(g(y_0))\neq y_0$.
+
+\item Are $f$ and $g$ inverses of each other?
+\end{enumerate}
+\end{question}
+
+
+
 \begin{question}    \label{Q1:Quadratics}
 Let 
 \[
@@ -198,20 +255,24 @@ Answer parts (a)-(c) of Example \ref{Ex98:Quadratics} for the function
 
 
 \begin{exploration} \label{E1:Quadratics}
-The animation below shows water draining from a tank. Play the animation and sketch by hand a graph of the function $V=f(t)$ that expresses the depth of the water as a function of time. Explain your reasoning.
+The animation below shows water draining from a tank. 
 
-
-\pdfOnly{
-Access Desmos interactives through the online version of this text at
- 
-\href{https://www.desmos.com/calculator/pdghky6tie}.
-}
- 
 \begin{onlineOnly}
     \begin{center}
 \desmos{pdghky6tie}{900}{600}
 \end{center}
 \end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/pdghky6tie}{141: Draining Tank}
+
+\begin{enumerate}
+\item Use the animation to sketch by hand a graph of the function $V=f(t)$ that expresses the depth of the water as a function of time. Explain your reasoning.
+
+\item Is the function $f$ one-to-one? Explain your reasoning.
+
+\item Is the inverse of $f$ a function? Explain your reasoning.
+
+\end{enumerate}
 \end{exploration}
 
 
