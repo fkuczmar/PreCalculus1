@@ -171,22 +171,28 @@ Let
 \[
     y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
 \]
+\begin{enumerate}
+\item Use your knowledge of circles to graph the function $y=f(x)$ \emph{by hand}. Use the graph to thoroughly explain why $f$ is one-to-one.
 
-(a) Use your knowledge of circles to graph the function $y=f(x)$ \emph{by hand}. Use the graph to thoroughly explain why $f$ is one-to-one.
-
-(b) Find an expression for the inverse function
+item Find an expression for the inverse function
 \[
     x = f^{-1}(y)
 \]
 that expresses the input of $f$ in terms of its output. State the domain of $f^{-1}$ using set notation.
 
-(c) Graph the function $y=f^{-1}(x)$.
+\item Simplify the composition $f^{-1}(f(x))$ algebraically.
+
+\item Graph the function $y=f^{-1}(x)$. 
+
+\item Explain how you could have realized that $f^{-1}(x) = f(x)$ by looking at the graph of $y=f(x)$.
+\end{enumerate}
 
 
 \begin{explanation}
-(a) The graph of $y=f(x)$ is a quarter-circle in the first quadrant centered at the origin with endpoints $(5,0)$ and $(0,5)$. Since each horizontal line intersects the graph in at most one point, any two different inputs to $f$ have different ouputs. This means that $f$ is one-to-one.
+\begin{enumerate}
+\item The graph of $y=f(x)$ is a quarter-circle in the first quadrant centered at the origin with endpoints $(5,0)$ and $(0,5)$. Since each horizontal line intersects the graph in at most one point, any two different inputs to $f$ have different ouputs. This means that $f$ is one-to-one.
 
-(b) We know from the graph in part (a) that the range of $f$ is the set
+\item We know from the graph in part (a) that the range of $f$ is the set
 \[
    \{ y \, | \,  0\leq y \leq 5 \} .
 \]
@@ -226,7 +232,17 @@ is the function
     x = f^{-1}(y) = \sqrt{25-y^2} \, , 0\leq y \leq 5 .
 \]
 
-(c) Since the variables $x$ and $y$ have no practical meaning, we can switch them in our expression for $x = f^{-1}(y)$. So the inverse of the function
+\item We simplify the composition $f^{-1}(f(x))$ as follows:
+\begin{align*}
+           f^{-1}(f(x)) &= f^{-1}(\sqrt{25-x^2})   \\
+                             &= \sqrt{25 - \left( \sqrt{25-x^2}\right)^2}  \\
+                             &= \sqrt{25 - (25-x^2)}  \\
+                             &= \sqrt{x^2} \\
+                             &= |x|  \\
+                             &= x \text{ since } 0\leq x \leq 5.
+\end{align*}
+
+\item Since the variables $x$ and $y$ have no practical meaning, we can switch them in our expression for $x = f^{-1}(y)$. So the inverse of the function
 \[
     y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 
 \]
@@ -235,6 +251,10 @@ is the function
     y = f^{-1}(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
 \]
 This is identical to the function $f$. That is, $f$ is its own inverse and the graphs of $f$ and $f^{-1}$ are identical.
+
+\item Since the graph of $y=f(x)$ is symmetric about the line $y=x$, we could have realized from the start that $f$ is its own inverse.
+
+\end{enumerate}
 
 \end{explanation}
 
