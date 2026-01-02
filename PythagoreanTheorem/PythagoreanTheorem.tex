@@ -78,7 +78,7 @@ But probably the best choice, the one that let's us see immediately \emph{why} t
 \href{https://www.desmos.com/calculator/oaxj7u8xly}{141: Pythagorean Thm Statement 4}
 
 \begin{question} \label{Qer3Ldfe44r3r}
-How does this picture \emph{prove} the Pythagorean theorem. Explain.
+Explain how does this picture \emph{proves} the Pythagorean theorem. 
 \begin{freeResponse}
 \end{freeResponse}
 \end{question}
@@ -91,16 +91,69 @@ How does this picture \emph{prove} the Pythagorean theorem. Explain.
 
 
 \begin{question}  \label{Q324dfg45rhp}
-Imagine a one-mile long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one foot and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
+Imagine a $5$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one meter and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
 
-
+\begin{enumerate}
+\item Without doing any computation, guess the height of the track at its midpoint. What do you think? 
 \begin{freeResponse}
-(a) Before doing any computation, guess the height of the track at its midpoint. What do you think? Note that there are 5280 feet in one mile.
 \end{freeResponse}
 
-(b) Now compute the height. How accurate was your estimate?
+\item Now use the Pythagorean theorem to approximte the height. Doe not use a calcluator. How accurate was your guess?
+
+\end{enumerate}
 \end{question}
 
+
+
+
+\begin{question}  \label{QLkfde9fdfs}
+Let's suppose we didn't know about the Pythagorean theorem and try to answer the previous question emperically.
+
+Suppose, for example, we have a string $11$ centimeters long and pin its ends $10$ cm apart. Then we lift the midpoint of the string upward to make the string taut. We'll see something like the figure below, where the ends of the string $AM^\prime B$ are pinned at points $A$ and $B$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{bse86hs9ng}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/bse86hs9ng}{141: Railroad Track}
+
+The idea now is to use the data we can gather here to answer the previous question.  
+
+\begin{enumerate}
+\item First approximate the height of the midpoint $M^\prime$ of the string above the ground (ie. approximate the length of segment $MM^\prime$. Do this visually, without using the power of the computer, as if you had a physical piece of string and were measuring its height with a ruler.
+
+\item Now let's thing about relative changes, in both the length of our railroad track (ie. the string) and its height.
+
+\begin{enumerate}
+\item If the relaxed track had length $10$cm and its length increased to $11$cm, the relative change in its length is $\answer{10}\%$.
+
+\item And in this case, the height of the track, about $2.3$ cm at its midpoint, as a percentage of the original track length ($10$cm) is approximately
+\[
+  \frac{\answer{2.2}\text{ cm}}{10\text{ cm}} = \answer{22}\%.    
+\]
+Input this fraction (as a decimal) in the second column ($y_1$) of the table in Line 1 above. 
+
+\item Now let's gather more data. You can change the relative change
+\[
+        k = \frac{\text{change in the length of the stretched string}}{\text{distance between its pinned ends}},
+\] 
+in the length of the string by dragging point above. Choose the values $k=0.2, 0.3, 0.4, 0.5$ to complete the table in Line 1.
+
+\item Use this data to approximate the height of the track in Question 1, where the track had a relaxed length of $5$ km and the stretched track a length one meter greater. For this, you'll need to look at the plot of the data points in Table 1 and make a reasonble guess about the kind of curve on which they lie.
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{QPlFErerr33e}
+A
+\end{question}
+
+
+
+\section{A Leaning Ladder}
 
 \begin{question}  \label{Qdfdst4nb554334}
 (a) The bottom end of a $20$-foot ladder rests on level ground, $15$ feet away from a vertical wall. The top end rests against the wall. How high above the ground is the top end?
