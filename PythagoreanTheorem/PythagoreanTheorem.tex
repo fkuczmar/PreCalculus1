@@ -15,10 +15,14 @@ Pythagorean Theorem.
 
 \section{The Pythagorean Theorem}
 
-A reflexive response when asked about the Pythagorean theorem is to say $a^ + b^2 = c^2$. But this is incomplete without giving the meanings of $a$, $b$, and $c$. They are the lengths of the sides of a \emph{right} triangle. Here $a$ and $b$ are the lengths of the two \emph{legs}. These are the sides that form the right angle. They are the two shorter sides in the triangle. And $c$ is the length of the \emph{hypotenuse}, the side opposite the right angle. This is the longest side.
+A common response when asked about the Pythagorean theorem is to say $a^2 + b^2 = c^2$. But this is incomplete without giving the meanings of $a$, $b$, and $c$. They are the lengths of the sides of a \emph{right} triangle. Here $a$ and $b$ are the lengths of the two \emph{legs}. These are the sides that form the right angle and are the two shorter sides in the triangle. The parameter $c$ is the length of the \emph{hypotenuse}, the side opposite the right angle. This is the longest side.
 
 The Pythagorean theorem in this form is really a statement about areas. 
 
+
+
+\begin{exploration} \label{EXP1234}
+For the most basic interpretation of the Pythagorean theorem we construct squares on the sides of a right triangle.
 \begin{onlineOnly}
     \begin{center}
 \desmos{y2o9zqibsv}{900}{600}
@@ -33,8 +37,11 @@ What does the Pythagorean Theorem say about the areas of the three squares above
 \end{freeResponse}
 \end{question}
 
+\end{exploration}
 
-But there's nothing special about squares. Any three curves with the same shape will do. For example, we could construct semicrircles on the outside of each side like this.
+
+\begin{exploration} \label{ESP09332}
+But there's nothing special about squares. Any three curves with the same shape will do. For example, we could construct semicircles on the outside of each side like this.
 
 \begin{onlineOnly}
     \begin{center}
@@ -50,6 +57,9 @@ What does the Pythagorean Theorem say about the areas of the three seimicircles 
 \end{freeResponse}
 \end{question}
 
+\end{exploration}
+
+\begin{exploration} \label{EXPldfk3}
 Or equilateral triangles.
 
 \begin{onlineOnly}
@@ -65,6 +75,9 @@ What does the Pythagorean Theorem say about the areas of the three triangles abo
 \begin{freeResponse}
 \end{freeResponse}
 \end{question}
+\end{exploration}
+
+\begin{exploration}  \label{EXPMDF3}
 
 But probably the best choice, the one that let's us see immediately \emph{why} the Pythagorean theorem is true, would be to construct three triangles with the same shape as right triangle $\Delta ABC$ and just the right size.
 
@@ -83,6 +96,7 @@ Explain how this picture \emph{proves} the Pythagorean theorem.
 \end{freeResponse}
 \end{question}
 
+\end{exploration}
 
 
 
@@ -91,7 +105,7 @@ Explain how this picture \emph{proves} the Pythagorean theorem.
 
 
 \begin{question}  \label{Q324dfg45rhp}
-Imagine a $5$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one meter and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground at its midpoint. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
+Imagine a $5$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one meter and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground in the middle. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
 
 \begin{enumerate}
 \item Without doing any computation, guess the height of the track at its midpoint. What do you think? 
@@ -135,9 +149,9 @@ The idea now is to use the data we can gather here to answer the previous questi
 \]
 Input this fraction (as a decimal) in the second column ($y_1$) of the table in Line 1 above. 
 
-\item Now let's gather more data by changing the relative change
+\item Now let's gather more data by varying the relative change
 \[
-        k = \frac{\text{change in the length of the stretched string}}{\text{distance between its pinned ends}},
+        k = \frac{\text{change in the length of the string}}{\text{distance between its pinned ends}},
 \] 
 in the length of the string. Do this by dragging point $P$ above. Choose $k=0.2, 0.3, 0.4, 0.5$ to complete the table in Line 1.
 
@@ -153,18 +167,18 @@ This is a generalization of Question 5.
 A railroad track $L$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands $\Delta L$ km and buckles into a curve.To approximate the track's height at its midpoint, we assume the track bends into two straight segments running from the high point to its endpoints.
 
 \begin{enumerate}
-\item Find a expression for the exact height.
+\item Find a expression for the height.
 
 \item Assume $\Delta L$ is small relative to $L$ and find an expression for the approximate height $h$.
 
 \item Find an expression that approximates the relative height $h/L$ in terms of the relative change $\Delta L/L$.
 
-\item When a railroad track expands by $50$cm, its buckles to a height of $20$ meters. How high would the buckle have been if
+\item When a railroad track expands $50$cm, its buckles to a height of $20$ meters. How high would the buckle have been if
 
 \begin{enumerate}
-\item the same track expanded by $100$cm instead?
+\item the same track expanded $100$cm instead?
 
-\item a track of the same material twice as long expanded by $50$ cm? By $100$ cm?
+\item a track of the same material twice as long expanded $50$ cm?  $100$ cm?
 \end{enumerate}
 \end{enumerate}
 
