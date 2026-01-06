@@ -105,14 +105,72 @@ Explain how this picture \emph{proves} the Pythagorean theorem.
 
 
 \begin{question}  \label{Q324dfg45rhp}
-Imagine a $5$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands one meter and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground in the middle. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
+Imagine a $10$-km long railroad track secured only at its two ends to the desert floor. Suppose on a hot day the track expands two meters and buckles into a curve. We would like to compute, or at least approximate, the height of the track above the ground in the middle. We really need calculus to determine the shape of the curve and the exact height, but we can get a pretty good approximation by supposing the track bends into two straight segments running from the high point to its endpoints.
 
 \begin{enumerate}
-\item Without doing any computation, guess the height of the track at its midpoint. What do you think? 
+\item Without doing any computation, guess the height of the track at its midpoint. What do you think? \emph{Do not move on without making a guess.}
 \begin{freeResponse}
 \end{freeResponse}
 
-\item Now use the Pythagorean theorem to approximte the height. Doe not use a calcluator. How accurate was your guess?
+\item Now before answering this particular question, let's work in general. We'll suppose the railroad track is $L$ km long in its relaxed state and that it expands $\Delta L$ km due to the heat of the desert. 
+
+We want to find  an expression for the height of the height of the track at its midpoint, assuming  the track bends into two straight segments. Do this as follows.
+
+\begin{enumerate}
+
+\item Start by definining one unknown in a complete sentence. Choose a meaningful unknown for the \emph{height}. Include units in your definition.
+
+\item Next find an expression for the height of the height of the track at its midpoint. 
+
+\item Now use algebra to simplify your expression.
+
+\item Finally, write a concluding sentence.
+
+The height of the track at its midpoint is
+\[
+  h =  \sqrt{\answer{\frac{L \Delta L}{2}} + \frac{\Delta L^2}{4}} \text{ km}.
+\]
+Type \textbackslash Delta L for $\Delta L$.
+
+\end{enumerate}
+
+\item Use the result of part (b) to answer the original question about a $10$-km long track that expands two meters. Do not use a calcluator. 
+
+\item How accurate was your guess in part (a)? Are you surprised?
+
+\item Now let's suppose (as is the case in reality) that $\Delta L$ is much less than $L$. Then to approximate the track's height in the middle we can ignore the second term under the square root in your expression from part (b)(iv). This gives the approximate height in the middle as
+\[
+  h \sim  \sqrt{\answer{\frac{L \Delta L}{2}}} \text{ km} .
+\]
+
+\begin{enumerate}
+\item Check this expression has the correct units.
+
+\item Interpret the expression under the square root geometrically.
+\begin{freeResponse}
+\end{freeResponse}
+
+\item Now divide both sides of the equation above by $L$ and simplify the right side to get
+\[
+    \frac{h}{L} \sim \sqrt{\answer{\frac{\Delta L}{2L}}} .
+\]
+
+\item In the original question about a $10$-km track that expands two meters, what are the ratios $\Delta L/L$ and $h/L$? 
+
+The ratios are 
+\[
+   \frac{\Delta L}{L} = \answer{0.02} \%  
+\]
+and
+\[
+  \frac{h}{L} \sim \answer{1} \%.
+\]
+
+\item Our conclusion is that if the length of a pinned track increases by $\answer{0.02}\%$, it buckles to a height of approximately  $\answer{1}\%$ of its original length.
+
+\item What would happen if the length of a pinned track increased by ${0.01}\%$?
+
+\end{enumerate}
 
 \end{enumerate}
 \end{question}
