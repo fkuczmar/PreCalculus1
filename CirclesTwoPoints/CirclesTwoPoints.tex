@@ -1,0 +1,93 @@
+\documentclass{ximera}
+\title{Circles Through Two Points}
+
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Finding equation of circles passing through two given points.
+\end{abstract}
+\maketitle
+
+
+\pskip
+
+\begin{question}\label{QLDF3efr}
+Find an equation of the smallest cricle through the points $A(3,5)$ and $B(6,-2)$. 
+
+Explain your reasoning. Draw a picture to help with your explanation. Start by plotting the given points and drawing the circle.
+\end{question}
+
+\begin{example}  \label{Ex5sdfdsfdsf}
+How many circles pass through the points $A(3,5)$ and $B(6,-2)$? What can you say about their centers?
+
+\begin{explanation}
+We have three degrees of freedom (ie. three choices) in drawing a circle - two in choosing the coordinates of its center and a third in choosing its radius. Since there are only two conditions, namely that our circle pass through the two given points, we would are left with one degree of freedom. This suggests that there are infinitely many circles (more precisely, a one-parameter family of circles) through the points $A$ and $B$. We'll explore this in the activity below. 
+
+
+Drag the centers of each of the circles below so that they pass through the points $A$ and $B$ if possible. What do you notice about the centers of these circles?
+ 
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/6lmpvfuqjk}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{6lmpvfuqjk}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+You should have noticed that the centers of circles through the points $A(3,5)$ and $B(6,-2)$ lie on a line. In fact, the centers are exactly the points on the perpendicular bisector of the segment $\overline{AB}$. The key to show why this is true is to realize that a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ exactly when (ie. if and only if) $P$ is equidistant (equally distant) from $A$ and $B$ (\emph{Why?}). 
+
+Now many of you already know that the set of points equidistant from $A$ and $B$ is the perpendicular bisector of the segment $\overline{AB}$ and we could use this to find an equation of the set of all such points. But because this is an algebra class, we will \emph{not} use this approach. Instead, we will translate the geometric condition that the center $P(x,y)$ be equidistant from $A(3,5)$ and $B(6,-2)$ into an equation.
+
+
+\begin{question}   \label{Q0dfdf9e9ee}
+The point $P$ is the center of a circle through $A$ and $B$ if and only if the distances $\text{dist}(A,P)$ and $\text{dist}(B,P)$ are equal. That is, if and only if
+\[
+   \text{dist}(A,P)  = \text{dist}(B,P) .
+\]
+Now because
+\[
+   \text{dist}(A,P) = \sqrt{(x-3)^2 + (y-5)^2}
+\] 
+and
+\[
+  \text{dist}(B,P) = \answer{\sqrt{(x-6)^2 + (y+2)^2}} ,
+\]
+the point $P$ is the center of a circle through $A$ and $B$ if and only if
+\[
+   \sqrt{(x-3)^2 + (y-5)^2} = \answer{\sqrt{(x-6)^2 + (y+2)^2}} .
+\]
+
+Now this does not look at all like an equation of a line and there's a lot to do. The first step is to square both sides and then distribute. This gives us
+\begin{align*}
+      \left( x^2 - \answer{6}x +\answer{9}  \right) + & \left( y^2 - \answer{10}y +\answer{25} \right)  = \\
+                                                                          & x^2 + y^2 +\answer{-12}x + \answer{4}y + \answer{40} ,
+\end{align*} 
+or equivalently that
+\[
+    \answer{3}x - \answer{7}y = 3 .
+\]
+ 
+Type this equation in Line 24 of the above Desmos demonstration to make sure you are correct.
+
+\end{question}
+
+\end{explanation}
+
+\pskip
+
+\begin{question} \label{Q1444sfdsf4433}
+(a) Find an equation of the smallest circle through the points $A(3,5)$ and $B(6,-2)$. Explain your reasoning thoroughly.
+
+(b) Find an equation of another circle through the points $A(3,5)$ and $B(6,-2)$. Explain your reasoning thoroughly.
+
+\end{question}
+\end{example}
+
+\end{document}
