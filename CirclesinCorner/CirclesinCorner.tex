@@ -43,7 +43,7 @@ Finding equations of all circles through a given point tangent to the coordinate
 \begin{enumerate}
 \item How many circles of radius $4$ are tangent to the coordinate axes? 
 
-\item Find equations of two such circles.
+\item Find equations of all such circles.
 
 \item Find an equation of the circle of radius $r > 0$ in the first quadrant tangent to the coordinate axes. Enter this equation in Line 3 of the worksheet below. Check that you are correct by dragging the slider $r$.
 
@@ -59,6 +59,52 @@ Finding equations of all circles through a given point tangent to the coordinate
 \item Drag the slider $r$ above to determine how many circles tangent to the coordinate axes pass through the point $(5,3)$. 
 
 \item Use algebra to find equations of all the circle(s) in part (d). Enter these equations on Lines 4 and 5 of the desmos worksheet.
+Click the \emph{Hint} tab above for help.
+
+\begin{hint}
+A circle in the first quadrant tangent to the coordinate axes with radius $r>0$ has equation
+\[
+    \answer{\sqrt{(x-r)^2 + (y-r)^2}} = r .
+\]
+
+The point $(5,3)$ lies on this circle if and only if
+\[
+  \sqrt{(\answer{5}-r)^2 + (\answer{3}-r)^2} = r  .
+\]
+
+Squaring both sides and doing some algebra leads to the equation
+\[
+      \answer{r^2 - 16r}  = -34 .
+\]
+
+Completing the square, we get
+\[
+        r^ - 16r + \answer{(-8)}^2 = \answer{30} 
+\]
+or 
+\[
+      (\answer{r-8})^2 = \answer{30} .
+\]
+
+So
+\[
+ r = \answer{8} + \sqrt{\answer{30}}
+\]
+or
+\[
+  r = \answer{8} - \sqrt{\answer{30}} .
+\]
+
+So there are two circles in the first quadrant through the points $(5,3)$. They larger has equation
+\[
+       \sqrt{(x-(8+\sqrt{30}))^2 + (y-(8+\sqrt{30}))^2}  = 8 + \sqrt{30} .
+\]
+and the smaller equation
+\[
+       \sqrt{(x-(8-\sqrt{30}))^2 + (y-(8-\sqrt{30}))^2}  = 8 - \sqrt{30} .
+\]
+
+\end{hint}
 
 \end{enumerate}
 
@@ -69,6 +115,8 @@ Finding equations of all circles through a given point tangent to the coordinate
 Let $a,b\geq 0$ be constants.
 
 Find equations of all circles tangent to the coordinate axes thta pass through the point $Q$ with coordinates $(a,b)$.
+
+In solving this problem, you'll need to eventually solve a quadratic equation. Do this by \emph{completing the square}. 
 
 Use the worksheet below to check your work.
 
