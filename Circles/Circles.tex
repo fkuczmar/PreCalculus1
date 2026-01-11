@@ -39,7 +39,21 @@ The circle is the set of points exactly 9 units from the center $A(2,1)$. The po
 \end{center}
 \end{onlineOnly}
 
-To determine the distance between $A$ and $P$, we use the Pythagorean theorem by drawing a right triangle $\Delta ABP$ with hypotenuse $AP$ and legs parallel to the coordinate axes as in the figure above. The point $B$ has coordinates $(10,1)$, taken from the $x$-coordinate of $P$ (ie. $x=10$) and the $y$-coordinate of $A$ (ie. $y=1$). Then by the Pythagorean Theorem, the distance between $A$ and $P$ is
+To determine the distance between $A$ and $P$, we use the Pythagorean theorem by drawing a right triangle $\Delta ABP$ with hypotenuse $AP$ and legs parallel to the coordinate axes as in the figure above. The point $B$ has coordinates $(10,1)$, taken from the $x$-coordinate of $P$ (ie. $x=10$) and the $y$-coordinate of $A$ (ie. $y=1$). 
+
+The distance between points $A(2,1)$ and $B(10,1)$ is the absolute value
+\[
+   \text{dist}(A,B) = | 10 - 2 | = 8
+\]
+of the difference in their $x$-coordinates.
+
+The distance between points $P(10,5)$ and $B(10,1)$ is the absolute value
+\[
+     \text{dist}(P,B) = | 5 - 1 | = 4
+\] 
+of the difference in their $y$-coordinates. 
+
+Then by the Pythagorean Theorem in right triangle $\Delta ABP$, the distance between $A$ and $P$ is
 \[
    \text{dist}(A,P) = \sqrt{AB^2 + BP^2} = \sqrt{(10-2)^2 + (5-1)^2} = \sqrt{8^2 + 4^2} = \sqrt{80} . 
 \]
@@ -65,7 +79,7 @@ Find an equation of the circle with center $A(2,1)$ and radius $9$. Explain your
 \end{example}
 
 \begin{explanation}
-The idea is to turn the geometric description of the circle, namely the set of all points in the plane exactly 9 units from the point $A$, into an equation. Take a general point $P$ with coordinates $(x,y)$. Then this point $P$ lies on the circle if and only if
+The idea is to turn the geometric description of the circle, namely the set of all points in the plane exactly 9 units from the point $A$, into an equation. Take a general point $P$ with coordinates $(x,y)$. Then this point $P$ lies on the circle if and only if $P$
 \[
      \text{dist}(A,P) = 9 .
 \]
@@ -77,15 +91,26 @@ The idea is to turn the geometric description of the circle, namely the set of a
 \end{center}
 \end{onlineOnly}
 
-We can use the Pythagorean Theorem to compute the distance between the center $A(2,1)$ and the general point $P(x,y)$ as 
+We can use the Pythagorean Theorem to compute the distance between the center $A(2,1)$ and the general point $P(x,y)$ by first drawing a right triangle as shown above. The right angle is at $B$, the point with coordinates $(x,1)$ (ie. $B$ has the same $x$-coordinate $x$ as $P$ and the same $y$-coordinate, $1$, as $A$).
+
+Then the distance $AB$ is 
 \[
- \text{dist}(A,P) =  \sqrt{(x-2)^2 + (y-1)^2} .
+    AB = | x - 2 |
 \]
-So the point $P(x,y)$ lies on the circle with center $A(1,2)$ and radius $9$ exaclty when (ie. if and only if)
+and the distance $PB$ is
+\[
+     PB = | y - 1 |
+\]
+
+So by the Pythagorean theorem in right triangle $\Delta ABP$, the distance $AP$ is
+\[
+    AP =  \sqrt{|x-2|^2 + |y-1|^2} = \sqrt{(x-2)^2 + (y-1)^2} .
+\]
+So the point $P(x,y)$ lies on the circle with center $A(2,1)$ and radius $9$ exaclty when (ie. if and only if)
 \[
      \sqrt{(x-2)^2 + (y-1)^2} = 9 .
 \]
-This is an equation of the circle with center $A(1,2)$ and radius $9$. 
+This is an equation of the circle with center $A(2,1)$ and radius $9$. 
 
 \pskip
 
