@@ -1,0 +1,112 @@
+\documentclass{ximera}
+\title{Quiz Solutions, Winter 2026}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Quiz solutions.
+\end{abstract}
+\maketitle
+
+
+\section{Quiz 2B}
+
+\begin{question} \label{Q2BDrel}
+
+\begin{enumerate}
+
+\item Use the methods of this class to find the coordinates of the point on the circle with radius $5$ centered at the origin that is farthest from the point $P$ with coordinates $(2,-3)$.
+
+\begin{enumerate}
+\item Start by drawing a reasonably accurate graph of the circle. Label point $P$ with its name and its coordinates. Label the axes with appropriate variable names.
+
+\item Annotate your graph with the appropriate line(s) to help explain your thinking. 
+
+\item Give a thorough explanation of your thinking in complete sentences.
+
+\item Preface each computation block with a brief explanation of what you are about to compute.
+
+\end{enumerate}
+\end{enumerate}
+
+
+\begin{explanation}
+The points on the circle nearest and farthest from $P$ lie on the line through $P$ and the center of the circle. We'll use algebra to find the coordinates of these points.
+
+We start by finding an equation of the line.
+
+The line through the origin and the point $P$ with coordinates $(2,-3)$ has slope
+\[
+      \frac{\Delta y}{\Delta x} = \frac{-3-0}{2-0} = - \frac{3}{2} .
+\]
+A point $Q$ with coordinates $(x,y) \neq (0,0)$ lies on this line if and only if
+\[
+      \frac{y-0}{x-0} = - \frac{3}{2} .
+\] 
+And so an equation of the line is
+\[
+  y = - \frac{3}{2}x .
+\]
+
+Now for the circle. A point $Q$ with coordinates $(x,y)$ lies on the circle of radius $5$ centered at the origin if and only if the distance from $Q$ to the origin $O$ is equal to $5$. By the Pythogorean theorem
+\[
+  \text{dist}(Q,O) = \sqrt{(x-0)^2 + (y-0)^2} = \sqrt{x^2 + y^2}.
+\]
+So the point $Q(x,y)$ lies on this circle if and only if
+\[
+     \sqrt{x^2 + y^2} = 5.
+\]
+This is an equation of the circle.
+
+Now to find the coordinates of the points where the line intersects the circle we need to solve the system
+\[
+\begin{cases}
+        y = -\frac{3}{2}x  \\ \\
+         \sqrt{x^2 + y^2} =  5 .
+\end{cases}
+\]
+
+Substituting $y=-3x/2$ into the second equation and squaring both sides gives the equation
+\[
+     x^2 + \left(  -\frac{3}{2}x\right)^2 = 25.
+\]
+Then
+\[
+     x^2 + \frac{9}{4}x^2 = 25
+\]
+and
+\[
+\left( 1 + \frac{9}{4} \right) x^2 = 25.
+\]
+So
+\[
+   \frac{13}{4}x^2 = 25
+\]
+and
+\[
+     x^2 = \frac{100}{13} .
+\]
+So 
+\[
+    x = \pm \frac{10}{\sqrt{13}} .
+\]
+
+This makes sense. There are two points where the line intersects the circle. You'll need to draw a picture to see that the point $Q$ farthest from $P(2,-3)$ lies in the second quadrant. So $Q$ has $x$-coordinate
+\[
+     x = - \frac{10}{\sqrt{13}}
+\]
+and $y$-coordinate
+\[
+ y = -\frac{3}{2}x = \left( -\frac{3}{2} \right)  \left( - \frac{10}{\sqrt{13}} \right) = \frac{15}{\sqrt{13}} . 
+\]
+
+Our conclusion is that the point on the circle of radius $5$ centered at the origin that is closest to the point $(2,-3)$ has coordinates
+\[
+       \left(     - \frac{10}{\sqrt{13}} ,    \frac{15}{\sqrt{13}} \right) .
+\]
+\end{explanation}
+
+\end{question}
+
+\end{document}
