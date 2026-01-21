@@ -24,7 +24,28 @@ The balloon is at an altitude of $3235$ feet at 12:34 pm.
 \]
 that give the balloon's height (in feet) at time $t$ minutes past noon.
 
-\item Use your function from part (b) to determine when the balloon is at an altitude of $2900$ feet.
+\begin{hint}
+During the 
+\[
+    \Delta t = t - 34
+\]
+minutes from 12:34pm to time $t$ minutes past noon, the change in altitude is
+\begin{align*}
+    \Delta h &= \left( -37 \frac{\text{ ft}}{\text{min}} \right) \left( \Delta t \text{ min} \right) \\
+                &= -37 (t-34) \text{ ft}. 
+\end{align*}
+Adding this change to the height $f(34) = 3235$ feet of the balloon at 12:34pm give the balloon's  height (measured in feet)
+\begin{align*}
+   h   &= f(t) \\
+        &= f(34) + -37 (t-34) \\
+        &= 3235 - 37(t-34) \, , \, 15\leq t \leq 60,
+\end{align*}
+at time $t$ minutes past noon. 
+\end{hint}
+
+\item Use logic, \emph{not} your function, to determine when the balloon is at an altitude of $2828$ feet.
+
+\item Use your function from part (b) to determine when the balloon is at an altitude of $2828$ feet. Your algebraic solution should be identical to your logical solution from part (c).
 \end{enumerate}
 
 \end{question}
@@ -42,13 +63,13 @@ The graph of a linear function $y=f(x)$ passes through the points $(-4,5)$ and $
 
 \item Use your function from part (b) to solve the inequality
 \[
-     f(x) < 85 .
+     f(x) < 29 .
 \]
 Write your answer as a solution set.
 
 \item Solve the inequality
 \[
-      f(x) < f(85) .
+      f(x) < f(29) .
 \]
 Write your answer as a solution set.
 \end{enumerate}
@@ -61,8 +82,37 @@ The equation
 \]
 relates the average number of burgers $q$ a food truck sells per day in terms of the price $p$ (measured in dollars/burger).
 
-What happens to the average number of burgers/day sold if they raise the price by $\$0.75$/burger? Be specific. Try to solve this problem in general.
+What happens to the average number of burgers/day sold if they decrease the price by $\$0.77$/burger? Be specific. Try to solve this problem in general \emph{without} using any specific numbers.
  
+\begin{hint}
+Suppose the average number of burgers sold/day changes from $q$ to $q+\Delta q$ as the price changes from $p$ to $p +\Delta p$ dollars/burger. Then
+\[
+    25 (p+ \Delta p) + 7 (q + \Delta q) = 300.
+\]
+Using the distributive property of multiplication over addition and the commutative property of addition gives
+\[
+     (25p + 7q) + (25 \Delta p + 7 \Delta q) = 300.
+\]
+But since
+\[
+    25p + 7q = 300 ,
+\]
+it must be that
+\[
+       25 \Delta p + 7 \Delta q = 0.
+\]
+Solving for $\Delta q$, we get
+\[
+       \Delta q = -\frac{25}{7} \Delta p.
+\]
+So if they decrease the price by $\$0.77$/burger (ie. if $\Delta p = -\$0.77$/burger), then
+\begin{align*}
+     \Delta q &= -\left(  \frac{25\text{ burgers/day }}{7 \text{ dollars/burger}}   \right) \left( - 0.77 \text{ dollars/burger} \right) \\
+                  &= 2.75 \text{ burgers/day} 
+\end{align*}
+and they would sell an average of $2.75$ more burgers/day.
+\end{hint}
+
 \end{question}
 
 \begin{question}  \label{Qeeetl4gg}
