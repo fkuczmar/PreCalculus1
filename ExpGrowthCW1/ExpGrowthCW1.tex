@@ -1,0 +1,160 @@
+\documentclass{ximera}
+\title{Exponential Growth CW1}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Exponential functions and their inverses.
+\end{abstract}
+\maketitle
+
+
+\section{Growth Factors}
+A population that grows \emph{linearly} increases at a constant absolute rate, perhaps at the rate of $20,000$ people/yr. 
+
+A population that grows \emph{exponentially} increases at a constant \emph{relative} rate, perhaps at the rate of $20\%$/yr. To understand what this means, suppose the population was $P$ at the start of the year 2020. Then one year later the population would be $20\%$ greater, or 
+\[
+   P + 20\% P  = P + 0.2 P = 1.2P .
+\]
+We call 1.2 the \emph{annual growth factor}. To get the population one year from, we just multiply the current population by this factor of 1.2
+
+\begin{question}  \label{Q00:EwonentialG}
+A population grows exponentially, increasing by $25\%$ each year. Suppose the current population is $P$.
+
+(a) What will the population be one year from now?
+\[
+\answer{1.25P}
+\]
+ 
+(b) What was the population one year ago?
+\[
+\answer{0.8P}
+\]
+
+(c) What will the population be three years from now?
+\[
+\answer{1.953125P}
+\]
+
+(d) What is the three-year growth factor?
+\[
+\answer{1.953125}
+\]
+
+(e) What is the relative change in the population over a three-year period?
+\[
+\text{The population increases by } \answer{95.3125}\% \text{ every three years.}
+\]
+
+\end{question}
+
+
+\section{Point-Slope vs. Point-Growth, Part 1}
+
+\begin{example} \label{E56dw44}
+Suppose the population of a (small) colony of bacteria is $40,000$ at 2pm and $50,000$ at 3pm.
+
+\begin{enumerate}
+
+\item Suppose first that between 2pm and 8pm the population is a linear function of time.
+
+\begin{enumerate}
+\item What does it mean for the population to be a linear function of time? Explain in everday English. No math terms.
+
+\item Find the population's growth rate.
+
+The population increases at the constant rate of $\answer{10000}$ bac/hour.
+
+\item Let 
+\[
+      P = f(t) , 2\leq t \leq 8 ,
+\]
+be a function that expresses the population in terms of the number of hours past noon.
+
+Find an expression for the function $P=f(t)$. Use point-slope!
+
+\end{enumerate}
+
+\item Next suppose that between 2pm and 8pm the population is an exponential function of time.
+
+\begin{enumerate}
+\item What does it mean for the population to be an exponential function of time? Explain in everday English. No math terms.
+
+\item Compute the one-hour growth factor. What are its units?%At what rate does the population grow?
+
+\item Interpret the meaning of the one-hour growth factor.
+
+Every hour the population gets multipled by $\answer{1.25}$.
+
+\pskip
+
+Or, every hour the population increases by $\answer{25}\%$.
+
+
+\item Let 
+\[
+      P = f(t) , 2\leq t \leq 8 ,
+\]
+be a function that expresses the population in terms of the number of hours past noon.
+
+\begin{enumerate}
+\item Use common sense (do not rely on a formula) to evalute $f(8)$. Show the complete computation. Include units for every number. Explain your reasoning. Click the arrow to the lower right for guidance.
+\begin{expandable}
+The key idea is to use the one-hour growth factor of $\answer{1.25}$. Because each hour the population gets mutiplied by the factor $\answer{1.25}$ and because the length of the time interval from 2pm to 8pm is
+\[
+   \Delta t = \answer{8} \text{ hrs} - \answer{2}\text{ hrs} = \answer{6} \text{ hrs} , 
+\] 
+we need only mutiply the population at 2pm by the factor $\answer{1.25}$ six times. So the population at 8pm is
+\[
+   f(8) = f(2) (\answer{1.25})^{\answer{6}} = \answer{40000} (\answer{1.25})^{\answer{6}} 
+\]
+bacteria.
+ 
+\end{expandable}
+
+\item Use the same reasoning to find an expression for the function $P=f(t)$. Explain this reasoning.
+\end{enumerate}
+\end{enumerate}
+
+\end{enumerate}
+\end{example}
+
+
+\section{Point-Slope vs. Point-Growth, Part 2}
+
+\begin{question}   \label{Q22:sdww}
+(a) Suppose that a colony of bacteria has a population of 100,000 at 1pm and a population of 490,000 at 4pm. Find functions 
+\[
+   P = f(t) \, , 0\leq t \leq 10 ,
+\]
+and 
+\[
+   P = g(t) \, , 0\leq t \leq 10 ,
+\]
+that express the population (measured in thousands of bacteria) in terms of the number of hours past noon assuming the population grows a constant rate (the function $f$) and at a constant relative rate (the function $g$), respectively. Use point-slope for $f$. {\bf Explain the logic behind the expressions for each function.}
+
+Enter these functions in the worksheet below. Compare their behaviors over the given domain.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/bwine7dcmg}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{bwine7dcmg}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\pskip
+
+
+\end{question}
+
+
+
+
+
+\end{document}
