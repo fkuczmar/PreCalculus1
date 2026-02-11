@@ -52,7 +52,7 @@ A population grows exponentially, increasing by $25\%$ each year. Suppose the cu
 
 \section{Point-Slope vs. Point-Growth, Part 1}
 
-\begin{example} \label{E56dw44}
+\begin{question} \label{E56dw44}
 Suppose the population of a (small) colony of bacteria is $40,000$ at 2pm and $50,000$ at 3pm.
 
 \begin{enumerate}
@@ -118,13 +118,13 @@ bacteria.
 \end{enumerate}
 
 \end{enumerate}
-\end{example}
+\end{question}
 
 
 \section{Point-Slope vs. Point-Growth, Part 2}
 
 \begin{question}   \label{Q22:sdww}
-(a) Suppose that a colony of bacteria has a population of 100,000 at 1pm and a population of 490,000 at 4pm. Find functions 
+(a) Suppose that a colony of bacteria has a population of 100,000 at 1:00pm and a population of 490,000 at 4:00pm. Find functions 
 \[
    P = f(t) \, , 0\leq t \leq 10 ,
 \]
@@ -149,6 +149,47 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 
 \pskip
+
+\begin{explanation}
+For the exponential growth model, the \emph{three-hour} growth factor is
+\[
+               \frac{490,000 \text{ bac}}{100,000\text{ bac}} = 4.9 .
+\]
+This means every three hours the population increases by $\answer{390}\%$.
+
+Now let $g$ be the one-hour growth factor. Then 
+\[
+   g^3 = 4.9
+\]
+and 
+\[
+  g = (4.9)^{\frac{1}{3}} .
+\]
+
+This means that every hour the population get multiplied by $g = (4.9)^{\frac{1}{3}}$.
+
+How would we find, for example, the population at 5pm? 
+
+We'll base our computation on the population at 1:00pm. Since there are
+\[
+      5 \text{ hours} - 1 \text{ hours} = 4 \text{hours}
+\]
+from 1pm to 5pm, we get the population at 5pm by taking the population at 1:00pm (100,000) and multiplying it by $g^4$. So the population at 5pm is
+\begin{align*}
+  g(2) &= 100,000 (g^{5-1})  \\
+          &= 100,000 g^4 \\
+         &= 100,000 \left( (4.9)^{\frac{1}{3}} \right)^4
+\end{align*}
+
+The same logic shows that the population at time $t$ hours past noon is
+\begin{align*}
+  P &= g(t) \\
+          &= 100,000 (g^{t-1})  \\
+           &= 100,000 \left( (4.9)^{\frac{1}{3}} \right)^{t-1} \\
+           &= 100,000 \left( (4.9)^{\frac{1}{3}\left(t-1\right)}  \right) \, , \, 0\leq t \leq 10 .
+\end{align*}
+
+\end{explanation}
 
 
 \end{question}
