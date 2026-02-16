@@ -1,0 +1,140 @@
+\documentclass{ximera}
+\title{Exponential Growth CW2}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Exponential functions and their inverses.
+\end{abstract}
+\maketitle
+
+
+\section{Air Pressure}
+
+\begin{question}   \label{Q88:ExpentialG}
+Suppose that between sea level and an altitude of 10 km,  air pressure is an exponential function of altitude. Suppose further that the pressure is 14.7 pounds/(square inch) at sea level and 10.17 pounds/(square inch) at an altitude of 3 km.
+
+\begin{enumerate}
+\item What happens to the air pressure when the altitude increases by 3 km?
+
+\item What happens to the air pressure when the altitude increases by 1 km?
+
+\item Find a function
+\[
+    P = f(h) \, , 0\leq h \leq 10,
+\]
+that expresses the pressure (measured in lbs/(square inch) in terms of the altitude (measured in kilometers). Enter the function below.
+\[
+      f(h) = \answer{14.7(10.17/14.7)^{h/3}} \, , 0\leq h \leq 10 .
+\]
+
+\item Enter your function in Line 1 of the exploration below (ie. replace the incorrect function $f(h)=14.7-h$ with the correct one) and use the graph to estimate the altitude at which the pressure is 7 lbs/(square inch).
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/a8d1scpez0}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{a8d1scpez0}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\end{enumerate}
+\end{question}
+
+
+\section{Describe the Growth}
+
+\begin{question} \label{Q23:ExponentialG54}
+(a) The function 
+\[
+   f(t) = P_0 (2^{t/33}) \, , -10\leq t \leq 50 ,
+\]
+expresses the population of a country in terms of the number of years past 1940. Describe precisely how the population grows. Do not use a calculator.
+
+(b) The function 
+\[
+   m = m_0 \left( \frac{3}{4} \right)^{t/1300} \, , -10,000\leq t \leq 1000 ,
+\]
+expresses the mass (in kilograms) of a radiocative compound in terms of the number of years since 1900. Describe precisely how the mass decays. Do not use a calculator.
+
+\end{question}
+
+
+\section{Changes in Time, Linear vs. Exponential}
+
+\begin{question} \label{QLDFerF}
+A diner sells an average of $50$ burgers/day at a price of $\$8$/burger and an average of $20$ burgers/day at a price of $\$13$/burger. What happens to the average number of burgers it sells per day if the diner decrease the price by $\$0.50$/burger? Assume
+\begin{enumerate}
+\item The average number of burgers sold/day is a linear function of the price.
+
+\item The average number of burgers sold/day is an exponential function of the price. Give an exact answer \emph{without} using a calculator. Then use a calculator to given an approximation.
+\end{enumerate}
+\end{question}
+
+\section{Working in General}
+\begin{question} \label{QpDfreg91}
+The population of a colony of bacteria is $P_0$ at time $t_0$ hours past noon and $P_1$ at time $t_1$ hours past noon.
+
+Find an expression for the population at time $t$ hours past noon. Assume
+\begin{enumerate}
+\item The population is a linear function of time.
+
+\item The population is an exponential function of time.
+\end{enumerate}
+\end{question}
+
+\section{A Cooling Cup of Coffee}
+\begin{question} \label{E5g4hgy344}
+At noon a cup of coffee at a temperature of $100^\circ$C is placed in a room held at a constant temperature of $20^\circ$C.
+
+\begin{enumerate}
+\item Sketch by hand a reasonable graph for the function
+\[
+ T = f(m) , m\geq 0 ,
+\]
+that expresses the temperature of the coffee (measured in Celsius degrees) in terms of the number of minutes past noon. Explain your reasoning. Label your axes iwth the appropriate variable names and units.
+
+\item Is it possible that $f$ is an exponential function? Explain your reasoning.
+
+\item Suppose that the temperature of the coffee is $70^\circ$C at 12:10pm. Suppose also that the temperature difference between the coffee and the room decreases exponentially.
+
+\begin{enumerate}
+
+\item Describe how the temperature difference changes. Be precise.
+
+\item Find an expression for the temperature difference (in Celsius degrees)
+\[
+    d =  f(m) - 20 , m\geq 0
+\]
+between the coffee and the room at time $m$ minutes past noon.
+
+\item Find an expression for  the function
+\[
+ T = f(m) , m\geq 0 ,
+\]
+that expresses the temperature of the coffee in terms of the number of minutes past noon.
+
+\item Graph the function $T=f(m)$.
+
+\item According to this model, what is the temperature of the coffee at 12:30pm?
+
+\item Does the model seem realistic? Explain. If not, what might be a more reasonable temperature for the coffee at 12:10pm?
+
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{QPfmerer4z}
+At noon a cup of coffee at a temperature of $90^\circ$C is placed in a room held at a constant temperature. At 12:10pm the temperature of the coffee is $60^\circ$C and at 12:20pm the temperature is $44^\circ$C. Find the temperature of the room. Assume the difference in temperature between the coffee and the room decreases exponentially. Start by defining an unknown in a complete sentence, with units.
+\end{question}
+
+
+
+
+\end{document}
