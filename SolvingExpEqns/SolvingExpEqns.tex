@@ -15,7 +15,139 @@ Solving exponential equations.
 
 \section{Introduction}
 
+To solve an exponential equation is exactly like solving any other equation. We undo the action of the function by udoing each of its actions in the reverse order. The only thing new here is to use the \emph{correct} logarithm function to undo an exponential function. 
 
+Here are some examples.
+
+
+\begin{example} \label{Eldf3r0g9g}
+Let
+\[
+     f(t) = 3 \cdot 2^t .
+\]
+
+\begin{enumerate}
+\item Evaluate $f(-4)$.
+
+\item Describe the action of $f$ on its input.
+
+\item Describe the action of $f^{-1}$ on its input.
+
+\item Use your description from part (c) to solve the equation $f(t) = 36$. Write your answer as a solution set.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item 
+\[
+        f(-4) = 3 (2^{-4}) = 3\left( \frac{1}{16}\right) = \frac{3}{16} .
+\]
+
+\item The function $f$ first exponentiates the input base $2$. That is, the function first raises $2$ to the power of the input. Then the function multiplies the result by $3$.
+
+\item The inverse function $f^{-1}$ first divides its input by $3$. Then it undoes exponentiation base $2$ with the logarithm function base $2$. So the function $f^{-1}$ first divides its input by $3$ and then takes the logarithm base $2$ of the result.
+
+\item To solve the equation 
+\[
+   f(t) = 3\cdot 2^t = 36 ,
+\]
+we first divide both sides by $3$ to get
+\[
+    2^t = 12 .
+\]
+Then to undo the exponential function base $2$, we use the logarithm function base $2$. This gives us
+\[
+    \log_2 (2^t) = \log_2(12) .
+\]
+But since the log function base $2$ undoes the exponential function base $2$, 
+\[
+     \log_2 (2^t) = t.
+\]
+So 
+\[
+    t = \log_2(12).
+\]
+The solution set of the equation 
+\[
+   f(t) = 3\cdot 2^t = 36
+\]
+is
+\[
+ \{ t | t = \log_2(12) \sim 3.585 \}.
+\]
+
+Without the commentary, 
+\[
+   3 \cdot 2^t = 36
+\]
+if and only if
+\[
+   2^t = 12, 
+\]
+if and only if
+\[
+    t = \log_2(12).
+\] 
+\end{enumerate}
+
+\emph{Important Points:} 
+
+\begin{enumerate}
+\item Many texts solve the equation 
+\[
+    2^t = 12
+\]
+by either taking the logarithm base $10$ or base $e$ of both sides and then using properties of logarithms. While this method works, it obscures the main idea of undoing the exponential function base $2$ with the log function base $2$. {\bf DO NOT USE THIS METHOD IN THIS CLASS. USE THE FIRST METHOD INSTEAD.} 
+
+\item To approximate the value of $\log_2(12)$ use desmos by inputting this expression directly.
+
+\end{enumerate}
+
+\end{explanation}
+
+\end{example}
+
+\begin{example} \label{Ex3r3mfe}
+Solve the equation
+\[
+        12 \cdot 3^t = 2 \cdot 5^t .
+\]
+Write your answer as a solution set.
+\begin{explanation}
+Dividing both sides of the equation by $2$ gives
+\[
+      6 \cdot 3^t  = 5^t .
+\]
+Then divide both sides by $3^t$ to get
+\[
+    \frac{5^t}{3^t} = 6 ,
+\]
+or equivalently
+\[
+    \left( \frac{5}{3} \right)^t = 6 .
+\]
+Now undo the exponential function base $5/3$ with the log function base $5/3$ to get
+\[
+          \log_{\frac{5}{3}} \left( \frac{5}{3} \right)^t = \log_{\frac{5}{3}} (6) ,
+\] 
+or equivalently
+\[
+     t = \log_{\frac{5}{3}} (6) .
+\]
+
+So the solution set to the equation
+\[
+      6 \cdot 3^t  = 5^t .
+\]
+is
+\[
+   \{ t | t =  \log_{\frac{5}{3}} (6) \sim   3.508    \}.
+\]
+\end{explanation}
+
+
+\end{example}
 
 
 
