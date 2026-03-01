@@ -5,25 +5,188 @@
 
 \begin{document}
 \begin{abstract}
-The scalar product.
+Compound interest and the number $e$.
 \end{abstract}
 \maketitle
 
 
 \section{Compound Interest}
+ 
+\emph{Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it.} - Albert Einstein
+
+\pskip \pskip
+ 
+\begin{example} \label{Exdf831e3mzx}
+An investment of $\$1,000$ earns interest at the \emph{nominal} rate of $12\%$/yr, compounded quarterly.
+
+Find a function 
+\[
+   B = f(t) \, , \, t\geq 0,
+\]
+that expresses the balance (in dollars) in terms of the number of years since the investement was made.
+
+\begin{explanation}
+\emph{Nominal} means \emph{in name only}, and originates from the Latin \emph{nominalis} (relating to a name). Other words with the same root are 
+
+\begin{enumerate}
+\item \emph{nombre} (Spanish for \emph{name}).
+
+\item \emph{nominate}
+
+\item \emph{denomination}
+\end{enumerate}
+
+An investement that earns interest at the nominal rate of $12\%$/yr, compounded quarterly, does \emph{not} increase by $12\%$ each year. Rather, it increases at the \emph{effective} rate of 
+\[
+   \frac{12\%/\text{ yr}}{4 \text{ quarters/year}} = 3\%/\text{quarter} .
+\]
+This means that every quarter (3 months) the balance increases by $3\%$ and the one-quarter growth factor is
+\[
+   g = \answer{1.03} .
+\]
+So the one-year growth factor is
+\[
+   g^{\answer 4} = \answer{1.03^4} = 1.12550881.
+\]
+So every year the balance increases by 
+\[
+     \answer{12.550881}    \% 
+\]
+and the effective interest rate is
+\[
+               \answer{12.550881}    \% / \text{yr} . 
+\]
+
+So every year the balance gets multiplied by $g^4$ and with an initial investment of $\$1,000$, function that gives the balance (in dollars) after $t$ years is
+\begin{align*}
+   B &= f(t)  \\
+      &= 1000\left( \answer{g^4} \right)^t  \\
+      &= 1000\left( 1.03^4 \right)^{\answer{t}} \\ 
+     &= 1000(1.03)^{\answer{4t}}
+\end{align*}
+
+\end{explanation}
+\end{example}
+
+\begin{example} \label{ExLdferr3r3}
+An investment of $\$1,000$ earns interest at the \emph{nominal} rate of $12\%$/yr, compounded monthly.
+
+\begin{enumerate}
+\item Find a function 
+\[
+   B = f(t) \, , \, t\geq 0,
+\]
+that expresses the balance (in dollars) in terms of the number of years since the investement was made.
 
 
+\item Find the balance after 10 years.
 
-\begin{question}  \label{ExLMsdf3Er3}
+\item Find the balance after 40 years.
+
+\item When is the balance $\$1,000,000$?
+
+\item How much interest does the investment earn in the 10th year? The 40th year?
+
+\item How much interest does the investement earn in the one-year period that starts when the balance is $\$100,000$?
+
+\item Find a one-year period during which the investment earns $\$1,000$. Do not use a calculator. Then use a calculator to approximate the beginning of the one year period.
+
+Start by defining an unknown, with units in a complete sentence.
+
+\end{enumerate}
+\end{example}
+
+
+\section{The Number $e$}
+
+\begin{example}  \label{E9re3rfdmer3110}
+An investment of $\$1$ earns interest at the \emph{nominal} rate of $100\%$/yr.
+
+Find the one-year growth factor if interest is compounded
+\begin{enumerate}
+\item annually
+
+\item quarterly
+
+\item monthly
+
+\item daily
+
+\item $1000$ times per year
+
+\item $10000$ times per year
+
+Use the worksheet below to help.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{18pdjhgnrm}{900}{600}
+\desmos{1mbeajby8bb}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/18pdjhgnrm}{163: Hanging Weight and Tension 2}
+\href{https://www.desmos.com/calculator/mbeajby8bb}{163: Hanging Weight and Tension 2}
 
-\end{question}
+\end{enumerate}
+\end{example}
+
+\emph{The Takeaway:} The number $e\sim 2.71828...$ is the one-year growth factor for an investment earning a nominal rate of $100\%$/yr, compounded continuously.
+
+\begin{example} \label{ExKdf3rdf}
+An investment of $\$1000$ earns interest at the nominal rate of $100\%$/yr.
+
+\begin{enumerate}
+\item Find functions 
+\[
+   B = f(t) \, , \, t\geq 0,
+\]
+and 
+\[
+  B = h(t) \, , \, t\geq 0,
+\]
+that express the balance (in dollars) in terms of the number of years since the investement was made if interest is compounded
+\begin{enumerate}
+\item $10$ times per year ($f$)
+
+\item continuously ($g$).
+\end{enumerate} 
+
+\item Use your functions to answer each of the following questions. Compare your answers.
+
+\begin{enumerate}
+\item Find the balance after $10$ years.
+
+\item When is the balance $\$1,000,000$?
+
+\item Find a two-year period during which the investment earns $\$1,000,000$ in interest.
+\end{enumerate}
+\end{enumerate}
+
+\end{example}
+
+
+\begin{example}  \label{ExPfl3r8r3f31}
+An investment of $\$1000$ earns interest at the nominal rate of $25\%$/yr, compounded continuously.
+
+\begin{enumerate}
+\item Find the four-year growth factor.
+
+\item Find the one-year growth factor.
+
+\item Find a function 
+\[
+   B = f(t) \, , \, t\geq 0,
+\]
+that expresses the balance (in dollars) in terms of the number of years since the investement was made.
+
+\item Find the balance after $40$ years and compare with your answer to Question (b) (i) of Example 4.
+
+\item When is the balance $\$1,000,000$? Compare with your answer to Question (b) (ii) of Example 4.
+
+\item Find an $8$-year period during which the investement earns $\$1,000,000$ in interest. Compare with your answer to Question (b) (iii) of Example 4.
+\end{enumerate}
+
+
+\end{example}
+
 
 \end{document}
