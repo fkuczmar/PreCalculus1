@@ -10,8 +10,145 @@ Catenaries the number $e$.
 \maketitle
 
 
-\section{Introduction}
+The number $e$ comes up in unexpected places. Here's one.
 
-The number $e$ comes up in unexpected places. 
+\section{The Hyperbolic Cosine and Sine Functions}
+
+The function \emph{hyperbolic cosine} is defined as
+\[
+    \cosh(x) = 0.5(e^x + e^{-x}  ).
+\]
+
+Its graph is shown below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nubdwzgsa9}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nubdwzgsa9}{152: Hyp Cosine}
+
+\begin{enumerate}
+\item Drag the slider $u$ in Line 2 of the worksheet above. Explain how to get the graph of the function $y=\cosh x$ from the graphs of the functions $y=e^x$ and $y=e^{-x}$.
+
+\begin{freeResponse}
+\end{freeResponse}
+
+\item What is the range of the function $f(x)=\cosh x$?
+
+\item Is the function $f(x)=\cosh x$ one-to-one? If not, what would be one way to restrict its domain to get a new function that is one-to-one and has the same range as $f$?
+
+\item Activate the folder \emph{Hyperbolic Sine Function} in Line 15 above to see the graph of the hyperbolic sine function
+\[
+   \sinh(x) = 0.5(e^x - e^{-x}  ).
+\]
+\item Drag the slider $u$ in Line 2 of the worksheet above. Explain how to get the graph of the function $y=\cosh x$ from the graphs of the functions $y=e^x$ and $y=e^{-x}$.
+\begin{freeResponse}
+\end{freeResponse}
+
+\item What is the range of the function $g(x)=\sinh x$?
+
+\item Is the function $g(x)=\sinh x$ one-to-one?
+
+\item Prove that 
+\[
+      \cosh^2x - \sinh^2x = 1.
+\]
+
+\emph{Hint: For a quick way, first factor the above expression.}
+
+
+\end{enumerate}
+
+
+\section{Hanging Chains}
+
+Hold the ends of a chain and let the chain sag under its own weight. The resulting curve looks like a parabola, and so it was thought. But it turns out that this is not correct. 
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{tj3dz2cnf0}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/tj3dz2cnf0}{152: Hanging Chain 1}
+
+
+\begin{enumerate} 
+
+\item To see that the dashed (orange) chain in the worksheet above is \emph{not a parabola} drag the slider $c$ in Line 2.
+
+\item It turns out that a chain with uniform density hanging in a uniform graviatational field assumes the shape of the hyperbolic cosine function $y=\cosh x$ (we'll see why later in the course). All that's needed to describe a particular chain is to scale the size of the graph by some factor. Test this by dragging the slider $a$ in Line 6 to make the graph of the function
+\[
+     f(x) = -a + a\cosh(x/a)
+\]
+match the highlighted (orange) chain below.
+\end{enumerate}
+
+
+\section{Some Questions}
+
+\begin{question} \label{QLfeenvd}
+\begin{enumerate}
+\item Find an expression for the inverse of the function
+\[
+     f(x) = \cosh x = \frac{1}{2}\left( e^x + e^{-x} \right) \, , \, x\geq 0.
+\]
+Start by making the substutition $u=e^x$. Solve the resulting quadratic equation by completing the square.
+
+\item Find an expression for the inverse of the function
+\[
+    g(x) = \sinh x = \frac{1}{2}\left( e^x + e^{-x} \right) \, , \, x\in \mathbb{R}.
+\]
+Start by making the substutition $u=e^x$. Solve the resulting quadratic equation by completing the square.
+
+\item Simplify the composition
+\[
+       f(g^{-1}(x))
+\]
+as much as possible.
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qmdfmzmcp023}
+The function
+\[
+    h = f(x) = h_0 + a\cosh(x/a) \, , \, x\geq 0,
+\]
+expresses the height (in feet) of a point on hanging chain in terms of its distance (in feet) from the chain's axis of symmetry.
+
+The function
+\[
+      s = g(x) = a\sinh(x/a) \, , \, x\geq 0,
+\]
+gives the length of the chain (in feet) measured from its low point to a point on the chain $x$ feet from the chain's axis of symmetry.
+
+\begin{enumerate}
+
+\item What are the units of $h_0$? How do you know?
+
+\item What are the units of $a$? How do you know?
+
+\item Find a function
+\[
+     h = w(s) \, , \, s\geq 0,
+\]
+that expresses the height (measured in feet) of a point $P$ on the chain in terms of the length of the chain from its low point to $P$.
+
+\end{enumerate}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{5oppqdy2l1}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/5oppqdy2l1}{141: Catenary}
+
+
+\end{question}
+
 
 \end{document}
