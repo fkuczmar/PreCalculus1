@@ -130,13 +130,15 @@ is shown below.
 
 \item Is $f$ one-to-one? If not, what would be one way to restrict its domain to get a new function that is one-to-one and has the same range as $f$?
 
-\item Find an expression for the inverse of the function
+\item Find an expression $x=c^{-1}(y)$ for the inverse of the function
 \[
-    c(x) = \frac{1}{2}\left( e^x + e^{-x} \right).
+   y= c(x) = \frac{1}{2}\left( e^x + e^{-x} \right) \, , \, x\geq 0.
 \]
+Start by making the substitution $u=e^x$ to get a quadratic equation in $u$. Then complete the square to solve for $u$ in terms of $y$. Then substitute back $u=e^x$ to solve the original equation for $x$ in terms of $y$.
 
-Start by making the substitution $u=e^x$ to get a quadratic equation in $u$. Then complete the square.
+\item State the domain of the function $x = c^{-1}(y)$. Use set-builder notation.
 
+\item Verify algebraically that $c^{-1}$ undoes $c$ and that $c$ undoes $c^{-1}$.
 
 
 \item Activate the folder \emph{Hyperbolic Sine Function} in Line 15 above to see the graph of the hyperbolic sine function
@@ -144,14 +146,18 @@ Start by making the substitution $u=e^x$ to get a quadratic equation in $u$. The
   g(x) =  \sinh(x) = \frac{1}{2}\left( e^x - e^{-x} \right).
 \]
 
-\item Is the function $g$ one-to-one?
+\item Is the function $g$ one-to-one? Explain.
+\begin{freeResponse}
+\end{freeResponse}
 
-\item Find an expression for the inverse of the function
+\item Find an expression for the inverse $x =g^{-1}(y)$ of the function
 \[
-    g(x) = \frac{1}{2}\left( e^x + e^{-x} \right).
+   y= g(x) = \frac{1}{2}\left( e^x - e^{-x} \right).
 \]
 
-Start by making the substitution $u=e^x$ to get a quadratic equation in $u$. Then complete the square.
+Start by making the substitution $u=e^x$ to get a quadratic equation in $u$. Then complete the square as before.
+
+\item Verify algebraically that $g^{-1}$ undoes $g$ and that $g$ undoes $g^{-1}$.
 
 
 \end{enumerate}
@@ -188,25 +194,20 @@ match the highlighted (orange) chain below.
 \section{Some Questions}
 
 \begin{question} \label{QLfeenvd}
-\begin{enumerate}
-\item Find an expression for the inverse of the function
+Let
 \[
-     f(x) = \cosh x = \frac{1}{2}\left( e^x + e^{-x} \right) \, , \, x\geq 0.
+     f(x) = \cosh x = \frac{1}{2}\left( e^x + e^{-x} \right)
 \]
-Start by making the substutition $u=e^x$. Solve the resulting quadratic equation by completing the square.
-
-\item Find an expression for the inverse of the function
+and let
 \[
     g(x) = \sinh x = \frac{1}{2}\left( e^x + e^{-x} \right) \, , \, x\in \mathbb{R}.
 \]
-Start by making the substutition $u=e^x$. Solve the resulting quadratic equation by completing the square.
 
-\item Simplify the composition
+Simplify the composition
 \[
        f(g^{-1}(x))
 \]
 as much as possible.
-\end{enumerate}
 \end{question}
 
 \begin{question} \label{Qmdfmzmcp023}
