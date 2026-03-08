@@ -206,8 +206,30 @@ that expresses the balance (in dollars) in terms of the number of years since th
 \item Find an $8$-year period during which the investement earns $\$1,000,000$ in interest. Compare with your answer to Question (b) (iii) of Example 4.
 \end{enumerate}
 
-
 \end{example}
+
+
+\section{Summary}
+The key ideas about interest compounded continuously:
+
+\begin{enumerate}
+\item The number $e\sim 2.71828$ is the annual growth factor for an investment earning interest at a nominal rate of $100\%$/yr, compounded continuously.
+
+\item If instead the nominal rate is, for example, $5\%$/yr, then the annual growth factor would be $e^{0.05}$. Here's a quick way to understand why.
+
+A nominal rate of $5\%$/yr is equivalent to a nominal rate of
+\[
+    \frac{5\%}{\text{yr}} = \frac{5\%}{\text{yr}} \cdot \frac{20}{20} = \frac{100\%}{20 \text{yrs}} .
+\]
+So $e$ is the twenty-year growth factor for an investment earning interest at a nominal rate of $20\%$/yr, compounded continuously. And if $g$ is the annual growth factor for this investment, then
+\[
+  g^{20} = e
+\]
+ and (since $g>0$),
+\[
+    g = e^{1/20}  = e^{0.05} .
+\]
+\end{enumerate}
 
 
 \end{document}
