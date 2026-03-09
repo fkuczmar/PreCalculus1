@@ -33,6 +33,10 @@ The graph of the function $y=f(x)$ is just the one point  with coordinates $(-7,
 \item $h_8(x) = f \left( \frac{3-7x}{x-3} \right)$
 
 \item $h_9(x) = f(b + mx) \, , \, m\neq 0$
+
+\item $h_{10}(t) = f\left( \left| t  \right| \right)$
+
+\item $h_{11}(t) = f\left( \left|7 t +3 \right| \right)$
 \end{enumerate}
 
 \end{question}
@@ -47,13 +51,13 @@ The point $(a,b)$ lies on the graph of the function $y=f(x)$. Find the coordinat
 
 \item $g_2(x) = f(2x)$
 
-\item $g_3(x) = f\left( \frac{23}{13}x \right)$
+\item $g_3(t) = f\left( \frac{23}{13}t \right)$
 
 \item $g_4(x) = f(-x)$
 
-\item $g_5(x) = f\left( -\frac{7}{12}x \right)$
+\item $g_5(t) = f\left( -\frac{7}{12}t \right)$
 
-\item $g_6(x) = f(x-12)$
+\item $g_6(t) = f(t-12)$
 
 \item $g_7(x) = f(x+5)$
 
@@ -70,9 +74,11 @@ The point $(a,b)$ lies on the graph of the function $y=f(x)$. Find the coordinat
 \begin{question} \label{QMENFE3d0}
 The point $(a,b)$ lies on the graph of the function $y=f(x)$. What point lies on the graph of the function
 \[
-       h(x) = f(g(x))?
+       h(t) = f(g(t))?
 \]
-Assume $g$ is one-to-one and that $b$ is in range of $g$. What if $b$ is not in the range of $g$? What if $g$ is not one-to-one?
+Assume $g$ is one-to-one and that $b$ is in range of $g$. 
+
+What can you say if $b$ is not in the range of $g$? What if $g$ is not one-to-one?
 \end{question}
 
 
@@ -99,18 +105,18 @@ The graph of the function $y=f(x)$ is shown below.
 
 \item $g_1(x) = f(x-12)$
 
-\item $g_2(x) = f(9x + 18)$
+\item $g_2(t) = f(9t + 18)$
 
-\item $g_3(x) = f(x^2)$
+\item $g_3(t) = f(t^2)$
 
-\item $g_4(x) = f(2^x)$
+\item $g_4(t) = f(2^t)$
 \end{enumerate}
 
 \end{enumerate}
 \end{question}
 
 
-\section{An Application}
+\section{Applications}
 
 \begin{question} \label{QKdfm3re32}
 The function
@@ -132,11 +138,15 @@ We'll assume there are exactly $1.6$km in one mile and exactly $4$ liters in one
 
 \item Find the coordinates of a point on the graph of the function $G=h(s)$.
 
+\item If the point with coordinates $(a,b)$ lies on the graph of $G=f(m)$, what are the coordinates of the corresponding point on the graph of $L=h(s)$?
+
 \item Express the function $h$ in terms of $f$. Use the correct input and the correct output.
+
+\item If the point with coordinates $(a,b)$ lies on the graph of $L=h(s)$, what are the coordinates of the corresponding point on the graph of $G=f(m)$?
 
 \item Express $f$ in terms of $h$. Use the correct input and the correct output.
 
-\item Use the graph of the function $G=f(m)$ below to sketch (by hand) a graph of the function $L=h(s)$.
+\item Use the graph of the function $G=f(m)$ below to sketch (by hand) a graph of the function $L=h(s)$. Label the axes with the appropriate variable names and units.
 
 \begin{onlineOnly}
     \begin{center}
@@ -144,14 +154,52 @@ We'll assume there are exactly $1.6$km in one mile and exactly $4$ liters in one
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/nh0w4bcvby}{163: Gas Consumption Trans}
-
-
-
+\href{https://www.desmos.com/calculator/nh0w4bcvby}{141: Gas Consumption Trans}
 \end{enumerate}
 \end{question}
 
+\begin{question} \label{Q9d9r3mdf32}
+The function $h=f(\theta)$, $0\leq \theta \leq 1$, expresses your height (in feet) in terms of the rotation angle of a ferrris wheel (measured in fractions of a revolution from the downward vertical). Its graph is shown below.
 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{olrqe90xht}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/olrqe90xht}{141: Ferris Wheel 1}
+
+The function
+\[
+   h = g(t) \, , \, 0.5 \leq t \leq 3 ,
+\]
+expresses your height (in feet) in terms of the number of minutes past noon as you ride the ferris wheel. Its graph is shown below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{szsqtovplg}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/szsqtovplg}{141: Ferris Wheel 2}
+
+\begin{enumerate}
+\item What is the radius of the ferris wheel? Explain your reasoning.
+
+\item Graph the function
+\[
+       \theta = a(t) \, , \, 0.5 \leq t \leq 3 ,
+\]
+that expresses the rotation angle of the wheel (in revolutions) in terms of the number of minutes past noon. Label the axes with the appropriate variable names and units.
+
+\item Find an expression for the function $\theta=a(t)$.
+
+\item Express the function $g$ in terms of the function $f$. Use the appropriate variable names for the input and output.
+
+\item Express the function $f$ in terms of the function $g$. Use the appropriate variable names for the input and output.
+\end{enumerate}
+
+\end{question}
 
 
 \end{document}
