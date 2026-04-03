@@ -140,11 +140,101 @@ is
 \]
 
 
-\section{Completing the Square}
-
+\section{Completing the Square, Part 1}
 An important part of this class is developing algebra skills and so we will almost never rely on formulas. For solving equations this generally means not using the quadratic formula. Instead, we'll complete the square.
 
 Here's an example.
+
+\begin{example}  \label{Exmve83r23r}
+Solve the equation
+\[
+    x^2 + 18x -3 = 0.
+\]
+
+\begin{explanation}
+We start by adding $3$ to both sides of the equation to get
+\[
+   x^2 + 18x = 3.
+\]
+Next we write $18x$ as $9x + 9x$ and the equation as
+\[
+   x^2 + 9x + 9x = 3.
+\]
+The reason for doing this is to interpret the left side as the sum of three areas - one square with dimensions  $x\times x$ and two rectangles with dimensions $9\times x$. See the picture below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{hz4c6f7tio}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/hz4c6f7tio}{141: Completing the Square 22}
+
+Our problem now is to complete the square by finding the area of the missing square and adding that area to both sides of our equation
+\[
+    x^2 + 9x + 9x = 3.
+\]
+
+The key idea is to look at the two rectangles, each with area $9x$. We know the length of each rectangle is equal to the side length $x$ of the big red square. So the width of each rectangle must be
+\[
+    \frac{\answer{9x}}{\answer{x}} = 9 .
+\]
+
+So we now have the picture below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{arhlne3gxu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/arhlne3gxu}{141: Completing the Square 22B}
+
+This tells us that we should add the additional area $5^2$ to both sides of our last equation
+\[
+      x^2 + 9x + 9x = 3
+\]
+to get
+\[
+   x^2 + 9x + 9x + 9^2 = 3 + 9^2 .
+\]
+Now the left side is a perfect square. From the last picture we can see the big square (ie. the whole picture) has side length $x+9$. So our equation becomes
+\[
+   (x + 9)^2 = 84 .
+\]
+Then 
+\[
+   x + 9 = \pm \sqrt{84}
+\]
+and
+\[
+     x = -9 \pm \sqrt{84} .
+\]
+
+Our conclusion:
+
+The solution set to the equation
+\[
+      x^2 +18x - 3 = 0
+\]
+is
+\[
+ \left\{ x | x =  -9 \pm \sqrt{84} \right\} .
+\]
+
+
+\end{explanation}
+\end{example}
+
+
+
+
+
+
+
+\section{Completing the Square, Part 2}
+
+Here's an example where the leading coefficient is not $1$.
 
 \begin{example}  \label{Ex:er433r3rfsdstr}
 Solve the equation
