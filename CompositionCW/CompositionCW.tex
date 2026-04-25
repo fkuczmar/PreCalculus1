@@ -102,6 +102,8 @@ Use the graphs of the functions $y=f(x)$ and $y=g(x)$ below to answer the follow
 
 \item Evaluate $g(f(4))$.
 
+\item Evaluate $f(g(0))$
+
 \item Domains:
 
 \begin{enumerate}
@@ -127,11 +129,44 @@ Use the graphs of the functions $y=f(x)$ and $y=g(x)$ below to answer the follow
 \]
 Use the method of $u$-substitution to help explain your reasoning. Drag points $A$ and $B$ for help.
 
+\begin{explanation}
+To use the method of $u$-substitution, we hide the inner function by letting
+\[
+    u = g(x).
+\]
+Then our first step in solving the equation $f(g(x))=1$ is to solve the equation
+\[
+      f(u) = 1.
+\]
+From the graph of the function $f$ above, we know this equation has two solutions, 
+\[
+    u \sim 1.5  \text{ or } u\sim -1.4 .
+\] 
+Now we know
+\[ 
+    u = g(x) \sim 1.5 \text{ or } u = g(x) \sim -1.4.
+\]
+Using the graph of $g$, we see the first of these equations has no solution and the second has solutions
+\[
+   x \sim 3.2  \text{ or } x\sim -2.1 .
+\]
+
+So the solution set to the equation $f(g(x))= 1$ is
+\[
+      \{ x | x \sim -2.1 \text{ or } x\sim 3.2   \} .
+\]
+
+\end{explanation}
+
+
 \item Approximate the solutions to the equation
 \[
        f(f(x)) = f(-1/2).
 \]
-Use the method of $u$-substitution to help explain your reasoning. Drag points $A$ and $B$ for help.
+Use the method of $u$-substitution to help explain your reasoning. Drag points $A$ and $B$ for help. 
+
+Start by hiding the inner function by letting $u=f(x)$ and then solving the equation $f(u) = f(-1/2)$.
+ 
 
 
 \end{enumerate}
@@ -210,7 +245,7 @@ and
 \]
 
 
-Answer each of the following questions \emph{without} using the quadratic formula. Use set notation to write solution sets when solving an equation.
+Answer each of the following questions \emph{without} using the quadratic formula. Factor or complete the square instead. Use set notation to write solution sets when solving an equation.
 \begin{enumerate}
 
 \item Solve the equation $g(f(x))=23/10$. Use the method of $u$-substitution.
@@ -223,6 +258,43 @@ Answer each of the following questions \emph{without} using the quadratic formul
 
 \item Find the domain of the composition $g(g(g(x)))$. Use $u$-substitution and write the domain as a set.
 \end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item We start by hiding the inner function by letting $u=f(x)$ and solving the equation
+\[
+     g(u) = \frac{23}{10}. 
+\]
+This means we solve the equation
+\[
+        \frac{3u-5}{u-4} = \frac{23}{10} .
+\]
+Do this by multiplying both sides by $10(u-4)$ and killing the fractions to get
+\[
+       10 (3u-5) = 23 (u-4) .
+\]
+Then 
+\[
+      7u = \answer{-42}
+\]
+and $u=\answer{-6}$. 
+
+To finish, remember that $u=f(x)$, so we now need to solve the equation
+\[
+      f(x) = \frac{24}{x^2-x-6} = -6.
+\]  
+First divide both sides by $-6$ to get
+\[
+      \frac{-4}{x^2-x-6} = 1.
+\] 
+Then kill the fraction by multiplying both sides by $x^2 - x - 6$ to get
+\[
+      -4 = x^2 - x - 6 .
+\]
+I'll let you finish from here.
+
+\end{enumerate}
+\end{explanation}
 
 \end{example}
 
