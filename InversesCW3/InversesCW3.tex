@@ -1,0 +1,147 @@
+
+\documentclass{ximera}
+\title{Inverses CW3}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Review of inverse functions.
+\end{abstract}
+\maketitle
+
+\begin{question}  \label{Qdf3r344xxz}
+The function
+\[
+       Q = f(P) \, , \, 5 \leq P \leq 15,
+\]
+expresses the average number of burgers a diner sells per day in terms of the price (in dollars/burger).
+
+\begin{enumerate}
+
+\item Would you expect $f$ to be a one-to-one function? Explain your reasoning.
+
+\item Interpret the meanings of each of the following expressions.
+
+\begin{enumerate}
+\item $f(10)$
+
+\item $f^{-1}(30)$.
+
+\item $f^{-1}(f(6)-10)$
+
+\item $f(f^{-1}(30)-2)$
+
+%\item $f^{-1}(f(P)-10)$
+
+%\item $Q - f(f^{-1}(Q)-2)$
+
+\end{enumerate}
+
+\item Suppose the function $f$ is linear. Suppose also the diner sells an average of $50$ burgers/day when the price is $\$5$/burger and an average of $10$ burgers/day when the price is $\$15$/burger.
+
+\begin{enumerate}
+\item Find expressions for the functions $Q=f(P)$ and $P=f^{-1}(Q)$. Include a domain and range for 	each.
+
+\item Evaluate $f(f^{-1}(30)-2)$
+
+\item Let 
+\[
+      q = g(Q) = f(f^{-1}(Q)-2).   
+\]
+
+\begin{enumerate}
+\item Explain the meaning of the function $g$. What does it take as an input? What does it return as an output?
+
+\item Use algebra to find a simplified expression for the function $q=g(Q)$.
+
+\item Try to use logic instead of algebra to find a simplified expression for the function $q=g(Q)$.
+
+\item Use set builder notation to write the domain and range of the function $q=g(Q)$.
+
+\item Graph the function $q=g(Q)$. Label the coordinate axes with the appropriate variable names and units.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\end{question}
+
+\begin{question} \label{Qpve03}
+The function
+\[
+      V = f(t) \, , \, 0\leq t \leq 6,
+\]
+expresses the volume of water in a tank (measured in gallons) in terms of the number of minutes past noon.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+
+\begin{enumerate}
+\item Explain what it would mean for the function $f$ to be one-to-one in this particular scenario. Use everyday English. Avoid math terms like input and output.
+
+\item Explain what it would mean for the function $f$ to \emph{not} be one-to-one in this particular scenario. Use everyday English. Avoid math terms like input and output.  
+
+\item Now suppose 
+\[
+  V = f(t) = \frac{4}{3}\left( t-6 \right)^2 \, , \, 0\leq t \leq 6.
+\]
+
+
+\begin{enumerate}
+\item Sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. 
+
+\item Use your graph to determine if the function $f$ is one-to-one. Explain your reasoning in the context of this particular scenario.
+
+\item Describe the action of the function $f^{-1}$ in this particular scenario. What does it take as an input? What does it return as an output.
+
+\item Find an expression for the function $t = f^{-1}(V)$. 
+
+\item Write the domain and range of $f^{-1}$ in set notation.
+
+\item Simplify the composition $f\circ f^{-1}$ algebraically. Use the appropriate variable name for the input.
+
+\item Simplify the composition $f^{-1}\circ f$ algebraically. Use the appropriate variable name for the input.
+
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+\begin{question}\label{Qpfef3z}
+The function
+\[
+  h = f(t) = 320 - 5(t-6)^2 \, , \, 0\leq t \leq 14.
+\]
+expresses the height (in meters) of a rock in terms of the number of seconds since it was launched straight up. Its graph is shown below.
+
+\href{https://www.desmos.com/calculator/ew9jsipj5z}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nho1omvdtd}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ew9jsipj5z}{141:Rock}
+
+\begin{enumerate}
+\item Is function $f$ one-to-one? Explain your reasoning in this particular scenario.
+
+\item Find a function $T=u(h)$ that takes as an input a height (in meters) and returns as an output the time (in seconds past noon) when the rock was at that height and on its way up. Include the domain.
+
+\item Explain the meaning of the composition $u\circ f$.
+
+\item Find the domain of the composition $u\circ f$. Write it as a set with the appropriate variable.
+
+\item Use the graph of the function $f$ above to sketch a graph of the function $T= u(f(t))$. Explain your reasoning.
+
+\item Simplify the composition $T=u(f(t))$ alegebraically. Your final expression should involve the absolute value function. Then graph the composition and see how it compares with your sketch from part (d).  %Then find a piecewise-defined equivalent form of the composition.
+
+\item Find the inverse of the function $u$. Stop and think. You need not do any algebra for this.
+
+\item Repeat parts (a)-(f) for the function $T=d(h)$ that takes as an input a height (in meters) and returns as an output the time (in seconds past noon) when the rock was at that height and on its way down.
+\end{enumerate}
+\end{question}
+
+\end{document}
