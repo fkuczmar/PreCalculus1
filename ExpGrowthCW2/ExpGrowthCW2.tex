@@ -12,6 +12,61 @@ Exponential functions and their inverses.
 
 \section{Air Pressure}
 
+
+\begin{question} \label{Qewr3b3e}
+
+Between sea level and an altitude of 20 km,  air pressure on the planet Krypton is an exponential function of altitude. Suppose further that the pressure is 12 pounds/(square inch) at an altitude of 3.75km and 9 pounds/(square inch) at an altitude of  8.75 km.
+
+\begin{enumerate}
+\item Describe precisely how a change in altitude affects the pressure.
+
+\item Find the \emph{one-kilometer scaling factor}. This converts (by multiplication) the pressure at some altitude to the pressure at an altitude one kilometer higher.
+
+\item Use the result of part (b) to find a function
+\[
+    P = f(h) \, , 0\leq h \leq 20,
+\]
+that expresses the pressure (measured in lbs/(square inch) in terms of the altitude (measured in kilometers). 
+
+\item Find the exact pressure at an altitude of 6.25 km. Then use a calculator to approximate the pressure.
+
+\item Find the exact pressure at sea level.
+
+\item What happens to the air pressure when the altitude increases by 1 km?
+\end{enumerate}
+
+\begin{explanation}
+\item If the altitude increases by 
+\[
+    8.75\text{ km} - 3.75\text{ km} = 5 \text{ km},
+\]
+the pressure gets multiplied by the factor
+\[
+  \frac{12 \text{ lb/square inch}}{9 \text{ lb/square inch}} = \frac{3}{4}.
+\]
+In other words, if the altitude increases by $5$ km, the pressure decreases by $25\%$.
+
+\item Let $g$ be the one-kilometer scaling factor. Then $g^5$ is the five-kilometer scaling factor. Since
+\[
+ g^5 = 0.75 ,
+\]
+the one-kilometer scaling factor is
+\[
+  g = 0.75^{1/5}.
+\]
+
+\item Since the pressure gets multiplied by the one-kilometer scaling factor $g = 0.75^{1/5}$ for \emph{each} one-kilometer increase in altitude and the pressure is $12$ pounds/(square inch) at an altiude of $3.75$ km, the function is
+\begin{align*}
+ P &= f(h)  \\
+    &= 12 g^{h-3.75} \\
+    &= 12 \left( 0.75^{1/5} \right)^{h-3.75} \\
+    &= 12 (0.75)^{\frac{1}{5}(h-3.75)} \, , \, 0\leq h \leq 20.
+\end{align*}
+
+\end{explanation}
+
+\end{question}
+
 \begin{question}   \label{Q88:ExpentialG}
 Suppose that between sea level and an altitude of 10 km,  air pressure is an exponential function of altitude. Suppose further that the pressure is 14.7 pounds/(square inch) at sea level and 10.17 pounds/(square inch) at an altitude of 3 km.
 
