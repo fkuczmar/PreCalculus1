@@ -6,7 +6,7 @@
 
 \begin{document}
 \begin{abstract}
-Finding equation of circles passing through two given points.
+Finding equations of circles passing through two given points.
 \end{abstract}
 \maketitle
 
@@ -40,13 +40,19 @@ Access Desmos interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 
+\href{https://www.desmos.com/calculator/6lmpvfuqjk}{142: Circles Through Two Points}
+
 
 You should have noticed that the centers of circles through the points $A(3,5)$ and $B(6,-2)$ lie on a line. In fact, the centers are exactly the points on the perpendicular bisector of the segment $\overline{AB}$. The key to show why this is true is to realize that a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ exactly when (ie. if and only if) $P$ is equidistant (equally distant) from $A$ and $B$ (\emph{Why?}). 
 
 Now many of you already know that the set of points equidistant from $A$ and $B$ is the perpendicular bisector of the segment $\overline{AB}$ and we could use this to find an equation of the set of all such points. But because this is an algebra class, we will \emph{not} use this approach. Instead, we will translate the geometric condition that the center $P(x,y)$ be equidistant from $A(3,5)$ and $B(6,-2)$ into an equation.
 
+\end{explanation}
 
 \begin{question}   \label{Q0dfdf9e9ee}
+Use algebra to describe the set of points that are centers of circles through the points $A(3,5)$ and $B(6,-2)$.
+
+\begin{explanation}
 The point $P$ is the center of a circle through $A$ and $B$ if and only if the distances $\text{dist}(A,P)$ and $\text{dist}(B,P)$ are equal. That is, if and only if
 \[
    \text{dist}(A,P)  = \text{dist}(B,P) .
@@ -76,11 +82,97 @@ or equivalently that
  
 Type this equation in Line 24 of the above Desmos demonstration to make sure you are correct.
 
+\end{explanation}
 \end{question}
 
-\end{explanation}
 
-\pskip
+\begin{question} \label{Qdr383r7f3}
+Use algebra, \emph{not vectors}, to find equations for all circles with radius $10$ passing through the points $A(3,5)$ and $B(7,-1)$.
+
+\begin{explanation}
+\begin{enumerate}
+\item The first step is to find an equation of the set of points that are centers of circles through the given points. This is exacly like the last example. The result is that a point $P$ with coordinates $(x,y)$ is the center of a circle through the points $A(3,5)$ and $B(7,-1)$ if and only if
+\[
+   \answer{2x - 3y} = 4 .
+\]
+
+\item Next find coordinates of the midpoint of segment $\overline{AB}$. This point $M$ has coordinates
+\[
+   (x,y) = (\answer{5},\answer{2}) .
+\] 
+
+\item Now find the distance $r$ from $M$ of the center of a circle with radius $10$ through the points $A$ and $B$. This distance is
+\[
+   r = \answer{\sqrt{87}}.
+\]
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{5hjdvplzkk}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/5hjdvplzkk}{142: Circles Through Two Points 2}
+
+
+
+\item The center of a circle with radius $10$ through $A$ and $B$ must therefore lie on the circle centered at $M$ with equation 
+\[
+  \answer{\sqrt{(x-5)^2 + (y-2)^2}}   = \sqrt{87} .
+\]
+
+\item Finding the coordinates of the centers of all circles of radius $10$ through $A$ and $B$ now amounts to solving the system
+\[
+\begin{cases}
+          & 2x - 3y = 4 \\
+          &\sqrt{(x-5)^2 + (y-2)^2}   = \sqrt{87} 
+\end{cases}
+\]
+For this, solve the first equation for $x$ in terms of $y$ to get
+\[
+    x = \answer{2 + \frac{3}{2}y} .
+\]
+Then substitute this expression for $x$ in the second equation, square both sides to get
+\[
+         \left( \frac{3}{2}y - 3\right)^2 + (y-2)^2 = 87.
+\]
+Factor the coefficient of $y$ from the first term giving
+\[
+   \left( \frac{3}{2}(y - \answer{2})\right)^2 + (y-2)^2 = 87 
+\]
+or
+\[
+     \answer{\frac{9}{4}} \left( y-2  \right)^2 + (y-2)^2 = 87 .
+\]
+So
+\[
+    \answer{\frac{13}{4}}  \left( y-2  \right)^2 = 87 ,
+\]
+\[
+     (y-2)^2 = \frac{87(4)}{13},
+\]
+and
+\[
+    y = 2\pm \answer{2\sqrt{\frac{87}{13}}} .
+\]
+Then substitute these value of $y$ in the first equation to find the coordinates of the two circles with radius $10$ through the points $A$ and $B$. The centers have coordinates
+\[
+    (x,y) = \left( 5 \pm 3\sqrt{\frac{87}{13}}  , 2\pm 2\sqrt{\frac{87}{13}}  \right).
+\]
+
+\item So there are two circles with radius $10$ through the points $A(3,5)$ and $B(7,-1)$. Their equations are
+\[
+     \left( x - 5 - 3 \sqrt{\frac{87}{13}}  \right)^2  +  \left( y - 2 - 2\sqrt{\frac{87}{13}} \right)^2   = 100
+\] 
+and
+\[
+   \left( x - 5 + 3 \sqrt{\frac{87}{13}}  \right)^2  +  \left( y - 2 + 2\sqrt{\frac{87}{13}} \right)^2   = 100
+\]
+\end{enumerate}
+
+\end{explanation}
+\end{question}
+
 
 \begin{question} \label{Q1444sfdsf4433}
 (a) Find an equation of the smallest circle through the points $A(3,5)$ and $B(6,-2)$. Explain your reasoning thoroughly.
