@@ -90,6 +90,76 @@ This question is about finding an equation of the smallest circle passing throug
 \item Enter the exact coordinates of these points in Lines 19 and 20 in the above worksheet.
 
 \end{enumerate}
+
+\begin{explanation}
+The key idea is that the points on the circle closest to and farthest from point $B$ lie on the line through $B$ and the center of the circle. To find the coordinates of these closest and farthest points with algebra, we need to first find equations for the circle and the line.
+
+A point $P$ lies on the circle centered at the origin with radius $5$ if and only if $P$ is exaclty 5 units from the origin. So if $P$ has coordinates $(x,y)$, the distance from $P$ to the origin is $\sqrt{x^2+y^2}$ and $P$ lies on the circle if and only if
+\[
+     \sqrt{x^2 + y^2} = 5.
+\]
+
+To find an equation of the line through $B$ and the origin, we first find its slope. The slope is the rate of change of $y$ with respect to $x$ as we move along the line and is equal to 
+\[
+  \frac{\Delta y}{\Delta x} = \frac{3 - 0}{-2 - 0} = - \frac{3}{2}.
+\]
+Now the point $P$ (other than the origin) with coordinates $(x,y)$ lies on the line through the origin with slope $-3/2$ if and only if the line through the origin and $P$ has slope $-3/2$. Since the line through $(0,0)$ and $(x,y)$ has slope
+\[
+ \frac{\Delta y}{\Delta x} = \frac{y - 0}{x - 0} = \frac{y}{x},
+\]
+the point $(x,y)\neq (0,0$ lies on the line if and only if
+\[
+    \frac{y}{x} = -\frac{3}{2},
+\]
+or if and only if 
+\[
+ y = -\frac{3}{2}x.
+\]
+
+So the coordinates of the points where the line intersects the circle are the solutions to the system
+\[
+  \begin{cases}
+  & \sqrt{x^2 + y^2} = 5 \\
+  & y = -\frac{3}{2}x .
+\end{cases}
+\]
+
+To solve this system, substitute the expression for $y$ in the first equation into the second, then square both sides to get
+\[
+   \left( -\frac{3}{2}x \right)^2 + y^2 = 25.
+\]
+Then
+\[
+  \frac{13}{4}x^2 = 25 ,
+\]
+so
+\[
+    x^2 = \frac{100}{13},
+\]
+and 
+\[
+  x = \pm \frac{10}{\sqrt{13}}.
+\]
+If $x=\frac{10}{\sqrt{13}}$, then
+\[
+    y = -\frac{3}{2}x = -\frac{3}{2} \left(\frac{10}{\sqrt{13}}  \right) = -\frac{15}{\sqrt{13}}
+\]
+and if $x=-\frac{10}{\sqrt{13}}$,
+\[
+   y = \frac{15}{\sqrt{13}}.
+\]
+
+So the line through the origin and the point $B$ intersects the circle of radius $5$ centered at the origin in the points with coordinates,
+\[
+ (x,y) = \left(\frac{10}{\sqrt{13}} , -\frac{15}{\sqrt{13}}  \right) 
+\]
+and
+\[
+  (x,y) = \left(-\frac{10}{\sqrt{13}} , \frac{15}{\sqrt{13}}  \right).
+\]
+Looking at the graph, the first of these points is the point on the circle farthest from $B$, the second the point on the circle nearest $B$.
+\end{explanation}
+
 \end{question}
 
 
