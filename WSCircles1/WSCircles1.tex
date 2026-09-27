@@ -12,6 +12,37 @@ Some basic questions about circles.
 
 \begin{question}\label{Qpf3m390}
 Use the Pythagorean Theorem to find the exact distance between the points $A$ and $B$ with repsective coordinates $(3,-1)$ and $(-2,2)$. Start by plotting the points on a coordinate system. Then draw three segments to form a right triangle.
+
+\begin{explanation}
+Plot a third point, call it $C$, with coordinates $(3,2)$. Then $\Delta ABC$ is a right triangle with right angle at $C$. The two legs have lengths
+\[
+     a = BC = |3 - (-2)| = 5
+\]
+and
+\[
+     b = AC = | -1 - 2| = 3. 
+\]
+So by the Pythagorean Theorem the length of the hypotenuse of $\Delta ABC$ is
+\[
+ c = AB = \sqrt{5^2 + 3^2} = \sqrt{34}.
+\]
+This is the distance between points $A$ and $B$.
+
+Common errors:
+\begin{enumerate}
+\item Treating $A$ and $B$ as lengths. These are just \emph{names} of points, not lengths. They should not be part of  your computations.
+
+\item Writing $a^2 + b^2 = c^2$ without defining the meanings of $a$, $b$, and $c$.
+
+\item Omitting two write the coordinates of the third point $C$.
+
+\item Missing explanations about how to compute the lengths of the two legs.
+
+\end{enumerate}
+
+
+
+\end{explanation}
 \end{question} \label{Qkf31222}
 
 
@@ -32,10 +63,41 @@ A point $P$ lies on the circle with center $A(3,1)$ and radius $7$ if and only i
 \item Use your description of the circle in part (b) to find an equation of that circle.
 
 \end{enumerate}
+
+\begin{explanation}
+See the solutions to Examples 1 and 2 in the chapter \href{https://ximera.osu.edu/precalc1/PreCalculus1/Circles/Circles}{Circles, Part 1} of our class notes.
+
+Common errors:
+
+\begin{enumerate}
+\item Most groups had incomplete explanations for parts (b) and (c). The idea is that a point $P$ lies on the circle with center $A(3,1)$ and radius $7$ if and only if the distance between $P$ and $A$ is equal to the radius ($7$). 
+
+To find an equation of the circle let $P$ have coordinates $(x,y)$ and continue as in Example 2 of the chapter above. In particular, if the vertex $C$ of right triangle $ACP$ has coordinates $(x,1)$, then leg $\overline{AC}$ has length
+\[
+   AC = | x-3 |.
+\]
+Be sure to include the absolute value so that the length is positive. Then since
+\[
+      |x-3|^2 = (x-3)^2,
+\]
+we can omit the absolute value when we square the length. 
+
+Also, leave the equation of the circle as
+\[
+    \sqrt{(x-3)^2 + (y-1)^2} = 7.
+\] 
+Do \emph{not} square both sides as doing would obscure the meaning of the circle as the set of points exactly 7 units from its center. 
+\end{enumerate}
+
+\end{explanation}
 \end{question}
 
 \begin{question} \label{Q98er333}
 Use algebra to find the exact coordinates of the points where the circle with radius $8$ centered at the point $(-2,3)$ intersects the $x$-axis. Start by drawing an accurate picture on a coordinate system.
+
+\begin{explanation}
+See Example 3 here \href{https://ximera.osu.edu/precalc1/PreCalculus1/Circles/Circles}{Circles, Part 1}.
+\end{explanation}
 \end{question}
 
 \begin{question} \label{Qfe31111}
