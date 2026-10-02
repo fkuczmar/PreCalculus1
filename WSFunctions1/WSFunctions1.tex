@@ -1,0 +1,246 @@
+\documentclass{ximera}
+\title{Worksheet, Functions 1}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Introduction to functions.
+\end{abstract}
+\maketitle
+
+\emph{Directions:} No calculators. Work with fractions.
+
+
+\begin{question} \label{Qfvm334}
+Complete the following sentences. Each - is a letter.
+
+\begin{enumerate}
+\item The domain of a relation is the  - - -  of its  - - - - - - .
+
+\item The range of a relation is the - - - of its  - - - - - - - .
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Q930f}
+Find the domain and range of each function or relation.
+
+\begin{enumerate}
+\item $f(x) = \sqrt{25 - 49x}$
+
+\item $g(x) = \frac{1}{\sqrt{25 - 49x}}$
+
+\item $h(x) = \frac{31x - 13}{17 - 87x}$ (find just the domain for now)
+
+\item $k(x) = 97 - \frac{2}{3}\left( x-12 \right)^2$
+
+\item $\{ (x,y) \, | \, (x+8)^2 + (y-12)^2 = 5 \}$
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qor3or3}
+Let 
+\[
+    f(x) = \frac{11}{7}\left( x - 9 \right) .
+\]
+
+\begin{enumerate}
+\item Evaluate $f(-12)$.
+
+\item Describe in complete sentences the action of $f$ on its input.
+
+\item Use part (b) to solve the equation $f(x) = 55$.
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qffee}
+Let 
+\[
+       g(x) = \frac{7}{3}\left(x-5\right)^2 +4
+\]
+
+\begin{enumerate}
+\item Evaluate $g(-4)$.
+
+\item Describe in complete sentences the action of $g$ on its input.
+
+\item Use part (b) to solve the equation $g(x) = 18$.
+
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qdf3efr30}
+Let $f(x) = x^2 + 12x + 3$ and solve the equation $f(x)=1$ \emph{without} using the quadratic formula.
+\end{question}
+
+\begin{question} \label{Q9emfe}
+Let 
+\[
+    h(x) =12 -  (x+9)^2
+\]
+
+\begin{enumerate}
+\item Evaluate $h(-13)$.
+
+\item Describe the action of $h$ on its input.
+
+\item Use part (b) to solve the equation $h(x) = -37$.
+
+\item Solve the equation $h(x) = h(-5)$.
+
+\item Solve the equation $h(x) = h(153)$.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item
+\begin{align*}
+ h(-13) &= 12 - (-7+13)^2 \\
+         &= 12 - (-6)^2 \\ 
+         &= 12 - 36  \\
+         &= -24
+\end{align*}
+
+\item \begin{itemize}
+\item The function $h$ first adds $9$ to its input. 
+\item It then squares the result.
+\item It then multiplies that result by $-1$.
+\item And finally it adds 12 to the previous result. 
+\end{itemize}
+
+\item To solve the equation $h(x) = -37$, we undo the actions of $h$ in the reverse order:
+
+If $h(x) = -37$, then
+\[
+      12 -  (x+9)^2 = -37 .
+\] 
+And (subtracting 12 from both sides) this equation is true if and only if
+\[
+      - (x+9)^2 = -49,
+\]
+or (multiplying both sides by $-1$) if and only if
+\[
+ (x+9)^2 = 49.
+\]
+And since there are two numbers we can square to get $49$, this last equation is true if and only if
+\[
+  x+ 9 = 7 \hskip 0.2 in \text{or} \hskip 0.2 in  x+9 = -7
+\]
+\[
+   x = -2  \hskip 0.2 in \text{or} \hskip 0.2 in  x = -16 .
+\]
+So the solution set to the equation $h(x)=-37$ is
+\[
+    \{x \, | \, x=-2 \text{ or } x=-16   \}.
+\]
+
+
+\item We start by evaluating $h(-5)$:
+\begin{align*}
+ h(-5) &= 12 - (-5+9)^2 \\
+         &= 12 -4^2 \\ 
+         &= 12 - 16  \\
+         &= -4.
+\end{align*}
+The most common error is to stop here. But the question was not to evaluate $h(-5)$. Rather it was to solve the equation $h(x)=h(-5)$, which we can write as
+\[
+    12 -  (x+9)^2 = -4 .
+\]
+This is similar to part (c) and I'll leave the work to you. The final result is that the solution set to the equation $h(x) = h(-5)$ is
+\[
+   \{x \, | \, x=-5 \text{ or } x=-13   \}.
+\]
+
+\item We can do this without a calculator as follows.
+
+The equation is
+\[
+   h(x) = h(153)
+\]
+or equivalently,
+\[
+  12 -  (x+9)^2 = 12 -  (153+9)^2 .
+\]
+And this equation is true if and only if
+\[
+   -  (x+9)^2 = -  (153+9)^2 ,
+\]
+or if and only if
+\[
+  (x+9)^2 = (153+9)^2.
+\]
+And this last equation is true if and only if
+\[
+   x+9 = 153+9 \hskip 0.2 in \text{or} \hskip 0.2 in x+9 = -(153+9)
+\]
+\[
+      x = 153  \hskip 0.2 in \text{or} \hskip 0.2 in x = -171
+\]
+So the solution set to the equation $h(x) = h(153)$ is
+\[
+   \{x \, | \, x=153 \text{ or } x=-171  \}.
+\]
+
+\end{enumerate}
+
+
+\end{explanation}
+
+\end{question}
+
+\begin{question} \label{Qef3er}
+The function
+\[
+   g = f(v) , 25 \leq v \leq 75 ,
+\]
+expresses the gas mileage (in miles/gal) of a car in terms of its speed (in miles/hour). Translate each of the following into mathematics. Use \emph{complete} sentences.
+
+\begin{enumerate}
+
+\item What is the car's gas mileage at a speed of 40 miles/hour?
+
+
+\emph{Solution:} To determine the car's gas mileage at a speed of $40$ miles/hour, we would ....
+
+\item At what speeds does the car get 32 miles/gal?
+
+
+\emph{Solution:} To determine the speeds at which the car gets $32$ miles/gal we would ...
+
+
+\item At what speeds does the car get at most 32 miles/gal?
+
+
+\emph{Solution:} To determine the speed at which the car gets at most $32$ miles/gallon, we would ...
+
+\item At what speeds does the car get the same gas mileage as it does at a speed of 37 miles/hour?
+
+\item At what speeds is the gas mileage $3$ miles/gal less than it is at a speed of 30 miles/hour?
+
+\item At what speeds is the gas mileage at least $5$ miles/gal greater than it is at a speed of $30$ miles/hour?
+
+\item At what speeds is the gas mileage $25\%$ less than it is at a speed of $50$ miles/hour?
+
+\item At what speeds does decreasing the speed by $7$ miles/hour leave the gas mileage unchanged?
+
+\item At what speeds does increasing the speed by $5$ miles/hour decrease the gas mileage by $2$ miles/gal?
+
+\item At what speeds does increasing the speed by $5$ miles/hour increase the gas mileage by $10\%$?
+
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Q9efr3r}
+The function
+\[
+    g = f(v) = 40-\frac{1}{25}\left(v-50\right)^{2} \, , \, 25\leq v \leq 70 ,
+\]
+expresses the gas mileage (in miles/gal) of a car in terms of its speed (in miles/hr).
+
+Use this function to answer all parts of Question 7.
+\end{question}
+
+
+\end{document}
+
+
