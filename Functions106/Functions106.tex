@@ -1,0 +1,187 @@
+\documentclass{ximera}
+\title{Functions, October 6}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Two problems about functions.
+\end{abstract}
+\maketitle
+
+\begin{question} \label{Q0f03f3}
+
+\item Let 
+\[
+    f(x) = 3x^2 + 14x +7 .
+\]
+
+\begin{enumerate}
+\item Solve the equation
+\[
+        f(x) = f(0) .
+\] 
+
+\item Solve the equation
+\[
+     f(x) = f(-1) + 10.
+\]
+without using the quadratic formula and without introducing fractions.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The problem is asking us to solve an equation. So our concluding sentence will describe a \emph{solution set}.
+
+First we evaluate $f(0)$, 
+\begin{align*}
+     f(0) &= 3(0)^2 + 14(0) + 7 \\
+           &=7.
+\end{align*}
+Now we solve the equation $f(x) = f(0)$. Using the expression for $f(x) = 3x^2 + 14x +7$ and the value $f(0)=7$, the equation $f(x) = f(0)$ is
+\[
+        3x^2 + 14x + 7 = 7 ,
+\]
+or (subtracting $7$ from each side) equivalently
+\[
+      3x^2 + 14x = 0.
+\]
+This is a quadratic equation. And in this class we have two ways to solve such an equation . Either by setting it equal to $0$ and trying to factor or by completing the square. Here the left side factors easily and our equation is equivalent to 
+\[
+   x (3x + 14) = 0.
+\]
+
+Now here's the key point. The product of two numbers is equal to zero if and only if one of the two numbers is zero. So
+\[
+  x(3x + 14) = 0
+\]
+if and only if
+\[
+     x = 0  \hskip 0.2 in \text{or} \hskip 0.2 in  3x + 14 = 0.
+\]
+And so $f(x)=f(0)$ if and only if
+\[
+   x = 0  \hskip 0.2 in \text{or} \hskip 0.2 in  x = -14/3.
+\]
+So the solution set to the equation
+\[
+    f(x) = f(0)
+\]
+is
+\[
+  \{  x | x = 0 \text{ or } x = -14/3 \}. 
+\]
+
+\item Here we are also solving an equation and so our final conclusion will describe a solution set as well.
+
+First we evaluate $f(-1)$,
+\begin{align*}
+    f(-1) &= 3(-1)^2 + 14(-1) + 7  \\
+           &= 3 - 14 + 7 \\
+           &= -4.
+\end{align*}
+
+Now we solve the equation $f(x) = f(-1) + 10$. Using the expression for $f(x) = 3x^2 + 14x +7$ and the value $f(-1)=-4$, the equation $f(x) = f(-1)+10$ is
+\[
+        3x^2 + 14x + 7 = -4 + 10 ,
+\]
+or equivalently
+\[
+   3x^2 + 14x = -1.
+\]
+We could (as many students did) factor the left and side again to get
+\[
+    x(3x+14) = -1,
+\]
+but unlike part (a) this is of no help. The reason is the product of two numbers being equal to $-1$ leaves too much freedom. There are infinitely many such pairs of numbers, like $5$ and $-1/5$ for example. So instead, we go back to the prior form
+\[
+   3x^2 + 14x = -1
+\]
+and complete the square. 
+
+For this, we need to make the coefficient of $x^2$ a perfect square. One way would be to divide both sides by $3$, but this would introduce fractions. So instead, we multiply both sides by $3$ to get
+\[
+    9x^2 + 42x = -3 ,
+\]
+or equivalently
+\[
+        9x^2 + (21x + 21x) = -3.
+\]
+The next step is to represent the expression on the left geometrically as an area by drawing a picture. To do this, see Example 2 of our class notes here \href{https://ximera.osu.edu/precalc1/PreCalculus1/SolvingQuadraticEqs/SolvingQuadraticEqs}{Solving Quadratic Equations} .
+
+The result is to add $7^2$ to both sides to get
+\[
+  9x^2 + (21x + 21x) + 7^2 = -3 + 7^2, 
+\]
+or equivalently
+\[
+ (3x + 7)^2 = 46.
+\]
+So 
+\[
+   x = \frac{1}{3}\left(-7 \pm \sqrt{46}  \right)
+\]
+and the solution set to the equation $f(x) = f(-1)+10$ is 
+\[
+ \{  x |   x = \frac{1}{3}\left(-7 \pm \sqrt{46}  \right)\} .
+\]
+\end{enumerate}
+\end{explanation}
+\end{question}
+
+\begin{question} \label{Q0f93r3fe}
+The function 
+\[
+ h =  f(t) \, , \, 0\leq t \leq 5,
+\] 
+expresses the height of a balloon (in thousands of feet) in terms of the number of hours past noon.
+
+Translate each of the following questions into mathematics.
+
+\begin{enumerate}
+\item Find the height of the balloon at 2:45pm.
+
+\item When is the balloon 3500 feet above the ground?
+
+\item When is the balloon the same height as it is at 2:40pm?
+
+\item Find a three-hour time interval during which the balloon falls $1000$ feet.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item To find the height of the balloon at 2:40pm we would \emph{evaluate} $f(11/4)$. Note that 2:45pm is two hours and 45 minutes past noon or $2 + 3/4 = 11/4$ hours past noon. This is the input to our function and $f(8/3)$ is the output, in this case the balloon's altitude (in thousands of feet) at 2:40pm.
+
+\item To find the times when the balloon is $3500$ feet above the ground we would \emph{solve} the equation
+\[
+   f(t) = 3.5 \, , \, 0\leq t \leq 5.
+\]
+
+\item To find when the balloon is the same height as it is at 2:40pm we would solve the equation
+\[
+     f(t) = f(8/3) \, , \, 0\leq t \leq 5.
+\]
+
+\item To find a three-hour time interval during which the balloon falls $1000$ feet, we would first let $t$ be the beginning of the time interval (measured in hours past noon, so that $t+3$ is the end of the three-hour period) and then solve the equation 
+\[
+       f(t+3) - f(t) = -1 \, , \, 0\leq t \leq 2 .
+\]
+
+Explain why the domain for solving this equation is $\{t \, | \, 0\leq t \leq 2\}$.
+\begin{freeResponse}
+\end{freeResponse}
+
+\end{enumerate}
+\end{explanation}
+\end{question}
+
+\begin{question} \label{Qf3r3feef}
+Use 
+\[
+ h = f(t) = 7 - \frac{1}{2}\left( t- \right) \, , \, 0\leq t \leq 5
+\]
+for the altitude function in Question 2 and answer the questions above without a calculator. For the easiest way to do part (c), see the solution to Question 6e in our class notes \href{https://ximera.osu.edu/precalc1/PreCalculus1/WSFunctions1/WSFunctions1}{WSFunctions1}. 
+\end{question}
+
+
+\end{document}
