@@ -225,19 +225,14 @@ Access Desmos interactives through the online version of this text at
 Suppose that between prices of $\$6.00/\text{burger}$ and $\$10.00/\text{burger}$ the average number of burgers Five Guys in Edmonds sells is a linear function of the price. They sell an average of $200$ burgers/day at a price of $\$6.00/\text{burger}$ and an average of $120$ burgers/day at a price of $\$10.00/\text{burger}$. Find a function that expresses the price in terms of the average number of burgers they sell.
 
 \begin{explanation}
-(a) {\bf Start by defining each variable in a complete sentence. Include units in the definitions (the units should be $\$$/burger and burgers/day). Use {\bf meaningful} variable names (a single letter for each). Do {\bf not} use $x$ and $y$.}
+Here are the steps.
+
+\begin{enumerate}
+\item \emph{Start by defining each variable in a complete sentence. Then use function notation to relate the variables and include the correct domain. Include units in the definitions. Use {\bf meaningful} variable names (a single letter for each). Do {\bf not} use $x$ and $y$.}
 
 \pskip
 
-We will let $p$ be the price (in $\$$/burger) and $q$ be the average number of burgers (measured in burgers/day) sold. %that Five Guys sells at a pirce of $p$  dollars/burger.
-
-\pskip
-
-(b) {\bf Relate the variables from part (a) with function notation.} % as in Example 2, where we let $T=f(m)$.}
-
-\pskip
-
-The problem asks us to express $p$ as a function of $q$. So we are looking for a function
+We will let $p$ be the price (in dollars/burger) and $q$ the average number of burgers (measured in burgers/day) they sell. The problem asks us to express $p$ as a function of $q$. So we are looking for a function
 \[
    p = f(q) , 120 \leq q \leq 200 ,
 \]
@@ -245,11 +240,10 @@ that expresses the price (in dollars/burger) in terms of the average number of b
 
 \pskip
 
-%{\bf Note:} Although the price determines the average number of burgers they sell, the question asks us to express the price as a function of quantity. That isthat if we know the quantity we could determine the price. This is how economists do things.
+{\bf Note:} Although the price determines the average number of burgers they sell, the question asks us to express the price as a function of quantity. That is, if we know the quantity we could determine the price. This is how economists do things.
 
-%\pskip
 
-(c) {\bf Sketch a graph of the function. Label axes with the appropriate variable names and units.}
+\item \emph{Sketch a graph of the function. Label axes with the appropriate variable names and units.}
 
 \pskip 
 
@@ -257,7 +251,7 @@ I'll omit this part, but you should include a graph. In this case the graph of t
 
 \pskip
 
-(d) {\bf Compute the appropriate rate of change of the linear function. Include units in your computation and use the delta notation for changes. Interpret the meaning of the slope.}
+\item \emph{Compute the appropriate rate of change of the linear function. Include units in your computation and use the delta notation for changes. Interpret the meaning of the slope.}
 
 \pskip
 
@@ -265,39 +259,44 @@ The rate of change in the price with with respect to the average number of burge
 \[
    \frac{\Delta p}{\Delta q} = \frac{(10-6) \text{dollars/burger}}{(120-200) \text{burgers/day}} = -\frac{1}{20} \frac{\text{dollars/burger}}{\text{burgers/day} } .
 \]
-So if Five Guys raise the price by 1 dollar/burger, they sell an average of 20 fewer burgers/day. Or if they raise the price by $\$0.05$/burger, they sell an average of 1 fewer burgers/day.
-\pskip
-
-{\bf Do not simplify the units, otherwise it will be impossible to interpret the rate of change.}
+\emph{Interpretation:} For Five Guys to sell an average of $20$ more burgers/day they would need to lower the price by $\$1$/burger. Or for Five Guys to sell an average of $1$ more burger/day they would need to lower the price by $\$0.05$/burger. 
 
 \pskip
 
-(e) {\bf Use your slope and a known data point to write an expression for the function in point-slope form. Include a domain.}
+\emph{Do not simplify the units, otherwise it will be impossible to interpret the rate of change.}
+
+\item  \emph{Use the slope and a known data point to write an expression for the function in point-slope form. Include a domain.}
 
 Because $p=6$ when $q=200$, 
-\[
-  p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200 . 
-\]
+\begin{align*}
+  p   &= f(q)   \\
+       & = f(200) + (f(q) - f(200)) \\
+       &= f(200) + \frac{\Delta p}{\Delta q}\left(q - 200  \right) \\
+      & = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200 . 
+\end{align*}
 Or  because $p=10$ when $q=120$, 
 \[
   p = f(q) = 10 - \frac{1}{20} \left( q - 120 \right) \text{ for } 120\leq q \leq 200.
 \]
-\end{explanation}
-{\bf Leave the expressions like this. No need to simplify.}
 
-\pskip 
+{\bf Leave the expressions like this. Do not simplify.}
 
-(f) {\bf Explain the logic behind your function.}
+ 
+
+\item \emph{Explain the logic behind your function.}
 
 The function
 \[
    p = f(q) = 6 - \frac{1}{20} \left( q - 200 \right) , \text{ for } 120\leq q \leq 200
 \]
-tells us that to get the price $p$ when they sell $q$ burgers/day, we take the price ($\$6$/burger) when they sell 200 burgers/day and add to that the change in the price when the number of burgers they sell changes from 120 burgers/day to $q$  burgers/day.
+tells us that to get the price $p$ when they sell $q$ burgers/day, we start with the price ($\$6$/burger) when they sell 200 burgers/day and add to that the change
+\begin{align*}
+   \Delta p &= f(q) - f(200) \\  
+               &=-\frac{1}{20} \left( q - 200 \right)
+\end{align*}
+in the price when the number of burgers they sell changes from 200 burgers/day to $q$  burgers/day.
 
-\pskip
-
-(g) {\bf Check that your function is correct.}
+\item \emph{Check that your function is correct.}
 
 Using
 \[
@@ -315,7 +314,8 @@ And we'll evaluate $f(120)$ to get
 \]
 That's also correct. When they sell 120 burgers/day the price is $\$10$/burger.
 
-
+\end{enumerate}
+\end{explanation}
 \end{example}
 
 
@@ -323,30 +323,26 @@ That's also correct. When they sell 120 burgers/day the price is $\$10$/burger.
 \begin{question}   \label{Qdfsdfbbhhh}
 Suppose that between altitudes of $1,000$ and $12,000$ feet above sea level the air temperature is a linear function of altitude. Suppose also that the temperature is $57^\circ$F at at altitude of $2,000$ feet and $42^\circ$F at an altitude of $9,000$ feet.
 
-(a) Find a function
+\begin{enumerate}
+\item Follow \emph{all} the steps in the Explanation to Question 8 to find a function
 \[
     T = f(h) ,
 \]
 that expresses the temperature (in Fahrenheit degrees) in terms of the altitude (measured in thousands of feet). First sketch a graph of the function $f$. Label the axes with the appropriate variable names and units. Be sure to consider the domain.
 
-(b) Use set-builder notation to describe the domain of $f$.
+\item Use your function to determine the temperature at an altitude of $8,300$ feet.
 
-(c) Find the rate of change of temperature with respect to altitude and explain what this means. Be sure to include units.
+\item Use your function to determine the altitude where the temperature is $48^\circ$F.
 
-(d) Explain the \emph{logic} behind your function in this particular scenario.
+\item Write and solve an inequality to determine at what altitudes the temperature is at most $49.5^\circ$F.
 
-(e) Use your function to determine the temperature at an altitude of $8,300$ feet.
+\item At what altitude is the temperature $3^\circ$F greater than it is at an altitude of $8732$ feet? Answer this without using a calculator.
 
-(f) Use your function to determine the altitude where the temperature is $48^\circ$F.
+\item What happens to the air temperature if you increase your altitude by $4200$ feet?
 
-(g) Write and solve an inequality to determine at what altitudes the temperature is at most $49.5^\circ$F.
+\item If you increase your altitude by $70\%$, the air temperature decreases by $5.1^\circ$F. What is your altitude?
 
-(h) At what altitude is the temperature $3^\circ$F greater than it is at an altitude of $8732$ feet? Answer this without using a calculator.
-
-(i) What happens to the air temperature if you increase your altitude by $4200$ feet?
-
-(j) If you increase your altitude by $70\%$, the air temperature decreases by $5.1^\circ$F. What is your altitude?
-
+\end{enumerate}
 \end{question}
 
 
