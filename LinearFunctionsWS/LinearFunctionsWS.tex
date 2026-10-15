@@ -17,7 +17,10 @@ For prices betweeen $\$4$/burger and $\$12$/burger, the equation
 relates the price $p$ (measured in dollars/burger) to the average number of burgers sold/day at Five Guys in Shoreline.
 
 \begin{enumerate}
-\item What happens to the average number of burgers sold/day if Five Guys increases the price by $\$0.50$/burger? First work the question in general by supposing they change the price by $\Delta p$ dollars/burger. Then answer the specific question at hand.
+
+\item What happens to the average number of burgers sold/day if Five Guys increases the price by $\$0.50$/burger? 
+
+First work the question in general by writing an equation that relates a change in price of $\Delta p$ dollars/burger and the corresponding change $\Delta q$ in the average number of burgers sold/day. Then answer the specific question at hand.
 
 \item How could they increase the average number of burgers they sell by $12$ burgers/day? 
 
@@ -26,23 +29,43 @@ relates the price $p$ (measured in dollars/burger) to the average number of burg
 \end{question}
 
 \begin{question} \label{QKdfder33}
-The graph of a function $y=f(x)$ is a line through the points $(12,-13)$ and $(-1,-2)$. 
 \begin{enumerate}
-\item Solve the inequality $f(x) < 42$.
+\item Suppose the function $y=f(x)$ is linear with contant rate of change $\Delta y / \Delta x$. Suppose also that $f(a) = b$. Then an expression for $f(x)$ is
+\begin{align*}
+  f(x) &= f(a) + (f(x) - \answer{f(a)})  \\
+        &= f(a) + \frac{\Delta y}{\Delta x} \left( \answer{x-a} \right)
+\end{align*}
 
+\item The function $y=f(x)$ is linear. Also, $f(4)=-3$ and $f(-1)=-1$. 
+\begin{enumerate}
+\item Sketch a rough graph of the function $y=f(x)$.
+\item Solve the inequality $f(x) < 42$.
 \item Solve the inequality $f(x) \geq f(74)$.
+\end{enumerate}
 \end{enumerate}
 \end{question}
 
 
 \begin{question} \label{Q93821L}
-Draw two points on the board. Label Them $A$ and $B$.
+Draw two points on the board. Label them $A$ and $B$.
 
 Now take a rectangular sheet of paper, like the one this worksheet is printed on, and label one vertex $P$. Label the two adjacent vertices $Q$ and $R$. Now hold the paper so that side $\overline{PQ}$ passes through $A$ and side $\overline{PR}$ passes through $B$. Then mark the position of $P$ on the board.
 
 Now move the paper and repeat the above process, marking the position of $P$ each time. Do this enough times to notice something about all the marked positions of $P$. What do you notice?
 \begin{freeResponse}
 \end{freeResponse}
+
+\pdfOnly{Access an interactive version in desmos at \href{https://www.desmos.com/calculator/8872fdmjxr}{141: Drawing a Circle with a Rectangle}}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{8872fdmjxr}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/8872fdmjxr}{141: Drawing a Circle with a Rectangle}
+
+
 
 We'll now use algebra to show your guess is correct.
 
@@ -84,6 +107,18 @@ Then translate this sentence into an equation.
 
 \item Write an equation of the circle through the points $A$, $B$, and $C$ of part (a). Use desmos to check you're correct.
 
+\pdfOnly{Access an interactive version in desmos at \href{https://www.desmos.com/calculator/4asngajdsq}{141: Circle Through 3 points 8}}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{8872fdmjxr}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/4asngajdsq}{141: Circle Through 3 points 8}
+
+
+
 \item Use the same approach to find the coordinates of the circle through the points $A$, $B$, $C$ with respective coordinates $(0,0)$, $(b,0)$, and $(c,d)$. Then write an equation of this circle and check your work in desmos.
 \end{enumerate}
 \end{question}
@@ -97,26 +132,14 @@ Between speeds of $55$ miles/hour and $90$ miles/hour, the gas mileage of a Corv
 
 \item Find a function $v=f(G)$ that expresses the speed of the Corvette (in miles/hour) in terms of its gas mileage (in miles/gallon). Start by sketching a graph of the function. Label the axes with the appropriate variable names and units.
 
-\item Use set notation to state the domain and range of $f$.
 
-\item What are the units of the slope of your line in part (a)? Interpret its meaning.
-
-\item At what speed does the car get $30$ miles/gal?
-
-\item What is the gas mileage at a speed of $80$  miles/hour?
-
-\item What happens to the gas mileage when the speed of the car decreases by $5$ miles/hour?
-
-\item How can you increase the gas mileage by $4$ miles/gal?
-
-\item Find a function $r=h(G)$ that expresses the rate at which the car burns gas (in gal/hour) in terms of its gas mileage. State the domain and range of $h$ in set notation.
-
-\item Simplify the units of the slope in part (c). What does this suggest about its meaning? Would that be a correct interpretation?
+\item Find a function $r=h(G)$ that expresses the rate at which the car burns gas (in gal/hour) in terms of its gas mileage. 
 
 \item Drag the slider $u$ in the worksheet below to approximate the rate (in miles/hr) at which the Corvette burns gas at a speed of $86$ miles/hour. Then use the appropriate function to compute the exact rate.
 
 \item Drag the slider $u$ in the worksheet below to approximate the speed at which the Corvette burns gas at the rate of $2$ gal/hour. Then use the appropriate function to compute the exact rate.
 
+\pdfOnly{Access an interactive version in desmos at \href{https://www.desmos.com/calculator/2fq4txcouq}{141: Corvette}}
 
 \begin{onlineOnly}
     \begin{center}
@@ -126,7 +149,7 @@ Between speeds of $55$ miles/hour and $90$ miles/hour, the gas mileage of a Corv
 
 \href{https://www.desmos.com/calculator/2fq4txcouq}{141: Corvette}
 
-\item Find a function $G=w(r)$ that expresses the gas mileage (in miles/hour) of the Corvette in terms of the rate (in gal/hour) at which it burns gas. State the domain and range $w$ in set notation.
+%\item Find a function $G=w(r)$ that expresses the gas mileage (in miles/hour) of the Corvette in terms of the rate (in gal/hour) at which it burns gas. State the domain and range $w$ in set notation.
 
 \end{enumerate}
 \end{question}
