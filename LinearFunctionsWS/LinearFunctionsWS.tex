@@ -1,0 +1,135 @@
+\documentclass{ximera}
+\title{Linear Functions WS}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+The point-slope equation of a line.
+\end{abstract}
+\maketitle
+
+\begin{question} \label{Qppef3231}
+For prices betweeen $\$4$/burger and $\$12$/burger, the equation
+\[
+     25p + 4q = 400
+\]
+relates the price $p$ (measured in dollars/burger) to the average number of burgers sold/day at Five Guys in Shoreline.
+
+\begin{enumerate}
+\item What happens to the average number of burgers sold/day if Five Guys increases the price by $\$0.50$/burger? First work the question in general by supposing they change the price by $\Delta p$ dollars/burger. Then answer the specific question at hand.
+
+\item How could they increase the average number of burgers they sell by $12$ burgers/day? 
+
+\item Use algebra to determine the price at which a $20\%$ increase in the price decrease the average number of burgers sold/day by $25\%$. 
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{QKdfder33}
+The graph of a function $y=f(x)$ is a line through the points $(12,-13)$ and $(-1,-2)$. 
+\begin{enumerate}
+\item Solve the inequality $f(x) < 42$.
+
+\item Solve the inequality $f(x) \geq f(74)$.
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{Q93821L}
+Draw two points on the board. Label Them $A$ and $B$.
+
+Now take a rectangular sheet of paper, like the one this worksheet is printed on, and label one vertex $P$. Label the two adjacent vertices $Q$ and $R$. Now hold the paper so that side $\overline{PQ}$ passes through $A$ and side $\overline{PR}$ passes through $B$. Then mark the position of $P$ on the board.
+
+Now move the paper and repeat the above process, marking the position of $P$ each time. Do this enough times to notice something about all the marked positions of $P$. What do you notice?
+\begin{freeResponse}
+\end{freeResponse}
+
+We'll now use algebra to show your guess is correct.
+
+\begin{enumerate}
+\item Start by imposing a coordinate system with $A$ as the origin and $B$ as the point with coordinates $(b,0)$. Now let ${\cal L}_1$ (ie. Line 1) be the line through $A$ with slope $a\neq 0$. Write an equation for this line.
+
+The line through $A$ with slope $a$ has equation
+\[
+    y = \answer{ax}.
+\]
+
+\item Next use point-slope to write an equation of the line ${\cal L}_2$ through $B$ (with coordinates $(b,0)$)  perpendicluar to ${\cal L}_1$.
+
+This line has equation
+\[
+   y = \answer{-\frac{1}{a}}\left( x - \answer{b} \right).
+\]
+
+\item Now use algebra to find the coordinates of the point $P$ where the lines ${\cal L}_1$ and ${\cal L}_2$ intersect.
+
+The point of intersection has coordinates
+\[
+    (x,y) = \left(  \answer{\frac{b}{1+a^2}}  , \answer{\frac{ab}{1+a^2}}   \right) .
+\]
+
+\item Use algebra and the Pythagorean theorem find the distance from $P$ to the midpoint of segment $\overline{AB}$.
+
+This distance is always equal to $\answer{b/2}$.
+
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{Qer3er3}
+\begin{enumerate}
+\item Use the methods of this class to find the coordinates of the circle through the points $A$, $B$, $C$ with respective coordinates $(0,0)$, $(10,0)$, and $(4,8)$. Do \emph{not} use anything about perpendicular bisectors. Instead, start you solution by saying a point $P$ with coordinates $(x,y)$ is the center of a circle through $A$ and $B$ if and only if the distance ....
+
+Then translate this sentence into an equation.
+
+\item Write an equation of the circle through the points $A$, $B$, and $C$ of part (a). Use desmos to check you're correct.
+
+\item Use the same approach to find the coordinates of the circle through the points $A$, $B$, $C$ with respective coordinates $(0,0)$, $(b,0)$, and $(c,d)$. Then write an equation of this circle and check your work in desmos.
+\end{enumerate}
+\end{question}
+
+
+
+\begin{question}  \label{Qeeetl4gg}
+Between speeds of $55$ miles/hour and $90$ miles/hour, the gas mileage of a Corvette is a linear function of its speed. The car gets $35$ miles/gallon at a speed of $55$ miles/hour and $20$ miles/gallon at a speed of $90$ miles/hour.
+
+\begin{enumerate}
+
+\item Find a function $v=f(G)$ that expresses the speed of the Corvette (in miles/hour) in terms of its gas mileage (in miles/gallon). Start by sketching a graph of the function. Label the axes with the appropriate variable names and units.
+
+\item Use set notation to state the domain and range of $f$.
+
+\item What are the units of the slope of your line in part (a)? Interpret its meaning.
+
+\item At what speed does the car get $30$ miles/gal?
+
+\item What is the gas mileage at a speed of $80$  miles/hour?
+
+\item What happens to the gas mileage when the speed of the car decreases by $5$ miles/hour?
+
+\item How can you increase the gas mileage by $4$ miles/gal?
+
+\item Find a function $r=h(G)$ that expresses the rate at which the car burns gas (in gal/hour) in terms of its gas mileage. State the domain and range of $h$ in set notation.
+
+\item Simplify the units of the slope in part (c). What does this suggest about its meaning? Would that be a correct interpretation?
+
+\item Drag the slider $u$ in the worksheet below to approximate the rate (in miles/hr) at which the Corvette burns gas at a speed of $86$ miles/hour. Then use the appropriate function to compute the exact rate.
+
+\item Drag the slider $u$ in the worksheet below to approximate the speed at which the Corvette burns gas at the rate of $2$ gal/hour. Then use the appropriate function to compute the exact rate.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{2fq4txcouq}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/2fq4txcouq}{141: Corvette}
+
+\item Find a function $G=w(r)$ that expresses the gas mileage (in miles/hour) of the Corvette in terms of the rate (in gal/hour) at which it burns gas. State the domain and range $w$ in set notation.
+
+\end{enumerate}
+\end{question}
+
+
+\end{document}
