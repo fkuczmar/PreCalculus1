@@ -278,6 +278,8 @@ Answer each of the following questions \emph{without} using the quadratic formul
 
 \item Solve the equation $g(g(x)) = 2$. Use the method of $u$-substitution.
 
+\item Find the domain of the composition $f(g(x))$. Use $u$-substitution and write the domain as a set.
+
 \item Find the domain of the composition $g(g(x))$. Use $u$-substitution and write the domain as a set.
 
 \item Find the domain of the composition $g(g(g(x)))$. Use $u$-substitution and write the domain as a set.
@@ -315,9 +317,91 @@ Then kill the fraction by multiplying both sides by $x^2 - x - 6$ to get
 \[
       -4 = x^2 - x - 6 .
 \]
-I'll let you finish from here.
+Then
+\[
+    x^2 - x -2 = 0
+\]
+and
+\[
+     (x-2)(x+1) = 0.
+\] 
+So either
+\[
+   x - 2 = 0 \hskip 0.3 in \text{ or } \hskip 0.3in x+1 = 0
+\]
+and
+\[
+ x = 2 \hskip 0.3 in \text{ or } \hskip 0.3in x = -1.
+\]
 
+So the solution set to the equation $g(f(x))=23/10$ is
+\[
+ \{ x \, \, | x =2 \text{ or } x=-1 \}.
+\]
 \end{enumerate}
+
+(d) The number $x$ is in the domain of the composition $f(g(x))$ if and only if
+\begin{enumerate}
+      \item $x$ is in the domain of $g$ and
+      \item $g(x)$ is in the domain of $f$.
+\end{enumerate}
+
+Now the domain of the function
+\[
+   g(x) = \frac{3x-5}{x-4}
+\]
+is the set
+\[
+   \{  x \, | \, x\neq 4 \}.
+\]
+
+We next find the domain of the function
+\[
+   f(u) = \frac{24}{u^2 - u -6}.
+\]
+
+Now $u$ is in the domain of $f$ if and only if
+\[
+  u^2 - u - 6 \neq 0,
+\]
+or equivalently
+\[
+  (u+2)(u-3) \neq 0.
+\]
+And this is true if and only if
+\[
+    u + 2 \neq 0 \hskip 0.3 in \text{ and } \hskip 0.3in  u-3 \neq 0,
+\]
+or if and only if
+\[
+    u\neq -2 \hskip 0.3 in \text{ and } \hskip 0.3in  u \neq 3.
+\]
+
+So the domain of the function $f(u)$ is the set
+\[
+  \{ u \, |\, u\neq -2 \text{ and } u\neq 3 \}.
+\] 
+
+Now $u=g(x)$ is in the domain of $f$ if and only if
+\[
+    g(x) \neq -2 \hskip 0.3 in \text{ and } \hskip 0.3in g(x) \neq  3
+\]
+or if and only if
+\[
+    \frac{3x-5}{x-4}\neq -2 \hskip 0.3 in \text{ and } \hskip 0.3in \frac{3x-5}{x-4}\neq 3.
+\]
+
+Solving these inequalities gives
+\[
+     x \neq \frac{13}{5} \hskip 0.3 in \text{ and }\hskip 0.3 in 0x = 7.
+\]
+The equation $0x = 7$ has no solution and does not give an additional restriction on the domain of the composition $f(g(x))$. 
+
+So the domain of the composition $f(g(x))$ is the set
+\[
+ \{ x \, | \, x\neq 4  \text{ and }  x\neq 13/5 \}.
+\]
+
 \end{explanation}
 
 \end{example}
