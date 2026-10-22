@@ -1,0 +1,131 @@
+\documentclass{ximera}
+\title{Composition of Functions, WS}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Composing functions.
+\end{abstract}
+\maketitle
+
+
+Composing functions is a lot like composing actions. For example, consider the actions of putting on your socks and putting on your shoes. Two key points. First is that order matters. We get a completely different result if were to first put on our shoes and then our socks. And depending on how flexible your socks are, it might not even be possible to put your socks over your shoes.
+
+The second point is that to undo the compostion of first putting on your socks and then your shoes, we undo the two actions in the \emph{reverse} order - we first take off our shoes and then our socks. And whether we're talking about socks and shoes or functions, it pays to remember this idea.
+
+
+\begin{question} \label{DEf9ef93}
+
+\[
+    f(x) = \frac{2x-15}{7x-3}
+\]
+and 
+\[
+  g(x) = \frac{6x}{x^2-9}
+\]
+
+\begin{enumerate}
+\item Evaluate $f(g(2))$.
+
+\item Evaluate $g(f(0))$.
+
+\item Use the method of $u$-substitution to solve each of the following equations. Write a concluding sentence with a solution set for each.
+
+\begin{enumerate}
+\item $f(g(x)) = -\frac{1}{2}$
+
+\item $g(f(x))= \frac{3}{4}$
+
+\item $f(f(x))=-1$
+\end{enumerate}
+
+\item Find the domain of each of the following. Write a concluding sentence with the domain written as a set for each. Use set-builder notation.
+
+\begin{enumerate}
+\item the function $f$
+
+\item the function $g$
+
+\item the function $f\circ g$
+
+Method: The number $x$ is in the domain of $f(g(x))$ if and only if
+
+\begin{enumerate}
+\item $x$ is in the domain of ??? and
+
+\item ??? is in the domain of $f$.
+ 
+\end{enumerate}
+
+\item the function $g\circ f$
+
+\item the function $f\circ f$
+
+\item the function $f\circ f \circ f$
+
+\item the function $g\circ g$
+
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qpfpr33}
+The function
+\[
+   h = f(s) \, , \, 0\leq s \leq 30 ,
+\]
+expresses the elevation (in km) of a road $30$ km long in terms of the distance (in km) from its starting point.
+
+The function
+\[
+ T = g(h) \, , \, 0.28 \leq h \leq 2.7 ,
+\]
+expresses the air temperature (in Celsius degrees) along the road in terms of elevation (in km). 
+
+Some of the following questions make sense. Others do not. Tranlsate each of the former from math to English and explain why each of the latter do not make sense.
+
+\begin{enumerate}
+\item Evaluate $g(f(5))$.
+
+\item Evaluate $f(g(2))$.
+
+%\item Evaluate $f(f(9))$.
+
+\item Evaluate $g(f(20)-1)$
+
+\item Solve the equation $g(f(s))=25$.
+
+\item Solve the inequality $g(f(s)) \leq g(f(12))$.
+
+\end{enumerate}
+
+\end{question}
+
+\begin{question} \label{Ws229}
+Use the graphs of the functions $f$ and $g$ below to find approximate answers to the math questions in Problem 2 and their English equivalents. Answer each math question in a complete sentence with the appropriate mathematical notation. Answer the English equivalent with a complete sentence in every day English that include both your response and the original question.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vn9n75zwjx}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/vn9n75zwjx}{141: Mountain Road 2}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vn9n75zwjx}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/qfiqp5idzc}{141: Air Temperature}
+
+
+
+\end{question}
+
+
+
+\end{document}
