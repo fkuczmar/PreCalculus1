@@ -120,7 +120,102 @@ Check that $x=19/8$ is the solution to the equation $f(g(x))=2$ by evaluating $f
 
 
 \section{Finding the Domain of a Composition}
+\begin{example} \label{Edf300}
+Let
+\[
+    f(x) = \frac{24}{x^2-x-6}
+\]
+and 
+\[
+    g(x) = \frac{3x-5}{x-4} .
+\]
+\begin{enumerate}
+\item Evaluate $f(g(4))$.
 
+\item Find the domain of the composition $f\circ g$.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Since 
+\[
+ g(4) = \frac{3(4) - 5}{4 -4} = \frac{7}{0},
+\]
+$f(g(4))$ is undefined.
+
+That's an example of one thing that can go wrong in evaluating the composition $f(g(x))$; the input $x$ might not be in the domain of $g$. The other thing that can go wrong is that $g(x)$ might not be in the domain of $f$.
+
+So the point is this. The number $x$ is in the domain of the composition $f\circ g$ if and only if
+\begin{enumerate}
+\item $x$ is in the domain of $g$ and
+
+\item $g(x)$ is in the domain of $f$.
+\end{enumerate}
+
+So the first step in finding the domain of $f\circ g$ is to find the domain of $g$. For our particular example where
+\[
+     g(x) = \frac{3x-5}{x-4},  
+\]
+the only thing that can go wrong is that the denominator is zero. So $x$ is in the domain of $g$ if and only if
+\[
+   x - 4 \neq 0,
+\]
+or if and only if
+\[
+     x \neq 4.
+\]
+
+The next step is to make sure $u=g(x)$ is in the domain of $f$. To do this we first find the domain of
+\[
+      f(u) = \frac{24}{u^2-u-6}.
+\]
+Again, the only thing that can go wrong is if the denominator is zero. So $u$ is in the domain of $f$ if and only if
+\[
+    u^2 - u - 6 \neq 0,
+\]
+or equivalently if and only if
+\[
+  (u-3)(u+2) \neq 0.
+\]
+Now for the product of two numbers to be non-zero it is necessary and sufficient that each number be not equal to zero. So 
+\[
+  (u-3)(u+2) \neq 0
+\]
+if and only if
+\[
+       u - 3 \neq 0  \hskip 0.2 in \text{and} \hskip 0.2 in u+2 \neq 0.
+\]
+So
+\[
+   u \neq 3  \hskip 0.2 in \text{and} \hskip 0.2 in u \neq -2.
+\]
+ 
+So $u$ is in the domain of the function $f$ if and only if $u\neq -2$ and $u\neq 3$.
+
+But remember for $x$ to be in the domain of $f(g(x))$, we need to make sure that $u=g(x)$ is in the domain of $f$. So $u=g(x)$ is in the domain of $f$ if and only if
+\[
+         g(x) \neq 3 \hskip 0.2 in \text{and} \hskip 0.2in  g(x) \neq -2,
+\]
+or if and only if
+\[
+   \frac{3x-5}{x-4} \neq 3 \hskip 0.2 in \text{and} \hskip 0.2in  \frac{3x-5}{x-4} \neq -2.
+\]
+Solving these inequalities gives
+\[
+ 0x = 7  \hskip 0.2 in \text{and} \hskip 0.2in x\neq \frac{13}{5}.
+\]
+
+The equation $0x = 7$ has no solution and does not give an additional restriction on the domain of the composition $f(g(x))$. 
+
+So remembering that $x$ must also be in the domain of $g$ (ie. $x\neq 4$), the domain of the composition $f(g(x))$ is the set
+\[
+ \{ x \, | \, x\neq 4  \text{ and }  x\neq 13/5 \}.
+\]
+
+\end{enumerate}
+\end{explanation}
+
+\end{example}
 
 
 \begin{example}  \label{Erer54r56t364}
