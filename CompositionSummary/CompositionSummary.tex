@@ -119,7 +119,7 @@ Check that $x=19/8$ is the solution to the equation $f(g(x))=2$ by evaluating $f
 \end{example}
 
 
-\section{Finding the Domain of a Composition}
+\section{Computing the Domain of a Composition}
 \begin{example} \label{Edf300}
 Let
 \[
@@ -207,27 +207,63 @@ Solving these inequalities gives
 
 The equation $0x = 7$ has no solution and does not give an additional restriction on the domain of the composition $f(g(x))$. 
 
-So remembering that $x$ must also be in the domain of $g$ (ie. $x\neq 4$), the domain of the composition $f(g(x))$ is the set
+So remembering that $x$ is in the domain of $f\circ g$ if and only if $x$ is in the domain of $g$ (ie. $x\neq 4$) and $g(x)$ is in the domain of $f$, the domain of the composition $f(g(x))$ is the set
 \[
  \{ x \, | \, x\neq 4  \text{ and }  x\neq 13/5 \}.
 \]
 
 \end{enumerate}
 \end{explanation}
-
 \end{example}
 
 
-\begin{example}  \label{Erer54r56t364}
-Use the graphs of the functions $y=f(x)$ and $y=g(x)$ below to find approximate answers to the following questions. Drag points $A$ and $B$ as needed to help with your approximations. Use set notation to write solution sets when solving an equation.
+\section{Approximating the Domain of a Composition Graphically}
+\begin{example}  \label{Er4r5d6t364}
+Use the graphs of the function $f$ below to find approximate the domain of the composition $f\circ f$.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{9uxkofytwi}{900}{600}
+\desmos{e1vf1vt06j}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/9uxkofytwi}{141: Composition 2}
+\href{https://www.desmos.com/calculator/e1vf1vt06j}{141: Composition Domain}
+
+\begin{explanation}
+The first step is to find the domain of $f$. From the graph, we see the domain of $f$ is the set
+\[
+  \{  x \, | \, -1\leq x \leq 4 \}.
+\]
+
+So $x$ is in the domain of $f(f(x))$ if and only if
+\[
+   - 1\leq x \leq 4
+\]
+and $f(x)$ is in the domain of $f$. 
+
+Now $f(x)$ is in the domain of $f$ if and only if
+\[
+         -1 \leq f(x) \leq 4. 
+\]
+To solve this compound inequality, we draw the horizontal lines $y=-1$ and $y=4$ and look at part of the graph of $y=f(x)$ between these lines.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{idj0lpyoya}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/idj0lpyoya}{141: Composition Domain 2}
+
+There are two portions of the graph (highlighted blue) between these lines. In the left portion, the $x$-coordinates run between $x\sim -0.45$ and $x=1$. In the right portion, between $x=3$ and $x=4$.
+
+So the approximate domain of the composition $f(f(x))$ is the set
+\[
+   \{ x \, | \, -0.45 \leq x \leq 1 \text{ or } 3\leq x \leq 4 \}.
+\]
+
+\end{explanation}
+
 
 \end{example}
 
