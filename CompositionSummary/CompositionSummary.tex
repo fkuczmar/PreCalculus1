@@ -1,0 +1,140 @@
+\documentclass{ximera}
+\title{Composition of Functions, Summary}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Composing functions.
+\end{abstract}
+\maketitle
+
+
+
+\section{Solving Equations with $u$-Substitution}
+
+Composing functions is a lot like composing actions. For example, consider the actions of putting on your socks and putting on your shoes. Two key points. First is that order matters. We get a completely different result if were to first put on our shoes and then our socks. And depending on how flexible your socks are, it might not even be possible to put your socks over your shoes.
+
+The second point is that to undo the compostion of first putting on your socks and then your shoes, we undo the two actions in the \emph{reverse} order - we first take off our shoes and then our socks. And whether we're talking about socks and shoes or functions, it pays to remember this idea.
+
+\begin{example} \label{E4433mzz}
+Let
+\[
+  f(x)  = \frac{3x+5}{7x-8}
+\]
+and
+\[
+   g(x) = \frac{x-5}{1-x}.
+\]
+
+\begin{enumerate}
+\item Evaluate $f(g(0))$.
+
+\item Solve the equation 
+\[
+    f(g(x)) = 2.
+\]
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item To evaluate $f(g(0))$, we work our way from the inside out and first evaluate $g(0)$. We get
+\[
+ g(0) = \frac{0-5}{1-0} = -5.
+\]
+We then input $g(0)$ into the function $f$. This gives
+\begin{align*}
+   f(g(0)) &= f(-5) \\
+             &= \frac{3(-5) + 5}{7(-5) - 8} \\
+              & = \frac{-10}{-43} .
+\end{align*}
+Our conclusion is that $f(g(0)) =10/43$. 
+
+\item To solve the equation $f(g(x))=2$, we need to undo the action of the composition $f\circ g$. In evaluating $f(g(0))$, we first computed $f(0)$ and then $g(f(0))$. So to reverse the action of $f\circ g$ we first undo the action of $f$ and then the action of $g$. To undo $f$, we hide the inner function $g(x)$ by letting
+\[
+      u  = g(x).
+\] 
+Then the equation 
+\[
+  f(g(x)) =2
+\]
+becomes
+\[
+    f(u) = 2,
+\]
+or equivalently
+\[
+          \frac{3u+5}{7u-8} = 2.
+\]
+To solve this equation, multiply both sides by $7u-8$ to get
+\[
+ 3u+5 = 2(7u-8),
+\]
+or equivalently
+\[
+3u + 5 = 14u - 16.
+\]
+Then 
+\[
+ 21 = 11u
+\]
+and 
+\[
+ \frac{21}{11} = u.
+\]
+
+But remember that $u=g(x)$. So
+\[
+   g(x) = \frac{21}{11}
+\]
+and we now need to undo the action of $g$. For this, we substitute the given expression for $g(x)$ to get
+\[
+   \frac{x-5}{1-x} = \frac{21}{11}.
+\]
+Then multiply both sides of this equation by $11(1-x)$, giving
+\[
+  11(x-5) = 21(1-x).
+\]
+So
+\[
+ 11x - 55 = 21 - 21x,
+\]
+\[
+   32x = 76
+\]
+and 
+\[
+  x = \frac{19}{8} .
+\]
+Our conclusion is the solution set to the equation $f(g(x))= 2$ is
+\[
+    \{  x \, | \, x = \frac{19}{8} \}.
+\]
+\begin{question} \label{Q2321}
+Check that $x=19/8$ is the solution to the equation $f(g(x))=2$ by evaluating $f(g(19/8))$.
+\end{question}
+\end{enumerate}
+
+\end{explanation}
+\end{example}
+
+
+\section{Finding the Domain of a Composition}
+
+
+
+\begin{example}  \label{Erer54r56t364}
+Use the graphs of the functions $y=f(x)$ and $y=g(x)$ below to find approximate answers to the following questions. Drag points $A$ and $B$ as needed to help with your approximations. Use set notation to write solution sets when solving an equation.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{9uxkofytwi}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/9uxkofytwi}{141: Composition 2}
+
+\end{example}
+
+
+\end{document}
