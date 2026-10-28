@@ -1,0 +1,78 @@
+\documentclass{ximera}
+\title{Inverses, Summary}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Summary of inverse functions.
+\end{abstract}
+\maketitle
+
+\begin{question}  \label{Qdf3r3fd44xxz}
+Let 
+\[
+     y =f(x) = \frac{6}{7}x + 4.
+\]
+
+\begin{enumerate}
+\item Describe the action of $f$ on its input.
+
+\item Describe the action of $f^{-1}$ on its input.
+
+\item Use your description in part (b) to find an expression for the function $x=f^{-1}(y)$.
+
+\item Verify algebraically that $f^{-1}$ undoes $f$.
+
+\item Verify algebraically that $f$ undoes $f^{-1}$.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The function $f$ first multiplies its input by $6/7$ and then adds $4$ to the result.
+
+\item The function $f^{-1}$ first subtracts $4$ from its input and then multiplies the result by $7/6$.
+
+\item 
+\[
+   x = f^{-1}(y) = \frac{7}{6} \left( y - 4\right).
+\]
+
+\item To check that $f^{-1}$ undoes $f$ we must show that
+\[
+     f^{-1}(f(x)) = x
+\]
+for all $x$ in the domain of $f$.
+
+Here's the algebra:
+
+\begin{align*}
+     f^{-1}(f(x)) &= f^{-1}\left( \frac{6}{7}x + 4  \right) \\ 
+                       &= \frac{7}{6} \left( \left( \frac{6}{7}x + 4 \right) - 4 \right)  \\
+                       &= \frac{7}{6} \left(   \frac{6}{7}x\right) \\
+                       &= x.
+\end{align*}
+
+\item To check that $f$ undoes $f^{-1}$ we must show that
+\[
+     f(f^{-1}(y)) = y
+\]
+for all $y$ in the domain of $f$.
+
+Here's the algebra:
+
+\begin{align*}
+     f(f^{-1}(y)) &= f\left(   \frac{7}{6} \left( y - 4\right)\right) \\ 
+                       &= \frac{6}{7} \left( \frac{7}{6} \left( y - 4\right) \right) +4  \\
+                       &= (y-4) + 4 \\
+                       &= y.
+\end{align*}
+
+
+\end{enumerate}
+\end{explanation}
+
+\end{question}
+
+
+\end{document}
