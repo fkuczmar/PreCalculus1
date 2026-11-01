@@ -9,6 +9,8 @@ Summary of inverse functions.
 \end{abstract}
 \maketitle
 
+\section{The Basics}
+
 \begin{question}  \label{Qdf3r3fd44xxz}
 Let 
 \[
@@ -71,8 +73,335 @@ Here's the algebra:
 
 \end{enumerate}
 \end{explanation}
-
 \end{question}
+
+\section{One-to-One Functions}
+
+The basic idea is this. The inverse of a function is always a relation (as set of ordered pairs), but it need not be a function.
+
+For example, the function 
+\[
+   y=f(x) = x^2 , x\in \mathbb{R},
+\]
+is really the set of ordered pairs
+\[
+  {\cal R} = \{  (x,x^2) \, | \, x \in \mathbb{R} \}. 
+\]
+This relation is a function because each input has \emph{exactly} one output. The graph of the relation passes the horizontal line test - ie. each horizontal line intersect the graph of the function $y=f(x)=x^2$ in at most one point. The test is a way to visualize the fact that each input (ie. $x$-coordinate) has exactly one output (ie. $y$-coordinate).
+
+We get the inverse of any relation by swapping the $x$ and $y$-coordinates. The inverse of the above function, for example, is the relation
+\[
+  {\cal R}^{-1}  = \{  (x^2, x)  \, | \, x \in \mathbb{R}\}.
+\] 
+
+This relation is \emph{not} a function since there is at least one input that has more than one output. For example, the points $(9,3)$ and $(9,-3)$ are both in the relation ${\cal R}^{-1}$, meaning that in this relation the input $9$ has two outputs, $3$ and $-3$.
+
+Geometrically the graph of ${\cal R}^{-1}$ ($x=y^2$) fails the vertical line test - ie. the vertical line $x=9$ intersects the graph in more than one point. This is because the graph of the original relation ($y=x^2$) fails the horizontal line test. That is, the horizontal line $y=9$ intersects the graph of $y=x^2$ in more than one point. And this is because the function
+\[
+ y = f(x) = x^2 \, , \, x\in \mathbb{R}
+\]
+is not \emph{one-to-one}. 
+
+What is means for a function to be \emph{one-to-one} is that \emph{any two different inputs always have different outputs}. And a function is not one-to-one when there is at least one pair of different inputs with the same outputs.
+
+The function $y=f(x) = x^2$, for example, is not one-to-one because $f(3) = f(-3)$.
+
+Here's the simple way to look at all this. I pick a number, square it, and get $25$. What was my number? Well, there are two possibilities, my number could have been $5$ or $-5$. You can't say for sure. So the squaring function is not one-to-one and thefore it's inverse is not a function. 
+
+On the other hand, the function
+\[
+   y = g(x) = x^2 \, , \, x \leq 0,
+\]
+ is one-to-one. If I now pick a number less than or equal to zero, square it, and get $25$, for example, there is only one possibility. My number must have been $-5$. And the same can be said if I pick any non-positive number. If I tell you the square of my number, you know can find my original number for sure.
+ 
+\begin{example} \label{Ev77337}
+Find the inverse of the function 
+\[
+   y = g(x) = x^2 \, , \, x \leq 0.
+\]
+
+\begin{explanation}
+Since
+\[
+   y = x^2 ,
+\]
+\[
+    x = \pm \sqrt{y}.
+\]
+But since $x\leq 0$, 
+\[
+   x = g^{-1}(y) = -\sqrt{y} \, , \, y \geq 0.
+\]
+\end{explanation}
+\end{example}
+
+\begin{example}     \label{Ex99:fefQuadratics}
+Let 
+\[
+   f(x) = \sqrt{25-x^2} \, , -5 \leq x \leq 5 .
+\]
+
+\begin{enumerate}
+\item Use your knowledge of circles to sketch a graph of the function $y=f(x)$ by hand.
+
+\item Explain what it means for a funtion to be one-to-one.
+
+\item Is the function $f$ one-to-one? Explain your reasoning.
+
+\item Explain what it means for a relation to be a function.
+
+\item Is the inverse of $f$ a function? Explain your reasoning.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Since 
+\[
+    y = \sqrt{25-x^2},
+\]
+we know that $y \geq 0$. Then squaring both sides and doing some algebra (you should fill in the details) gives
+\[
+    x^2 + y^2 =25 \text{ and } y\geq 0.
+\]
+The curve 
+\[
+   x^2 + y^2 = 25
+\]
+is a circle of radius 5 centered at the origin. But since $y\geq 0$, the graph (not shown) of the function $y=f(x)$ is a semicircle in the first and second quadrants with endpoints $(5,0)$ and $(-5,0)$.
+
+\item A function is one-to-one if any two distinct inputs have distinct outputs.
+
+\item The function $f$ is {\bf not} one-to-one. We can see this because the two inputs $x=-5$ and $x=5$ give the same output
+\[
+     f(5) = \sqrt{25-5^2} = 0 
+\]
+and
+\[
+     f(-5) = \sqrt{25-(-5)^2} = 0 = f(5). 
+\]
+
+We can also see that $f$ is not one-to-one from the graph. There are many horizontal lines that intersect the graph in two points. This means that there are many pairs of inputs that give the same output.
+
+\item A function is a relation when each input has exactly one output.
+
+\item Because $f$ is not one-to-one its inverse is {\bf not} a function. For example, the input $y=0$ to the inverse relation would have two outputs, $x=-5$ or $x=5$, making the inverse relation not a function.
+
+\end{enumerate}
+
+\end{explanation}
+\end{example}
+
+
+\begin{example} \label{Ex98:5Quadratics}
+Let 
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
+\]
+\begin{enumerate}
+\item Use your knowledge of circles to graph the function $y=f(x)$ \emph{by hand}. Use the graph to thoroughly explain why $f$ is one-to-one.
+
+\item Find an expression for the inverse function
+\[
+    x = f^{-1}(y)
+\]
+that expresses the input of $f$ in terms of its output. State the domain of $f^{-1}$ using set notation.
+
+\item Show algebraically that $f^{-1}$ undoes $f$.
+
+\item Show algebraically that $f$ undoes $f^{-1}$.
+
+\item Graph the function $y=f^{-1}(x)$. 
+
+\item Explain how you could have realized that $f^{-1}(x) = f(x)$ by looking at the graph of $y=f(x)$.
+\end{enumerate}
+
+
+\begin{explanation}
+\begin{enumerate}
+\item The graph of $y=f(x)$ is a quarter-circle in the first quadrant centered at the origin with endpoints $(5,0)$ and $(0,5)$. Since each horizontal line intersects the graph in at most one point, any two different inputs to $f$ have different ouputs. This means that $f$ is one-to-one.
+
+\item We know from the graph in part (a) that the range of $f$ is the set
+\[
+   \{ y \, | \,  0\leq y \leq 5 \} .
+\]
+This is the domain of the function $x=f^{-1}(y)$.
+
+Now to find an expression for $f^{-1}(y)$, we solve the equation
+\[
+   y=   \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+for $x$. Squaring both sides gives
+\[
+   y^2 = 25 - x^2 .
+\]
+So 
+\[
+     x^2 = 25-y^2
+\]
+and 
+\[
+   x  = \pm \sqrt{25-y^2} .
+\]
+
+To decide which sign to choose, we go back to the domain of $f$, where we are given that 
+\[
+     0 \leq x \leq 5 .
+\]
+Since $x\geq 0$, this means we must choose the positive sign and so
+\[
+    x = f^{-1}(y) = \sqrt{25-y^2}.
+\]
+We should also include the domain $0\leq y \leq 5$ (as stated above). So the inverse of the function
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+is the function
+\[
+    x = f^{-1}(y) = \sqrt{25-y^2} \, , 0\leq y \leq 5 .
+\]
+
+\item To show $f^{1-}$ undoes $f$, we simplify the composition $f^{-1}(f(x))$ as follows:
+\begin{align*}
+           f^{-1}(f(x)) &= f^{-1}(\sqrt{25-x^2})   \\
+                             &= \sqrt{25 - \left( \sqrt{25-x^2}\right)^2}  \\
+                             &= \sqrt{25 - (25-x^2)}  \\
+                             &= \sqrt{x^2} \\
+                             &= |x|  \\
+                             &= x \text{ since } 0\leq x \leq 5.
+\end{align*}
+
+\item To show $f$ undoes $f^{-1}$ simplify the composition $f(f^{-1}(x))$. I'll leave this for you.
+
+\begin{freeResponse}
+\end{freeResponse}
+
+\item Since the variables $x$ and $y$ have no practical meaning, we can switch them in our expression for $x = f^{-1}(y)$. So the inverse of the function
+\[
+    y=   f(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 
+\]
+is the function
+\[
+    y = f^{-1}(x) = \sqrt{25-x^2} \, , 0\leq x \leq 5 .
+\]
+This is identical to the function $f$. That is, $f$ is its own inverse and the graphs of $f$ and $f^{-1}$ are identical.
+
+\item Since the graph of $y=f(x)$ is symmetric about the line $y=x$, we could have realized from the start that $f$ is its own inverse.
+
+\end{enumerate}
+\end{explanation}
+\end{example}
+
+
+
+\section{Applications}
+
+\begin{example} \label{QlvemME8381O}
+\item The function 
+\[
+  g = f(v)  \, , \, 25\leq v \leq 50 ,
+\] 
+expresses the gas mileage of a car (in miles/gal) in terms of its speed (in miles/hr).
+   
+
+\begin{enumerate}
+   \item Explain what it would mean for the function $f$ to be one-to-one in this scenario.
+
+  \item Is it likely that $f$ is one-to-one? Explain your reasoning.    
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item For the function $f$ to be one-to-one means the car would get different gas mileages for any pair of different speeds between $25$ and $50$ miles/hour.
+
+\item You could say that $f$ is likely to be one-to-one because you think the function $f$ is increasing, i.e. the greater the speed, the greater the gas mileage (at least for speeds between $25$ miles/hour and $50$ miles/hour).
+
+You could alsos say that $f$ is unlikely to be one-to-one because you think it likely the car gets the same gas mileage at two different speeds between $25$ miles/hour and $50$ miles/hour.
+
+Either answer is correct. The important thing is your logic.
+\end{enumerate}
+\end{explanation}
+\end{example}
+
+
+\begin{example} \label{Emv3et3}
+The function
+\[
+g = f(v) = 40 -\frac{1}{25}\left(v-50 \right)^2 \, , \, 25\leq v \leq 50, 
+\]
+expresses the gas mileage of a car (in miles/gal) in terms of its speed (in mile
+
+\begin{enumerate}
+\item Find an expression for the function $v=f^{-1}(g)$. Include the domain.
+     \item Show algebraicall that $f^{-1}$ undoes $f$.
+    \item Simplify the function
+    \[
+             G =h(g)= f(f^{-1}(g)-10).
+    \]
+    Include the domain and interpret its meaning.
+    \end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Since 
+\[
+  g =  40 -\frac{1}{25}\left(v-50 \right)^2 ,
+\]
+\[
+  (v-50)^2 = 900 - 25g ,
+\]
+and
+\[
+ v  = 50 \pm \sqrt{900-25g} .
+\]
+To choose between $\pm$, we go back to the domain of $f$, where $25 \leq v \leq 50$. Since $\sqrt{900-25g}\geq 0$, we need to choose the minus sign to get speeds at most $50$ miles/hour. So
+\[
+ v = f^{-1}(g) = 50 - \sqrt{900-25g}.
+\]
+
+\item To show $f^{-1}$ undoes $f$ we need to show
+\[
+   f^{-1}(f(v)) = v \, , \, 25\leq v \leq 50.
+\]
+
+Here's the computation.
+
+\begin{align*}
+   f^{-1}(f(v)) &= f^{-1}\left(  40 -\frac{1}{25}\left(v-50 \right)^2 \right) \\ 
+                     &= 50 - \sqrt{900 - 25 \left( 40 -\frac{1}{25}\left(v-50 \right)^2 \right)} \\ 
+                     &= 50 - \sqrt{(v-50)^2} \\
+                     &= 50 - \left| v-50 \right| .
+\end{align*}
+
+Now we stop and think.
+
+To simplify $| v-50 |$, we need to know if $v-50$ is at least zero or at most zero. To decide, we go back to the domain of $f$, where we were told $25\leq v\leq 50$. This domain implies
+\[
+    25 - 50 \leq  v - 50 \leq 50 - 50 ,
+\]
+or equivalently that
+\[
+   -25 \leq v - 50 \leq 0.
+\]
+So $v - 50\leq 0$ and
+\begin{align*}
+  | v - 50 | &= - (v-50) \\
+                & = 50 - v.
+\end{align*}
+
+Now we can continue simplifying the composition.
+\begin{align*}
+  f^{-1}(f(v)) &= 50 - \left| v-50 \right| \\
+                    &= 50 - (50 -v) \\
+                    &=v. 
+\end{align*}
+
+
+\end{enumerate}
+\end{explanation}
+
+\end{example}
+
 
 
 \end{document}
