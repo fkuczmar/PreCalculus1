@@ -406,4 +406,151 @@ I'll leave it for you to finish the problem from here. Please let me know if you
 \end{explanation}
 \end{question}
 
+
+\section{Quiz 5A}
+
+\begin{question} \label{Qpv33f}
+Let
+\[
+  f(x) = \frac{4x-3}{3x+2}
+\]
+and
+\[
+   g(x) = x^2  - 6x -1.
+\]
+
+Use the methods of this class to solve the equation
+\[
+   g(f(x)) = 6.
+\]
+End with a concluding sentence that summarizes the original question and states the solution set.
+
+\begin{explanation}
+To hide the composition, let $u=f(x)$. Then the equation $g(f(x))=6$ becomes
+\[
+     g(u) = u^2 - 6u - 1 = 6,
+\]  
+or equivalently
+\[
+   u^2 - 6u - 7 = 0.
+\]
+So
+\[
+    (u-7)(u+1)=0
+\]
+and $u=7$ or $u=-1$.
+
+So $x$ is a solution to the equation $g(f(x)) = g(u) = 6$ if and only if
+\[
+ u = f(x) = 7 \hskip 0.3 in \text{or} \hskip 0.3 in u = f(x) = -1.
+\]
+
+I'll leave the rest for you, but the result is that the solution set to the equation $g(f(x))=6$ is
+\[
+ \{  x \, | \, x= -1 \text{ or } x = 1/7  \}.
+\]
+
+\end{explanation}
+\end{question}
+
+\section{Quiz 5B}
+
+\begin{question} \label{QQA232}
+\begin{enumerate}
+
+\item Complete the following sentence.
+
+The number $x$ is in the domain of the composition $h\circ g$ if and only if ...
+
+
+\item  Let 
+\[
+ g(x) = \frac{2x}{x^2+8x+7}
+\]
+and
+\[
+   h(x) =      \frac{x-4}{x+1}.
+\]
+Use $u$-substitution and the methods of this class to find the domain of the composition $h\circ g$.
+
+End with a concluding sentence that summarizes the original question and states domain as a set.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The number $x$ is in the domain of the composition $h\circ g$ if and only if
+\begin{enumerate}
+\item $x$ is in the domain of $g$ and
+
+\item $g(x)$ is in the domain of $h$.
+\end{enumerate}
+
+\item We first find the domain of $g$. 
+
+The number $x$ is in the domain of $g$ if and only if
+\[
+  x^2 + 8x + 7 \neq 0, 
+\]
+or equivalently if and only if
+\[
+   (x+7)(x+1) \neq 0.
+\]
+Since the product of two numbers is non-zero if and only if each factor is non-zero, the last inequality is equivalent to saying
+\[
+ x + 7 \neq 0  \hskip 0.3in \text{and} \hskip 0.3 in  x+1 \neq 0.
+\]
+So $x$ is in the domain of $g$ if and only if
+\[
+  x  \neq -7  \hskip 0.3in \text{and} \hskip 0.3 in  x \neq -1.
+\]
+
+Next we find conditions for $g(x)$ to be in the domain of $h$. 
+
+The number $u=g(x)$ is in the domain of $h$ if and only if 
+\[
+  u+1 \neq 0,
+\]
+or equivalently if and only if
+\[
+    u = g(x) \neq -1.
+\]
+
+So $u=g(x)$ is in the domain of $h$ if and only if
+\[
+     g(x) = \frac{2x}{x^2+8x+7} \neq -1.
+\]
+This is equivalent to the inequality
+\[
+  2x \neq -x^2 -8x -7 ,
+\]
+or equivalently
+\[
+  x^2 +10x \neq -7.
+\]
+
+Completing the square gives
+\[
+  x^2 + 10x + 5^2 \neq -7 + 5^2,
+\]
+or equivalently
+\[
+ (x+5)^2 \neq 18.
+\]
+
+So $g(x)\neq -1$ if and only if
+\[
+   x \neq -5 + \sqrt{18} \hskip 0.3in \text{and} \hskip 0.3 in x \neq -5 - \sqrt{18}.
+\]
+
+Our conclusion is that the domain of the composition $h(g(x))$ is the set
+\[
+ \{  x \, | \, x\neq -7 \text{ and } x\neq -1 \text{ and }   x \neq -5 + \sqrt{18} \text{ and }  x \neq -5 - \sqrt{18}     \}.
+\]
+
+\end{enumerate}
+\end{explanation}
+
+\end{question}
+
 \end{document}
