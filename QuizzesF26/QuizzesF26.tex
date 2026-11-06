@@ -550,7 +550,127 @@ Our conclusion is that the domain of the composition $h(g(x))$ is the set
 
 \end{enumerate}
 \end{explanation}
+\end{question}
+
+
+\section{Quiz 6A}
+
+\begin{question} \label{Q49v93f3}
+\begin{enumerate}
+
+\item[(a)] Use the methods of this class to find an expression for the inverse of the function
+\[
+    y = f(x) = \frac{2x-5}{x+3}.
+\]
+
+\item[(b)] Show algebraically that $f^{-1}$ undoes $f$. Do this on the back.
+
+\item[(c)] Find the range of $f$.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item If 
+\[
+ y = \frac{2x-5}{x+3} ,
+\]
+then
+\[
+ y(x+3) = 2x - 5
+\]
+and
+\[
+  yx + 3y = 2x - 5.
+\]
+So
+\[
+ 2x - yx = 3y + 5
+\]
+and
+\[
+  (2-y)x = 3y + 5.
+\]
+So
+\[
+ x = \frac{3y+5}{2-y}.
+\]
+
+Our conclusion is that  for the inverse of the function
+\[
+    y = f(x) = \frac{2x-5}{x+3}.
+\]
+is the function
+\[
+x = f^{-1}(y) = \frac{3y+5}{2-y}.
+\]
+
+\item To show $f^{-1}$ undoes $f$, we need to show $f^{-1}(f(x)) = x$ for all $x$ in the domain of $f$ (ie. for all $x\neq 3$). Here's the algebra.
+
+\begin{align*}
+  f^{-1}(f(x))  &= f \left( \frac{2x-5}{x+3} \right) \\
+                     & = \frac{3 \left( \frac{2x-5}{x+3}\right) + 5 }{2 - \left(  \frac{2x-5}{x+3} \right)} \\
+                     &= \frac{3(2x-5) + 5(x+3)}{2(x+3) - (2x-5)} \text{ since } x \neq -3 \\
+                     &= \frac{11x}{11}\\
+                     &=x .
+\end{align*}
+
+\emph{Note:} To get from the second to the third line we multiplied the expression in the second line by  $(x+3)/(x+3) = 1$.
+
+\item The range of the function $y=f(x)$ is the domain of the function $x=f^{-1}(y)$ and is therefore equal to the set
+\[
+  \{  y \, | \, y \neq 2 \}.
+\]
+
+\end{enumerate}
+\end{explanation}
+\end{question}
+
+\section{Quiz 6B}
+\begin{question} \label{Q4v22dd3}
+\begin{enumerate}
+
+\item[(a)] Use complete sentences to describe the action of the function
+\[
+    y = f(x) = 6 + \frac{5}{x-2}.
+\]
+on its input.
+
+\item[(b)] Use your description in part (a) to describe the action of $f^{-1}$ on its input.
+
+\item[(c)] Use your desription in part (b) to find an expression for the function $x = f^{-1}(y)$.
+
+\item[(d)] Show algebraically that $f^{-1}$ undoes $f$. 
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The function $f$ first subtracts $2$ from its input. It then divides the result into $12$ and adds $6$.
+
+\item The function $f^{-1}$ first subtracts $6$ from its input. It then divides the result into $12$ and adds $2$.
+
+\item So
+\[
+   x = f^{-1}(y) = \frac{12}{y-6} + 2.
+\]
+
+\item To show $f^{-1}$ undoes $f$, we need to show $f^{-1}(f(x)) = x$ for all $x$ in the domain of $f$ (ie. for all $x\neq 2$). Here's the algebra.
+
+\begin{align*}
+  f^{-1}(f(x))  &= f^{-1} \left(  6 + \frac{5}{x-2} \right) \\
+                     &= \frac{12}{ 6 + \frac{12}{x-2} - 6} +2 \\
+                     &= \frac{12}{\frac{12}{x-2}} + 2 \\
+                     &= 12\left( \frac{x-2}{12} \right) +2  \text{ since } x \neq 2\\  
+                     &= x-2 + 2 \\
+                    &= x.
+\end{align*}
+
+
+\end{enumerate}
+\end{explanation}
 
 \end{question}
+
 
 \end{document}
