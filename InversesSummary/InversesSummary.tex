@@ -407,6 +407,219 @@ Now we can continue simplifying the composition.
 
 \end{enumerate}
 \end{explanation}
+\end{example}
+
+
+\begin{example} \label{EW231a}
+The function
+\[
+       Q = f(P) \, , \, 5 \leq P \leq 15,
+\]
+expresses the average number of burgers a diner sells per day in terms of the price (in dollars/burger).
+
+\begin{enumerate}
+
+\item Interpret the meanings of each of the following expressions.
+
+\begin{enumerate}
+
+\item $f^{-1}(f(6)-10)$
+
+\item $f(f^{-1}(30)-2)$
+
+\end{enumerate}
+
+\item Suppose the function $f$ is linear for prices between $\$5$/burger and  $\$15$/burger. Suppose also the diner sells an average of $53$ burgers/day when the price is $\$5$/burger and an average of $10$ burgers/day when the price is $\$15$/burger.
+
+\begin{enumerate}
+\item Find expressions for the functions $Q=f(P)$ and $P=f^{-1}(Q)$. Include a domain and range for 	each.
+
+\item Let 
+\[
+      p = g(P) =  f^{-1}(f(P)-10).   
+\]
+
+\thispagestyle{empty}
+
+\begin{enumerate}
+\item Explain the meaning of the function $g$. What does it take as an input? What does it return as an output?
+
+\item Find a simplified expression for the function $p=g(P)$.
+
+\item Explain how we could have found an expression for the function $p=g(P)$ another way.
+
+%\item Use set builder notation to write the domain and range of the function $p=g(P)$.
+
+%\item Graph the function $p=g(P)$. Label the coordinate axes with the appropriate variable names and units.
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The meanings of the expressions are as follows.
+
+\begin{enumerate}
+
+\item The expression $f^{-1}(f(6)-10)$ is the price at which the diner sells an average of $10$ fewer burgers/day than they do at  a price of $\$6$/burger.
+
+\item The expression $f(f^{-1}(30)-2)$ is the average number of burgers/day the diner sells at a price of $\$2$/burger less than they do when they sell an average of $30$ burgers/day. 
+
+\end{enumerate}
+
+\item For the given information (work left for you)
+\begin{enumerate}
+\item 
+\[
+   Q = f(P) = 53 - \frac{43}{10} \left( P - 5 \right) \, , \, 5 \leq P \leq 15
+\]
+and
+\[
+     P = f^{-1}(Q) = 5 - \frac{10}{43}  \left( Q - 53 \right) \, , \, 10 \leq Q \leq 53.
+\]
+
+\item For the function $g$:
+\begin{enumerate}
+  \item The function $g$ returns as an output the price $p$ (measured in dollars/burger) at which the diner sells an average of $10$ burger/day fewer than they do at a price of $P$ dollars/burger.
+
+\item
+\begin{align*}
+      p & = g(P)   \\
+         &= f^{-1}(f(P)-10) \\
+         &= f^{-1}\left( \left(53 - \frac{43}{10} \left( P - 5 \right)\right) - 10  \right) \\
+         &= f^{-1}\left( 43 - \frac{43}{10} \left( P - 5 \right) \right) \\
+         &= 5 - \frac{10}{43}\left( \left( 43 - \frac{43}{10} \left( P - 5 \right) \right) - 53\right) \\
+         &= 5 - \frac{10}{43}\left(  -10 - \frac{43}{10} \left( P - 5 \right)\right) \\
+         &= 5 + \frac{100}{43}+ P-5 \\
+         & = P + \frac{100}{43} . 
+\end{align*}
+
+\item For another way to find an expression for the function $g$, we use the rate of change
+\[
+  \frac{\Delta Q}{\Delta P} = -\frac{43}{10} \frac{\text{burgers/day}}{\text{dollar/burger}}.
+\] 
+If the diner sells an average of $10$ burgers/day fewer than they do at a price of $P$ dollars/burger, then $\Delta Q=  -10$ and
+\[
+ \frac{-10}{\Delta P} = -\frac{43}{10}.
+\]
+So
+\[
+ \Delta P = \frac{100}{43} .
+\]
+This means for the diner sell an average of $10$ fewer burgers/day they must raise the price by $\frac{100}{43}$ dollars/burger and therefore
+\[
+      g(P) = P + \frac{100}{43}.
+\]
+
+We should find the domain of this function, but I'll leave that for you.
+\end{enumerate}
+
+\end{enumerate}
+\end{enumerate}
+\end{explanation}
+\end{example}
+
+\begin{example}\label{Qpfef3z}
+The function
+\[
+  h = f(t) = 320 - 5(t-6)^2 \, , \, 0\leq t \leq 14.
+\]
+expresses the height (in meters) of a rock in terms of the number of seconds since it was launched straight up. Its graph is shown below.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nho1omvdtd}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ew9jsipj5z}{141:Rock}
+
+\begin{enumerate}
+\item Is function $f$ one-to-one? Explain your reasoning in this particular scenario.
+
+\item Let  $T=u(h)$ be the function that as an input a height (in meters) and returns as an output the time (in seconds past noon) when the rock was at that height and on its way up. 
+
+Use the graph of the function $f$ above to approximate each of the following expressions.
+
+\begin{enumerate}
+
+\item $u(f(10))$
+
+\item $u(f(13))$
+\end{enumerate}
+
+\item Find an expression for the function $T=u(h)$. Include its domain.
+
+\item Explain the meaning of the composition $u\circ f$.
+
+\item Find the domain of the composition $u\circ f$. Write it as a set with the appropriate variable.
+
+
+\item Simplify the composition $T=u(f(t))$ alegebraically. Your expression should involve the absolute value function. %Then graph the composition and see how it compares with your sketch from part (d).  %Then find a piecewise-defined equivalent form of the composition.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The function $f$ is not one-to-one because the rock has the same height at time $t=10$ seconds past noon as it does at time $t=2$ seconds past noon.
+
+\item For this part:
+
+\begin{enumerate}
+\item $u(f(10))$ is the time when the rock is on its way up and has the same height as it does at time $t=10$ seconds past noon. This happens at time $t=2$ seconds past noon, so
+\[
+  u(f(10)) = 2.
+\]
+
+\item Since $f(13) = 0$, $u(f(13)) = u(0)$. This expression is undefined since the rock is never on the ground when it is on its way up.
+
+\item Since
+\[
+  h = 320 - 5(T-6)^2,
+\]
+\begin{align*}
+ 5(T-6)^2 &= 320 - h \\
+ (T-6)^2 &= \frac{320 - h}{5} \\
+  T &= 6 \pm \sqrt{\frac{320 - h}{5}} .
+\end{align*}
+
+Now since $T$ is the time when the rock is $h$ meters above the ground and on its way \emph{up}, 
+\[
+     0 \leq T \leq 6.
+\]
+So
+\[
+     T = u(t) =  6 - \sqrt{\frac{320 - h}{5}} \, , \, 140 \leq h < 320.
+\]
+
+\item The function $T=u(f(t))$ gives the time (measured in seconds past noon) when the rock is on its way up and has the same height as it does at time $t$ seconds past noon.
+
+\item The domain of the composition $h(f(t))$ is the set of times when the balloon balloon is at least 140 feet high but less than 320 feet high. So the domain of the composition is
+\[
+  \{ 0\leq t \leq 12 \text{ and } t\neq 6  \}.
+\]
+
+\item
+\begin{align*}
+  T &= u(f(t))  \\
+     &= u \left( 320 - 5(t-6)^2 \right)  \\
+     &= 6 - \sqrt{\frac{320 - \left( 320 - 5(t-6)^2 \right)}{5}} \\
+     &= 6 - \sqrt{(t-6)^2)} \\
+     &= 6 - \left|  t-6 \right| \\
+     &= 
+\begin{cases}
+        t - (6-t)  \, , \, 0\leq t <6 \\
+        t - (t-6)  \, , \, 6 < t \leq 12.
+\end{cases} \\
+      &=
+\begin{cases}
+        t  \, , \, 0\leq t <6 \\
+        6-t  \, , \, 6 < t \leq 12.
+\end{cases}
+\end{align*}
+\end{enumerate}
+\end{enumerate}
+\end{explanation}
 
 \end{example}
 
